@@ -1,0 +1,14 @@
+uuid: 26647ce5-472d-4657-965e-3cf498a82135
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Website feedback'
+recipients:
+  - sdpls@gmail.com
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''
