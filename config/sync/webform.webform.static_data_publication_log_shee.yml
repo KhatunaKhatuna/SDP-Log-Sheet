@@ -16,6 +16,73 @@ elements: |-
   receipt_and_assessment:
     '#type': webform_wizard_page
     '#title': 'Receipt and assessment'
+    log_sheet_number:
+      '#type': number
+      '#title': 'Log Sheet number'
+      '#description': 'Insert number as&nbsp; NNN'
+      '#title_display': inline
+      '#autocomplete': ''
+      '#step': 1
+    ref_to_raw_data:
+      '#type': textfield
+      '#title': 'Ref. to raw data'
+      '#description': 'Indicate Type of document and Number'
+      '#title_display': inline
+      '#autocomplete': ''
+    date_of_raw_data_receipt:
+      '#type': date
+      '#title': 'Date of raw data receipt'
+      '#description': 'Insert date as &nbsp; &nbsp;MM-DD-YYYY'
+      '#title_display': inline
+    data_originator:
+      '#type': select
+      '#title': 'Data Originator'
+      '#title_display': inline
+      '#options':
+        'Batumi Airport Ltd': 'Batumi Airport Ltd'
+        GCAA: GCAA
+        'Georgian Aviation University': 'Georgian Aviation University'
+        'Ilias State University': 'Ilias State University'
+        'Ministry of Economy': 'Ministry of Economy'
+        'Sakaeronavigatsia Ltd. - AIS': 'Sakaeronavigatsia Ltd. - AIS'
+        'Sakaeronavigatsia Ltd. - ATM': 'Sakaeronavigatsia Ltd. - ATM'
+        NAPR: NAPR
+        'Sakaeronavigatsia Ltd. - CNS': 'Sakaeronavigatsia Ltd. - CNS'
+        'Sakaeronavigatsia Ltd. - Search and Rescue': 'Sakaeronavigatsia Ltd. - Search and Rescue'
+        'Sakaeronavigatsia Ltd. - Economic Dpt.': 'Sakaeronavigatsia Ltd. - Economic Dpt.'
+        'Sakaeronavigatsia Ltd. - MET': 'Sakaeronavigatsia Ltd. - MET'
+        'ServiseAir Ltd.': 'ServiseAir Ltd.'
+        'TAV Urban Georgia LLC': 'TAV Urban Georgia LLC'
+        'United Airports of Georgia Ltd.': 'United Airports of Georgia Ltd.'
+    raw_data_subject:
+      '#type': textfield
+      '#title': 'Raw data subject'
+      '#title_display': inline
+      '#autocomplete': ''
+    publication_method:
+      '#type': select
+      '#title': 'Publication method'
+      '#description': 'Choose Aeronautical database in case of update based on PERM NOTAM, Special dates update, etc.'
+      '#title_display': inline
+      '#options':
+        'AIP AMDT': 'AIP AMDT'
+        'AIP SUP': 'AIP SUP'
+        AIC: AIC
+        'Aeronautical database': 'Aeronautical database'
+    publication_number:
+      '#type': textfield
+      '#title': 'Publication number'
+      '#title_display': inline
+      '#autocomplete': ''
+    database_entry_:
+      '#type': textfield
+      '#title': 'Database entry #'
+      '#description': 'Filled, if publication method is &quot;Aeronautical database&quot;'
+      '#title_display': inline
+      '#states':
+        visible:
+          ':input[name="publication_method"]':
+            value: 'Aeronautical database'
   evaluation:
     '#type': webform_wizard_page
     '#title': Evaluation
