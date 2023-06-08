@@ -16,73 +16,191 @@ elements: |-
   receipt_and_assessment:
     '#type': webform_wizard_page
     '#title': 'Receipt and assessment'
-    log_sheet_number:
-      '#type': number
-      '#title': 'Log Sheet number'
-      '#description': 'Insert number as&nbsp; NNN'
-      '#title_display': inline
-      '#autocomplete': ''
-      '#step': 1
-    ref_to_raw_data:
-      '#type': textfield
-      '#title': 'Ref. to raw data'
-      '#description': 'Indicate Type of document and Number'
-      '#title_display': inline
-      '#autocomplete': ''
-    date_of_raw_data_receipt:
-      '#type': date
-      '#title': 'Date of raw data receipt'
-      '#description': 'Insert date as &nbsp; &nbsp;MM-DD-YYYY'
-      '#title_display': inline
-    data_originator:
-      '#type': select
-      '#title': 'Data Originator'
-      '#title_display': inline
-      '#options':
-        'Batumi Airport Ltd': 'Batumi Airport Ltd'
-        GCAA: GCAA
-        'Georgian Aviation University': 'Georgian Aviation University'
-        'Ilias State University': 'Ilias State University'
-        'Ministry of Economy': 'Ministry of Economy'
-        'Sakaeronavigatsia Ltd. - AIS': 'Sakaeronavigatsia Ltd. - AIS'
-        'Sakaeronavigatsia Ltd. - ATM': 'Sakaeronavigatsia Ltd. - ATM'
-        NAPR: NAPR
-        'Sakaeronavigatsia Ltd. - CNS': 'Sakaeronavigatsia Ltd. - CNS'
-        'Sakaeronavigatsia Ltd. - Search and Rescue': 'Sakaeronavigatsia Ltd. - Search and Rescue'
-        'Sakaeronavigatsia Ltd. - Economic Dpt.': 'Sakaeronavigatsia Ltd. - Economic Dpt.'
-        'Sakaeronavigatsia Ltd. - MET': 'Sakaeronavigatsia Ltd. - MET'
-        'ServiseAir Ltd.': 'ServiseAir Ltd.'
-        'TAV Urban Georgia LLC': 'TAV Urban Georgia LLC'
-        'United Airports of Georgia Ltd.': 'United Airports of Georgia Ltd.'
-    raw_data_subject:
-      '#type': textfield
-      '#title': 'Raw data subject'
-      '#title_display': inline
-      '#autocomplete': ''
-    publication_method:
-      '#type': select
-      '#title': 'Publication method'
-      '#description': 'Choose Aeronautical database in case of update based on PERM NOTAM, Special dates update, etc.'
-      '#title_display': inline
-      '#options':
-        'AIP AMDT': 'AIP AMDT'
-        'AIP SUP': 'AIP SUP'
-        AIC: AIC
-        'Aeronautical database': 'Aeronautical database'
-    publication_number:
-      '#type': textfield
-      '#title': 'Publication number'
-      '#title_display': inline
-      '#autocomplete': ''
-    database_entry_:
-      '#type': textfield
-      '#title': 'Database entry #'
-      '#description': 'Filled, if publication method is &quot;Aeronautical database&quot;'
-      '#title_display': inline
-      '#states':
-        visible:
-          ':input[name="publication_method"]':
-            value: 'Aeronautical database'
+    head_of_ais:
+      '#type': fieldset
+      '#title': 'Head of AIS'
+      '#title_tag': h1
+      raw_data_receipt:
+        '#type': fieldset
+        '#title': 'Raw data receipt'
+        '#open': true
+        log_sheet_number:
+          '#type': number
+          '#title': 'Log Sheet number'
+          '#description': 'Insert number as&nbsp; NNN'
+          '#title_display': inline
+          '#description_display': invisible
+          '#placeholder': '732'
+          '#autocomplete': ''
+          '#min': 0
+          '#step': 1
+        ref_to_raw_data:
+          '#type': textfield
+          '#title': 'Ref. to raw data'
+          '#description': 'Indicate Type of document and Number'
+          '#title_display': inline
+          '#description_display': invisible
+          '#placeholder': '#123456'
+          '#autocomplete': ''
+        date_of_raw_data_receipt:
+          '#type': date
+          '#title': 'Date of raw data receipt'
+          '#description': 'Insert date as &nbsp; &nbsp;MM-DD-YYYY'
+          '#title_display': inline
+          '#description_display': invisible
+        raw_data_description:
+          '#type': details
+          '#title': 'Raw data description'
+          '#title_tag': h4
+          data_originator:
+            '#type': select
+            '#title': 'Data Originator'
+            '#title_display': inline
+            '#options':
+              'Batumi Airport Ltd': 'Batumi Airport Ltd'
+              GCAA: GCAA
+              'Georgian Aviation University': 'Georgian Aviation University'
+              'Ilias State University': 'Ilias State University'
+              'Ministry of Economy': 'Ministry of Economy'
+              'Sakaeronavigatsia Ltd. - AIS': 'Sakaeronavigatsia Ltd. - AIS'
+              'Sakaeronavigatsia Ltd. - ATM': 'Sakaeronavigatsia Ltd. - ATM'
+              NAPR: NAPR
+              'Sakaeronavigatsia Ltd. - CNS': 'Sakaeronavigatsia Ltd. - CNS'
+              'Sakaeronavigatsia Ltd. - Search and Rescue': 'Sakaeronavigatsia Ltd. - Search and Rescue'
+              'Sakaeronavigatsia Ltd. - Economic Dpt.': 'Sakaeronavigatsia Ltd. - Economic Dpt.'
+              'Sakaeronavigatsia Ltd. - MET': 'Sakaeronavigatsia Ltd. - MET'
+              'ServiseAir Ltd.': 'ServiseAir Ltd.'
+              'TAV Urban Georgia LLC': 'TAV Urban Georgia LLC'
+              'United Airports of Georgia Ltd.': 'United Airports of Georgia Ltd.'
+          raw_data_subject:
+            '#type': textfield
+            '#title': 'Raw data subject'
+            '#title_display': inline
+            '#autocomplete': ''
+          publication_method:
+            '#type': select
+            '#title': 'Publication method'
+            '#description': 'Choose Aeronautical database in case of update based on PERM NOTAM, Special dates update, etc.'
+            '#title_display': inline
+            '#options':
+              'AIP AMDT': 'AIP AMDT'
+              'AIP SUP': 'AIP SUP'
+              AIC: AIC
+              'Aeronautical database': 'Aeronautical database'
+          publication_number:
+            '#type': textfield
+            '#title': 'Publication number'
+            '#title_display': inline
+            '#autocomplete': ''
+            '#states':
+              visible:
+                ':input[name="publication_method"]':
+                  '!value': 'Aeronautical database'
+          database_entry_:
+            '#type': textfield
+            '#title': 'Database entry #'
+            '#description': 'Filled, if publication method is &quot;Aeronautical database&quot;'
+            '#title_display': inline
+            '#states':
+              visible:
+                ':input[name="publication_method"]':
+                  value: 'Aeronautical database'
+      raw_data_initial_assessment:
+        '#type': fieldset
+        '#title': 'Raw data initial assessment'
+        flexbox:
+          '#type': webform_flexbox
+          date:
+            '#type': date
+            '#title': Date
+            '#title_display': inline
+          raw_data_of_aeronautical_use:
+            '#type': select
+            '#title': 'Raw data of aeronautical use'
+            '#title_display': inline
+            '#options': yes_no
+          raw_data_needs_clarification:
+            '#type': select
+            '#title': 'Raw data needs clarification'
+            '#title_display': inline
+            '#options': yes_no
+          contact_with_do:
+            '#type': select
+            '#title': 'Contact with DO'
+            '#title_display': inline
+            '#options': yes_no
+        effective_and_or_publication_dates:
+          '#type': details
+          '#title': 'Effective and/or publication dates'
+          '#title_tag': h4
+          effective_date:
+            '#type': date
+            '#title': 'Effective date'
+            '#title_display': inline
+          publication_date:
+            '#type': textfield
+            '#title': 'Publication date'
+            '#title_display': inline
+        affected_publication_s_:
+          '#type': details
+          '#title': 'Affected publication(s)'
+          aip_items:
+            '#type': webform_select_other
+            '#title': 'AIP items'
+            '#title_display': inline
+            '#options': not_effected
+            '#states':
+              visible:
+                - ':input[name="publication_method"]':
+                    value: 'AIP AMDT'
+                - or
+                - ':input[name="publication_method"]':
+                    value: 'AIP SUP'
+          chart_s_:
+            '#type': webform_select_other
+            '#title': Chart(s)
+            '#title_display': inline
+            '#options': not_effected
+            '#states':
+              visible:
+                - ':input[name="publication_method"]':
+                    value: 'AIP AMDT'
+                - or
+                - ':input[name="publication_method"]':
+                    value: 'AIP SUP'
+          sup_s_:
+            '#type': webform_select_other
+            '#title': SUP(s)
+            '#title_display': inline
+            '#options': not_effected
+            '#states':
+              invisible:
+                ':input[name="publication_method"]':
+                  value: AIC
+          aic_s_:
+            '#type': webform_select_other
+            '#title': AIC(s)
+            '#title_display': inline
+            '#options': not_effected
+            '#states':
+              visible:
+                - ':input[name="publication_method"]':
+                    value: 'AIP AMDT'
+                - or
+                - ':input[name="publication_method"]':
+                    value: AIC
+          data_set_s_:
+            '#type': webform_select_other
+            '#title': 'Data set(s)'
+            '#title_display': inline
+            '#options': not_effected
+            '#states':
+              visible:
+                - ':input[name="publication_method"]':
+                    value: 'AIP AMDT'
+                - or
+                - ':input[name="publication_method"]':
+                    value: 'Aeronautical database'
   evaluation:
     '#type': webform_wizard_page
     '#title': Evaluation
@@ -113,7 +231,7 @@ settings:
   page_submit_path: ''
   page_confirm_path: ''
   page_theme_name: ''
-  form_title: both
+  form_title: source_entity_webform
   form_submit_once: false
   form_open_message: ''
   form_close_message: ''

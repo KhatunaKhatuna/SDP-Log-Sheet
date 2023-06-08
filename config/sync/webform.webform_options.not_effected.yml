@@ -1,0 +1,9 @@
+uuid: 456a6118-c649-4980-aa52-62b8beb61447
+langcode: en
+status: true
+dependencies: {  }
+id: not_effected
+label: 'Not effected'
+category: ''
+likert: false
+options: '''Not effected'': ''Not effected'''
