@@ -1,0 +1,20 @@
+uuid: 4ce5ef02-7bcd-4f5f-ac0b-4907f770abc3
+langcode: en
+status: true
+dependencies:
+  theme:
+    - sdpls
+_core:
+  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
+id: sdpls_page_title
+theme: sdpls
+region: sidebar_first
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

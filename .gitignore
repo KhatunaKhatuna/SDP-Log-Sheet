@@ -22,3 +22,14 @@
 
 # Ignore database
 /mariadb_volume
+
+/web/themes/custom/sdpls/*.log
+#/mix-manifest.json
+/web/themes/custom/sdpls/node_modules
+
+# Ignore compiled assets.
+/web/themes/custom/sdpls/dist
+
+# Ignore lock files.
+/web/themes/custom/sdpls/package-lock.json
+#/yarn.lock

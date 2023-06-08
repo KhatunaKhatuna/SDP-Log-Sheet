@@ -1,0 +1,22 @@
+uuid: 1b7d4f5e-142c-4fc6-bd61-e18cbdb182d6
+langcode: en
+status: true
+dependencies:
+  theme:
+    - sdpls
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: sdpls_primary_local_tasks
+theme: sdpls
+region: highlighted
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

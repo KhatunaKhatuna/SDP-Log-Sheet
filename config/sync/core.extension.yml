@@ -45,4 +45,6 @@ module:
 theme:
   olivero: 0
   claro: 0
+  stable: 0
+  sdpls: 0
 profile: minimal
