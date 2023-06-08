@@ -24,30 +24,70 @@ elements: |-
         '#type': fieldset
         '#title': 'Raw data receipt'
         '#open': true
-        log_sheet_number:
-          '#type': number
-          '#title': 'Log Sheet number'
-          '#description': 'Insert number as&nbsp; NNN'
-          '#title_display': inline
-          '#description_display': invisible
-          '#placeholder': '732'
-          '#autocomplete': ''
-          '#min': 0
-          '#step': 1
-        ref_to_raw_data:
-          '#type': textfield
-          '#title': 'Ref. to raw data'
-          '#description': 'Indicate Type of document and Number'
-          '#title_display': inline
-          '#description_display': invisible
-          '#placeholder': '#123456'
-          '#autocomplete': ''
-        date_of_raw_data_receipt:
-          '#type': date
-          '#title': 'Date of raw data receipt'
-          '#description': 'Insert date as &nbsp; &nbsp;MM-DD-YYYY'
-          '#title_display': inline
-          '#description_display': invisible
+        raw_data_receipt_details:
+          '#type': details
+          '#title': 'Raw data receipt'
+          log_sheet_number:
+            '#type': number
+            '#title': 'Log Sheet number'
+            '#description': 'Insert number as&nbsp; NNN'
+            '#title_display': inline
+            '#description_display': invisible
+            '#placeholder': '732'
+            '#autocomplete': ''
+            '#wrapper_attributes':
+              class:
+                - container-flex
+              style: 'display:flex; align-items: center;'
+            '#attributes':
+              class:
+                - element
+              style: 'width:70%; min-height:40px; height:40px'
+            '#label_attributes':
+              class:
+                - label
+              style: 'width:30%; '
+            '#min': 0
+            '#step': 1
+          ref_to_raw_data:
+            '#type': textfield
+            '#title': 'Ref. to raw data'
+            '#description': 'Indicate Type of document and Number'
+            '#title_display': inline
+            '#description_display': invisible
+            '#placeholder': '#123456'
+            '#autocomplete': ''
+            '#wrapper_attributes':
+              class:
+                - container-flex;
+                - ''
+              style: 'display:flex; align-items: center;'
+            '#attributes':
+              class:
+                - element
+              style: 'width:70%; min-height:40px; height:40px'
+            '#label_attributes':
+              class:
+                - label
+              style: 'width:30%'
+          date_of_raw_data_receipt:
+            '#type': date
+            '#title': 'Date of raw data receipt'
+            '#description': 'Insert date as &nbsp; &nbsp;MM-DD-YYYY'
+            '#title_display': inline
+            '#description_display': invisible
+            '#wrapper_attributes':
+              class:
+                - container-flex;
+              style: 'display:flex; align-items: center;'
+            '#attributes':
+              class:
+                - element
+              style: 'width:70%; min-height:40px; height:40px'
+            '#label_attributes':
+              class:
+                - label
+              style: 'width:30%'
         raw_data_description:
           '#type': details
           '#title': 'Raw data description'
@@ -72,39 +112,94 @@ elements: |-
               'ServiseAir Ltd.': 'ServiseAir Ltd.'
               'TAV Urban Georgia LLC': 'TAV Urban Georgia LLC'
               'United Airports of Georgia Ltd.': 'United Airports of Georgia Ltd.'
+            '#wrapper_attributes':
+              class:
+                - container-flex
+              style: 'display:flex; align-items: center;'
+            '#attributes':
+              class:
+                - element
+              style: 'width:70%; min-height:40px; height:40px'
+            '#label_attributes':
+              class:
+                - label
+              style: 'width:30%'
           raw_data_subject:
             '#type': textfield
             '#title': 'Raw data subject'
             '#title_display': inline
             '#autocomplete': ''
+            '#wrapper_attributes':
+              class:
+                - container-flex
+              style: 'display:flex; align-items: center;'
+            '#attributes':
+              class:
+                - element
+              style: 'width:70%; min-height:40px; height:40px'
+            '#label_attributes':
+              class:
+                - label
+              style: 'width:30%'
           publication_method:
             '#type': select
             '#title': 'Publication method'
             '#description': 'Choose Aeronautical database in case of update based on PERM NOTAM, Special dates update, etc.'
             '#title_display': inline
+            '#description_display': invisible
             '#options':
               'AIP AMDT': 'AIP AMDT'
               'AIP SUP': 'AIP SUP'
               AIC: AIC
               'Aeronautical database': 'Aeronautical database'
+            '#wrapper_attributes':
+              class:
+                - container-flex
+              style: 'display:flex; align-items: center;'
+            '#attributes':
+              class:
+                - element
+              style: 'width:70%; min-height:40px; height:40px'
+            '#label_attributes':
+              class:
+                - label
+              style: 'width:30%'
           publication_number:
             '#type': textfield
             '#title': 'Publication number'
             '#title_display': inline
             '#autocomplete': ''
-            '#states':
-              visible:
-                ':input[name="publication_method"]':
-                  '!value': 'Aeronautical database'
+            '#states_clear': false
+            '#wrapper_attributes':
+              class:
+                - container-flex
+              style: 'display:flex; align-items: center;'
+            '#attributes':
+              class:
+                - element
+              style: 'width:70%; min-height:40px; height:40px'
+            '#label_attributes':
+              class:
+                - label
+              style: 'width:30%'
           database_entry_:
             '#type': textfield
             '#title': 'Database entry #'
             '#description': 'Filled, if publication method is &quot;Aeronautical database&quot;'
             '#title_display': inline
-            '#states':
-              visible:
-                ':input[name="publication_method"]':
-                  value: 'Aeronautical database'
+            '#description_display': invisible
+            '#wrapper_attributes':
+              class:
+                - container-flex
+              style: 'display:flex; align-items: center;'
+            '#attributes':
+              class:
+                - element
+              style: 'width:70%; min-height:40px; height:40px'
+            '#label_attributes':
+              class:
+                - label
+              style: 'width:30%'
       raw_data_initial_assessment:
         '#type': fieldset
         '#title': 'Raw data initial assessment'
@@ -114,21 +209,53 @@ elements: |-
             '#type': date
             '#title': Date
             '#title_display': inline
+            '#wrapper_attributes':
+              class:
+                - flex-item
+              style: 'min-height: 126px;     display: flex;     flex-direction: column;'
+            '#label_attributes':
+              class:
+                - label
+              style: 'flex: 1 1 auto; text-align: center;'
           raw_data_of_aeronautical_use:
             '#type': select
             '#title': 'Raw data of aeronautical use'
             '#title_display': inline
             '#options': yes_no
+            '#wrapper_attributes':
+              class:
+                - flex-item
+              style: '    min-height: 110px;     display: flex;     flex-direction: column;'
+            '#label_attributes':
+              class:
+                - label
+              style: 'flex: 1 1 auto; text-align: center;'
           raw_data_needs_clarification:
             '#type': select
             '#title': 'Raw data needs clarification'
             '#title_display': inline
             '#options': yes_no
+            '#wrapper_attributes':
+              class:
+                - flex-item
+              style: '    min-height: 110px;     display: flex;     flex-direction: column;'
+            '#label_attributes':
+              class:
+                - label
+              style: 'flex: 1 1 auto; text-align: center;'
           contact_with_do:
             '#type': select
             '#title': 'Contact with DO'
-            '#title_display': inline
+            '#title_display': before
             '#options': yes_no
+            '#wrapper_attributes':
+              class:
+                - flex-item
+              style: '    min-height: 126px;     display: flex;     flex-direction: column;'
+            '#label_attributes':
+              class:
+                - label
+              style: 'flex: 1 1 auto; text-align: center;'
         effective_and_or_publication_dates:
           '#type': details
           '#title': 'Effective and/or publication dates'
@@ -137,10 +264,34 @@ elements: |-
             '#type': date
             '#title': 'Effective date'
             '#title_display': inline
+            '#wrapper_attributes':
+              class:
+                - container-flex
+              style: 'display:flex; align-items: center;'
+            '#attributes':
+              class:
+                - element
+              style: 'width:70%; min-height:40px; height:40px'
+            '#label_attributes':
+              class:
+                - label
+              style: 'width:30%'
           publication_date:
             '#type': textfield
             '#title': 'Publication date'
             '#title_display': inline
+            '#wrapper_attributes':
+              class:
+                - container-flex
+              style: 'display:flex; align-items: center;'
+            '#attributes':
+              class:
+                - element
+              style: 'width:70%; min-height:40px; height:40px'
+            '#label_attributes':
+              class:
+                - label
+              style: 'width:30%'
         affected_publication_s_:
           '#type': details
           '#title': 'Affected publication(s)'
@@ -201,6 +352,208 @@ elements: |-
                 - or
                 - ':input[name="publication_method"]':
                     value: 'Aeronautical database'
+      role_assignment:
+        '#type': fieldset
+        '#title': 'Role assignment'
+        role_assignment_details:
+          '#type': details
+          '#title': 'Role assignment'
+          editor_s_:
+            '#type': select
+            '#title': Editor(s)
+            '#title_display': inline
+            '#options': employee
+            '#wrapper_attributes':
+              class:
+                - container-flex
+              style: 'display:flex'
+            '#attributes':
+              class:
+                - element
+              style: 'width:70%'
+            '#label_attributes':
+              class:
+                - label
+              style: 'width:30%'
+          editor_s_2:
+            '#type': select
+            '#title': Editor(s)
+            '#title_display': inline
+            '#options': employee
+            '#wrapper_attributes':
+              class:
+                - container-flex
+              style: 'display:flex'
+            '#attributes':
+              class:
+                - element
+              style: 'width:70%'
+            '#label_attributes':
+              class:
+                - label
+              style: 'width:30%; visibility: hidden;'
+          cartographer:
+            '#type': select
+            '#title': Cartographer
+            '#title_display': inline
+            '#options':
+              'Natalia Gunchina': 'Natalia Gunchina'
+              NIL: NIL
+            '#wrapper_attributes':
+              class:
+                - container-flex
+              style: 'display:flex'
+            '#attributes':
+              class:
+                - element
+              style: 'width:70%'
+            '#label_attributes':
+              class:
+                - label
+              style: 'width:30%'
+          evaluator_s_:
+            '#type': select
+            '#title': Evaluator(s)
+            '#title_display': inline
+            '#options': employee
+            '#wrapper_attributes':
+              class:
+                - container-flex
+              style: 'display:flex'
+            '#attributes':
+              class:
+                - element
+              style: 'width:70%'
+            '#label_attributes':
+              class:
+                - label
+              style: 'width:30%'
+          evaluator_s_2:
+            '#type': select
+            '#title': Evaluator(s)
+            '#title_display': inline
+            '#options': employee
+            '#wrapper_attributes':
+              class:
+                - container-flex
+              style: 'display:flex'
+            '#attributes':
+              class:
+                - element
+              style: 'width:70%'
+            '#label_attributes':
+              class:
+                - label
+              style: 'width:30%; visibility: hidden;'
+          quality_controllers_aimdb_:
+            '#type': select
+            '#title': 'Quality controllers (AIMdb)'
+            '#title_display': inline
+            '#options': employee
+            '#wrapper_attributes':
+              class:
+                - container-flex
+              style: 'display:flex'
+            '#attributes':
+              class:
+                - element
+              style: 'width:70%'
+            '#label_attributes':
+              class:
+                - label
+              style: 'width:30%'
+          quality_controllers_aimdb_2:
+            '#type': select
+            '#title': 'Quality controllers (AIMdb)'
+            '#title_display': inline
+            '#options': employee
+            '#wrapper_attributes':
+              class:
+                - container-flex
+              style: 'display:flex'
+            '#attributes':
+              class:
+                - element
+              style: 'width:70%'
+            '#label_attributes':
+              class:
+                - label
+              style: 'width:30%; visibility: hidden;'
+          quality_controllers_sdo_db_:
+            '#type': select
+            '#title': 'Quality controllers (SDO DB)'
+            '#title_display': inline
+            '#options': employee
+            '#wrapper_attributes':
+              class:
+                - container-flex
+              style: 'display:flex'
+            '#attributes':
+              class:
+                - element
+              style: 'width:70%'
+            '#label_attributes':
+              class:
+                - label
+              style: 'width:30%'
+          quality_controllers_sdo_db_2:
+            '#type': select
+            '#title': 'Quality controllers (SDO DB)'
+            '#title_display': inline
+            '#options': employee
+            '#wrapper_attributes':
+              class:
+                - container-flex
+              style: 'display:flex'
+            '#attributes':
+              class:
+                - element
+              style: 'width:70%'
+            '#label_attributes':
+              class:
+                - label
+              style: 'width:30%; visibility: hidden;'
+          quality_controllers:
+            '#type': select
+            '#title': 'Quality controllers'
+            '#title_display': inline
+            '#options': employee
+            '#wrapper_attributes':
+              class:
+                - container-flex
+              style: 'display:flex'
+            '#attributes':
+              class:
+                - element
+              style: 'width:70%'
+            '#label_attributes':
+              class:
+                - label
+              style: 'width:30%'
+          quality_controllers_2:
+            '#type': select
+            '#title': 'Quality controllers'
+            '#title_display': inline
+            '#options': employee
+            '#wrapper_attributes':
+              class:
+                - container-flex
+              style: 'display:flex'
+            '#attributes':
+              class:
+                - element
+              style: 'width:70%'
+            '#label_attributes':
+              class:
+                - label
+              style: 'width:30%; visibility: hidden;'
+      summary:
+        '#type': fieldset
+        '#title': summary
+        date_of_personnel_notification_about_log_sheet_creation:
+          '#type': date
+          '#title': 'Date of personnel notification about Log Sheet creation'
+          '#title_display': inline
   evaluation:
     '#type': webform_wizard_page
     '#title': Evaluation
@@ -220,7 +573,7 @@ elements: |-
     '#type': webform_wizard_page
     '#title': Remarks
 css: ''
-javascript: ''
+javascript: "(function ($) {\r\n  $(document).ready(function () {\r\n    // Replace 'field-a' and 'field-b' with the actual field IDs.\r\n    var publicationMethod = $('#edit-publication-method');\r\n    var publicationNumber = $('#edit-publication-number');\r\n    var databaseEntry = $('#edit-database-entry-');\r\n    \r\n    publicationMethod.change(function () {\r\n      if (publicationMethod.val() === 'Aeronautical database') {\r\n        publicationNumber.val('NIL');\r\n        databaseEntry.val(' ');\r\n      }else{\r\n        publicationNumber.val(' ');\r\n        databaseEntry.val('NIL');\r\n      };\r\n    });\r\n  });\r\n})(jQuery);"
 settings:
   ajax: false
   ajax_scroll_top: form
