@@ -317,16 +317,17 @@ elements: |-
             '#title_display': inline
             '#description_display': invisible
             '#options': not_effected
-            '#empty_option': abavnaxot
+            '#other__option_label': ''
+            '#other__placeholder': ''
             '#wrapper_type': form_element
             '#wrapper_attributes':
               class:
                 - container-flex
-              style: 'display: flex;  flex-wrap: wrap; align-items: center; '
+              style: 'display: flex; align-items: center; '
             '#attributes':
               class:
                 - element
-              style: 'min-height:40px; height:40px; width: 100%; text-align: center;'
+              style: 'min-height:40px; height:40px; width: 70%; text-align: center; position: absolute; top: 3px; right: -0.1%;'
             '#label_attributes':
               class:
                 - label
@@ -340,11 +341,11 @@ elements: |-
             '#wrapper_attributes':
               class:
                 - container-flex
-              style: 'display: flex;  flex-wrap: wrap; align-items: center; '
+              style: 'display: flex;  align-items: center; '
             '#attributes':
               class:
                 - element
-              style: 'min-height:40px; height:40px; width: 100%; text-align: center;'
+              style: 'min-height:40px; height:40px; width: 70%; text-align: center; position: absolute; top: 3px; right: -0.1%;'
             '#label_attributes':
               class:
                 - label
@@ -357,11 +358,11 @@ elements: |-
             '#wrapper_attributes':
               class:
                 - container-flex
-              style: 'display: flex;  flex-wrap: wrap; align-items: center; '
+              style: 'display: flex;  align-items: center; '
             '#attributes':
               class:
                 - element
-              style: 'min-height:40px; height:40px; width: 100%; text-align: center;'
+              style: 'min-height:40px; height:40px; width: 70%; text-align: center; position: absolute; top: 3px; right: -0.1%;'
             '#label_attributes':
               class:
                 - label
@@ -375,11 +376,11 @@ elements: |-
             '#wrapper_attributes':
               class:
                 - container-flex
-              style: 'display: flex;  flex-wrap: wrap; align-items: center; '
+              style: 'display: flex; align-items: center; '
             '#attributes':
               class:
                 - element
-              style: 'min-height:40px; height:40px; width: 100%; text-align: center;'
+              style: 'min-height:40px; height:40px; width: 70%; text-align: center; position: absolute; top: 3px; right: -0.1%;'
             '#label_attributes':
               class:
                 - label
@@ -392,11 +393,11 @@ elements: |-
             '#wrapper_attributes':
               class:
                 - container-flex
-              style: 'display: flex;  flex-wrap: wrap; align-items: center; '
+              style: 'display: flex;  align-items: center; '
             '#attributes':
               class:
                 - element
-              style: 'min-height:40px; height:40px; width: 100%; text-align: center;'
+              style: 'min-height:40px; height:40px; width: 70%; text-align: center; position: absolute; top: 3px; right: -0.1%;'
             '#label_attributes':
               class:
                 - label
@@ -633,8 +634,8 @@ elements: |-
   remarks:
     '#type': webform_wizard_page
     '#title': Remarks
-css: "#edit-chart-s-other, #edit-aip-items-other,#edit-sup-s-other,#edit-aic-s-other,#edit-data-set-s-other{\r\n  min-height: 40px;\r\n  height: 40px;\r\n}\r\n#edit-aip-items .form-type-select{\r\n  margin-top:0;\r\n  margin-bottom:0;\r\n  width:70%\r\n  \r\n}\r\n#edit-chart-s- .form-type-select{\r\n  margin-top:0;\r\n  margin-bottom:0;\r\n  width:70%\r\n}\r\n#edit-sup-s- .form-type-select{\r\n  margin-top:0;\r\n  margin-bottom:0;\r\n  width:70%;\r\n}\r\n#edit-aic-s- .form-type-select{\r\n  margin-top:0;\r\n  margin-bottom:0;\r\n  width:70%;\r\n}\r\n#edit-data-set-s- .form-type-select{\r\n  margin-top:0;\r\n  margin-bottom:0;\r\n  width:70%;\r\n}\r\n#edit-aip-items{\r\n position:relative;\r\n}\r\n#edit-aip-items-other{\r\n  position:absolute;\r\n  top:3px;\r\n  right:7%;\r\n  height:40px;\r\n  width:63%\r\n}\r\n#edit-chart-s-{\r\n   position:relative;\r\n}\r\n#edit-chart-s-other{\r\n  position:absolute;\r\n  top:3px;\r\n  right:7%;\r\n  height:40px;\r\n  width:63% \r\n}\r\n#edit-sup-s-{\r\n  position:relative;\r\n}\r\n#edit-sup-s-other{\r\n  position:absolute;\r\n  top:3px;\r\n  right:7%;\r\n  height:40px;\r\n  width:63%\r\n}\r\n#edit-aic-s-{\r\n  position:relative;\r\n}\r\n#edit-aic-s-other{\r\n  position:absolute;\r\n  top:3px;\r\n  right:7%;\r\n  height:40px;\r\n  width:63%\r\n}\r\n#edit-data-set-s-{\r\n  position:relative;\r\n}\r\n#edit-data-set-s-other{\r\n  position:absolute;\r\n  top:3px;\r\n  right:7%;\r\n  height:40px;\r\n  width:63%\r\n}\r\nform-item {\r\n    margin-top: 0;\r\n    margin-bottom: 0;\r\n}\r\n"
-javascript: " function changeElementStyle(elementId){ \r\n setTimeout(function(){\r\n  let parent = document.getElementById(elementId);\r\n  let element = parent.lastElementChild\r\n  if (element) {\r\n    element.style.display = 'block';\r\n  }\r\n }, 500);\r\n} \r\n changeElementStyle(\"edit-aip-items\");\r\n changeElementStyle(\"edit-chart-s-\");\r\n changeElementStyle(\"edit-sup-s-\");\r\n changeElementStyle(\"edit-aic-s-\");\r\n changeElementStyle(\"edit-data-set-s-\");\r\n\r\n\r\n\r\n"
+css: "#edit-chart-s-other, #edit-aip-items-other,#edit-sup-s-other,#edit-aic-s-other,#edit-data-set-s-other{\r\n  min-height: 40px;\r\n  height: 40px;\r\n}\r\n#edit-aip-items .form-type-select{\r\n  margin-top:0;\r\n  margin-bottom:0;\r\n  width:70%\r\n  \r\n}\r\n#edit-chart-s- .form-type-select{\r\n  margin-top:0;\r\n  margin-bottom:0;\r\n  width:70%\r\n}\r\n#edit-sup-s- .form-type-select{\r\n  margin-top:0;\r\n  margin-bottom:0;\r\n  width:70%;\r\n}\r\n#edit-aic-s- .form-type-select{\r\n  margin-top:0;\r\n  margin-bottom:0;\r\n  width:70%;\r\n}\r\n#edit-data-set-s- .form-type-select{\r\n  margin-top:0;\r\n  margin-bottom:0;\r\n  width:70%;\r\n}\r\n\r\n#edit-aip-items{\r\n position:relative;\r\n}\r\n#edit-aip-items-other{\r\n  position:absolute;\r\n  top:3px;\r\n  right:7%;\r\n  height:40px;\r\n  width:63%\r\n}\r\n\r\n#edit-chart-s-{\r\n   position:relative;\r\n}\r\n#edit-chart-s-other{\r\n  position:absolute;\r\n  top:3px;\r\n  right:7%;\r\n  height:40px;\r\n  width:63% \r\n}\r\n#edit-sup-s-{\r\n  position:relative;\r\n}\r\n#edit-sup-s-other{\r\n  position:absolute;\r\n  top:3px;\r\n  right:7%;\r\n  height:40px;\r\n  width:63%\r\n}\r\n\r\n#edit-aic-s-{\r\n  position:relative;\r\n}\r\n#edit-aic-s-other{\r\n  position:absolute;\r\n  top:3px;\r\n  right:7%;\r\n  height:40px;\r\n  width:63%\r\n}\r\n\r\n#edit-data-set-s-{\r\n  position:relative;\r\n}\r\n#edit-data-set-s-other{\r\n  position:absolute;\r\n  top:3px;\r\n  right:7%;\r\n  height:40px;\r\n  width:63%\r\n}\r\n"
+javascript: " function changeElementStyle(elementId){ \r\n setTimeout(function(){\r\n  let parent = document.getElementById(elementId);\r\n  let element = parent.lastElementChild\r\n  if (element) {\r\n    element.style.display = 'block';\r\n  }\r\n }, 100);\r\n} \r\n changeElementStyle(\"edit-aip-items\");\r\n changeElementStyle(\"edit-chart-s-\");\r\n changeElementStyle(\"edit-sup-s-\");\r\n changeElementStyle(\"edit-aic-s-\");\r\n changeElementStyle(\"edit-data-set-s-\");"
 settings:
   ajax: false
   ajax_scroll_top: form
