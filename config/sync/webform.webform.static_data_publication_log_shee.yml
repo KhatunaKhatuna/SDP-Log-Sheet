@@ -22,22 +22,20 @@ elements: |-
       '#title_tag': h1
       raw_data_receipt:
         '#type': fieldset
-        '#title': 'Raw data receipt'
+        '#title': Main
         '#open': true
         raw_data_receipt_details:
           '#type': details
           '#title': 'Raw data receipt'
           log_sheet_number:
-            '#type': number
+            '#type': textfield
             '#title': 'Log Sheet number'
-            '#description': 'Insert number as&nbsp; NNN'
             '#title_display': inline
             '#description_display': invisible
-            '#placeholder': '732'
             '#autocomplete': ''
             '#wrapper_attributes':
               class:
-                - container-flex
+                - flex-item
               style: 'display:flex; align-items: center;'
             '#attributes':
               class:
@@ -46,9 +44,7 @@ elements: |-
             '#label_attributes':
               class:
                 - label
-              style: 'width:30%; '
-            '#min': 0
-            '#step': 1
+              style: 'width:30%;'
           ref_to_raw_data:
             '#type': textfield
             '#title': 'Ref. to raw data'
@@ -413,6 +409,7 @@ elements: |-
             '#title': Editor(s)
             '#title_display': inline
             '#options': employee
+            '#wrapper_type': form_element
             '#wrapper_attributes':
               class:
                 - container-flex
@@ -634,8 +631,8 @@ elements: |-
   remarks:
     '#type': webform_wizard_page
     '#title': Remarks
-css: "#edit-chart-s-other, #edit-aip-items-other,#edit-sup-s-other,#edit-aic-s-other,#edit-data-set-s-other{\r\n  min-height: 40px;\r\n  height: 40px;\r\n}\r\n#edit-aip-items .form-type-select{\r\n  margin-top:0;\r\n  margin-bottom:0;\r\n  width:70%\r\n  \r\n}\r\n#edit-chart-s- .form-type-select{\r\n  margin-top:0;\r\n  margin-bottom:0;\r\n  width:70%\r\n}\r\n#edit-sup-s- .form-type-select{\r\n  margin-top:0;\r\n  margin-bottom:0;\r\n  width:70%;\r\n}\r\n#edit-aic-s- .form-type-select{\r\n  margin-top:0;\r\n  margin-bottom:0;\r\n  width:70%;\r\n}\r\n#edit-data-set-s- .form-type-select{\r\n  margin-top:0;\r\n  margin-bottom:0;\r\n  width:70%;\r\n}\r\n\r\n#edit-aip-items{\r\n position:relative;\r\n}\r\n#edit-aip-items-other{\r\n  position:absolute;\r\n  top:3px;\r\n  right:7%;\r\n  height:40px;\r\n  width:63%\r\n}\r\n\r\n#edit-chart-s-{\r\n   position:relative;\r\n}\r\n#edit-chart-s-other{\r\n  position:absolute;\r\n  top:3px;\r\n  right:7%;\r\n  height:40px;\r\n  width:63% \r\n}\r\n#edit-sup-s-{\r\n  position:relative;\r\n}\r\n#edit-sup-s-other{\r\n  position:absolute;\r\n  top:3px;\r\n  right:7%;\r\n  height:40px;\r\n  width:63%\r\n}\r\n\r\n#edit-aic-s-{\r\n  position:relative;\r\n}\r\n#edit-aic-s-other{\r\n  position:absolute;\r\n  top:3px;\r\n  right:7%;\r\n  height:40px;\r\n  width:63%\r\n}\r\n\r\n#edit-data-set-s-{\r\n  position:relative;\r\n}\r\n#edit-data-set-s-other{\r\n  position:absolute;\r\n  top:3px;\r\n  right:7%;\r\n  height:40px;\r\n  width:63%\r\n}\r\n"
-javascript: " function changeElementStyle(elementId){ \r\n setTimeout(function(){\r\n  let parent = document.getElementById(elementId);\r\n  let element = parent.lastElementChild\r\n  if (element) {\r\n    element.style.display = 'block';\r\n  }\r\n }, 100);\r\n} \r\n changeElementStyle(\"edit-aip-items\");\r\n changeElementStyle(\"edit-chart-s-\");\r\n changeElementStyle(\"edit-sup-s-\");\r\n changeElementStyle(\"edit-aic-s-\");\r\n changeElementStyle(\"edit-data-set-s-\");"
+css: "#edit-chart-s-other, #edit-aip-items-other,#edit-sup-s-other,#edit-aic-s-other,#edit-data-set-s-other{\r\n  min-height: 40px;\r\n  height: 40px;\r\n}\r\n#edit-aip-items .form-type-select{\r\n  margin-top:0;\r\n  margin-bottom:0;\r\n  width:70%\r\n  \r\n}\r\n#edit-chart-s- .form-type-select{\r\n  margin-top:0;\r\n  margin-bottom:0;\r\n  width:70%\r\n}\r\n#edit-sup-s- .form-type-select{\r\n  margin-top:0;\r\n  margin-bottom:0;\r\n  width:70%;\r\n}\r\n#edit-aic-s- .form-type-select{\r\n  margin-top:0;\r\n  margin-bottom:0;\r\n  width:70%;\r\n}\r\n#edit-data-set-s- .form-type-select{\r\n  margin-top:0;\r\n  margin-bottom:0;\r\n  width:70%;\r\n}\r\n\r\n#edit-aip-items{\r\n position:relative;\r\n}\r\n#edit-aip-items-other{\r\n  position:absolute;\r\n  top:3px;\r\n  right:7%;\r\n  height:40px;\r\n  width:63%;\r\n  text-align: center;\r\n}\r\n\r\n#edit-chart-s-{\r\n   position:relative;\r\n}\r\n#edit-chart-s-other{\r\n  position:absolute;\r\n  top:3px;\r\n  right:7%;\r\n  height:40px;\r\n  width:63%; \r\n  text-align: center;\r\n}\r\n#edit-sup-s-{\r\n  position:relative;\r\n}\r\n#edit-sup-s-other{\r\n  position:absolute;\r\n  top:3px;\r\n  right:7%;\r\n  height:40px;\r\n  width:63%;\r\n  text-align: center;\r\n}\r\n\r\n#edit-aic-s-{\r\n  position:relative;\r\n}\r\n#edit-aic-s-other{\r\n  position:absolute;\r\n  top:3px;\r\n  right:7%;\r\n  height:40px;\r\n  width:63%;\r\n  text-align: center;\r\n}\r\n\r\n#edit-data-set-s-{\r\n  position:relative;\r\n}\r\n#edit-data-set-s-other{\r\n  position:absolute;\r\n  top:3px;\r\n  right:7%;\r\n  height:40px;\r\n  width:63%;\r\n  text-align: center;\r\n}\r\n"
+javascript: " function changeElementStyle(elementId){ \r\n setTimeout(function(){\r\n  let parent = document.getElementById(elementId);\r\n  let element = parent.lastElementChild\r\n  if (element) {\r\n    element.style.display = 'block';\r\n  }\r\n }, 100);\r\n} \r\n changeElementStyle(\"edit-aip-items\");\r\n changeElementStyle(\"edit-chart-s-\");\r\n changeElementStyle(\"edit-sup-s-\");\r\n changeElementStyle(\"edit-aic-s-\");\r\n changeElementStyle(\"edit-data-set-s-\");\r\n\r\n(function ($) {\r\n  $(document).ready(function () {\r\n    var publicationMethod = $('#edit-publication-method');\r\n    var publicationNumber = $('#edit-publication-number');\r\n    var databaseEntry = $('#edit-database-entry-');\r\n    //other\r\n    var aipItems = $('#edit-aip-items-other');\r\n    //other\r\n    var chart = $('#edit-chart-s-other');\r\n    var sup = $('#edit-sup-s-other');\r\n    var aic = $('#edit-aic-s-other');\r\n    var dataSet =  $('#edit-data-set-s-other');\r\n    \r\n    \r\n    publicationMethod.change(function () {\r\n      if (publicationMethod.val() === 'Aeronautical database') {\r\n       publicationNumber.val('NIL');\r\n       databaseEntry.val(' ');\r\n       aipItems.val('NIL');\r\n       chart.val('NIL');\r\n       sup.val(' ');\r\n       aic.val('NIL');\r\n       dataSet.val(' ');\r\n      }\r\n    });\r\n  });\r\n\r\n})(jQuery);\r\n"
 settings:
   ajax: false
   ajax_scroll_top: form
