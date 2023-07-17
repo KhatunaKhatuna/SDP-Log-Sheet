@@ -199,75 +199,78 @@ elements: |-
       raw_data_initial_assessment:
         '#type': fieldset
         '#title': 'Raw data initial assessment'
-        flexbox:
-          '#type': webform_flexbox
-          date:
-            '#type': date
-            '#title': Date
-            '#title_display': inline
-            '#wrapper_attributes':
-              class:
-                - flex-item
-              style: 'min-height: 112px;     display: flex;     flex-direction: column;'
-            '#attributes':
-              class:
-                - element
-              style: 'min-height:40px; height:40px'
-            '#label_attributes':
-              class:
-                - label
-              style: 'flex: 1 1 auto; text-align: center;'
-          raw_data_of_aeronautical_use:
-            '#type': select
-            '#title': 'Raw data of aeronautical use'
-            '#title_display': inline
-            '#options': yes_no
-            '#wrapper_attributes':
-              class:
-                - container-flex
-              style: 'min-height: 110px;     display: flex;     flex-direction: column;'
-            '#attributes':
-              class:
-                - element
-              style: 'min-height:40px; height:40px'
-            '#label_attributes':
-              class:
-                - label
-              style: 'flex: 1 1 auto; text-align: center;'
-          raw_data_needs_clarification:
-            '#type': select
-            '#title': 'Raw data needs clarification'
-            '#title_display': inline
-            '#options': yes_no
-            '#wrapper_attributes':
-              class:
-                - container-flex
-              style: 'min-height: 110px;     display: flex;     flex-direction: column;'
-            '#attributes':
-              class:
-                - element
-              style: 'min-height:40px; height:40px'
-            '#label_attributes':
-              class:
-                - label
-              style: 'flex: 1 1 auto; text-align: center;'
-          contact_with_do:
-            '#type': select
-            '#title': 'Contact with DO'
-            '#title_display': before
-            '#options': yes_no
-            '#wrapper_attributes':
-              class:
-                - container-flex
-              style: 'min-height: 112px;     display: flex;     flex-direction: column;'
-            '#attributes':
-              class:
-                - element
-              style: 'min-height:40px; height:40px'
-            '#label_attributes':
-              class:
-                - label
-              style: 'flex: 1 1 auto; text-align: center;'
+        raw_data_initial_assessment_details:
+          '#type': details
+          '#title': XXXXXXXXX
+          flexbox:
+            '#type': webform_flexbox
+            date:
+              '#type': date
+              '#title': Date
+              '#title_display': inline
+              '#wrapper_attributes':
+                class:
+                  - flex-item
+                style: 'min-height: 112px;     display: flex;     flex-direction: column;'
+              '#attributes':
+                class:
+                  - element
+                style: 'min-height:40px; height:40px'
+              '#label_attributes':
+                class:
+                  - label
+                style: 'flex: 1 1 auto; text-align: center;'
+            raw_data_of_aeronautical_use:
+              '#type': select
+              '#title': 'Raw data of aeronautical use'
+              '#title_display': inline
+              '#options': yes_no
+              '#wrapper_attributes':
+                class:
+                  - container-flex
+                style: 'min-height: 110px;     display: flex;     flex-direction: column;'
+              '#attributes':
+                class:
+                  - element
+                style: 'min-height:40px; height:40px'
+              '#label_attributes':
+                class:
+                  - label
+                style: 'flex: 1 1 auto; text-align: center;'
+            raw_data_needs_clarification:
+              '#type': select
+              '#title': 'Raw data needs clarification'
+              '#title_display': inline
+              '#options': yes_no
+              '#wrapper_attributes':
+                class:
+                  - container-flex
+                style: 'min-height: 110px;     display: flex;     flex-direction: column;'
+              '#attributes':
+                class:
+                  - element
+                style: 'min-height:40px; height:40px'
+              '#label_attributes':
+                class:
+                  - label
+                style: 'flex: 1 1 auto; text-align: center;'
+            contact_with_do:
+              '#type': select
+              '#title': 'Contact with DO'
+              '#title_display': before
+              '#options': yes_no
+              '#wrapper_attributes':
+                class:
+                  - container-flex
+                style: 'min-height: 112px;     display: flex;     flex-direction: column;'
+              '#attributes':
+                class:
+                  - element
+                style: 'min-height:40px; height:40px'
+              '#label_attributes':
+                class:
+                  - label
+                style: 'flex: 1 1 auto; text-align: center;'
         effective_and_or_publication_dates:
           '#type': details
           '#title': 'Effective and/or publication dates'
@@ -328,16 +331,17 @@ elements: |-
               class:
                 - label
               style: 'width:30%'
-          chart_s_:
+          chart:
             '#type': webform_select_other
             '#title': Chart(s)
             '#title_display': inline
+            '#description_display': invisible
             '#options': not_effected
             '#wrapper_type': form_element
             '#wrapper_attributes':
               class:
                 - container-flex
-              style: 'display: flex;  align-items: center; '
+              style: 'display: flex; align-items: center; '
             '#attributes':
               class:
                 - element
@@ -405,7 +409,7 @@ elements: |-
           '#type': details
           '#title': 'Role assignment'
           editor_s_:
-            '#type': select
+            '#type': webform_select_other
             '#title': Editor(s)
             '#title_display': inline
             '#options': employee
@@ -417,16 +421,17 @@ elements: |-
             '#attributes':
               class:
                 - element
-              style: 'width:70%; min-height:40px; height:40px; text-align: center;'
+              style: 'min-height:40px; height:40px; width: 70%; text-align: center; position: absolute; top: 3px; right: -0.1%;'
             '#label_attributes':
               class:
                 - label
               style: 'width:30%'
           editor_s_2:
-            '#type': select
+            '#type': webform_select_other
             '#title': Editor(s)
             '#title_display': inline
             '#options': employee
+            '#wrapper_type': form_element
             '#wrapper_attributes':
               class:
                 - container-flex
@@ -434,18 +439,19 @@ elements: |-
             '#attributes':
               class:
                 - element
-              style: 'width:70%; min-height:40px; height:40px; text-align: center;'
+              style: 'min-height:40px; height:40px; width: 70%; text-align: center; position: absolute; top: 3px; right: -0.1%;'
             '#label_attributes':
               class:
                 - label
               style: 'width:30%; visibility: hidden;'
           cartographer:
-            '#type': select
+            '#type': webform_select_other
             '#title': Cartographer
             '#title_display': inline
             '#options':
               'Natalia Gunchina': 'Natalia Gunchina'
               NIL: NIL
+            '#wrapper_type': form_element
             '#wrapper_attributes':
               class:
                 - container-flex
@@ -453,16 +459,17 @@ elements: |-
             '#attributes':
               class:
                 - element
-              style: 'width:70%; min-height:40px; height:40px; text-align: center;'
+              style: 'min-height:40px; height:40px; width: 70%; text-align: center; position: absolute; top: 3px; right: -0.1%;'
             '#label_attributes':
               class:
                 - label
               style: 'width:30%'
           evaluator_s_:
-            '#type': select
+            '#type': webform_select_other
             '#title': Evaluator(s)
             '#title_display': inline
             '#options': employee
+            '#wrapper_type': form_element
             '#wrapper_attributes':
               class:
                 - container-flex
@@ -470,16 +477,17 @@ elements: |-
             '#attributes':
               class:
                 - element
-              style: 'width:70%; min-height:40px; height:40px; text-align: center;'
+              style: 'min-height:40px; height:40px; width: 70%; text-align: center; position: absolute; top: 3px; right: -0.1%;'
             '#label_attributes':
               class:
                 - label
               style: 'width:30%'
           evaluator_s_2:
-            '#type': select
+            '#type': webform_select_other
             '#title': Evaluator(s)
             '#title_display': inline
             '#options': employee
+            '#wrapper_type': form_element
             '#wrapper_attributes':
               class:
                 - container-flex
@@ -487,16 +495,17 @@ elements: |-
             '#attributes':
               class:
                 - element
-              style: 'width:70%; min-height:40px; height:40px; text-align: center;'
+              style: 'min-height:40px; height:40px; width: 70%; text-align: center; position: absolute; top: 3px; right: -0.1%;'
             '#label_attributes':
               class:
                 - label
               style: 'width:30%; visibility: hidden;'
           quality_controllers_aimdb_:
-            '#type': select
+            '#type': webform_select_other
             '#title': 'Quality controllers (AIMdb)'
             '#title_display': inline
             '#options': employee
+            '#wrapper_type': form_element
             '#wrapper_attributes':
               class:
                 - container-flex
@@ -504,16 +513,17 @@ elements: |-
             '#attributes':
               class:
                 - element
-              style: 'width:70%; min-height:40px; height:40px; text-align: center;'
+              style: 'min-height:40px; height:40px; width: 70%; text-align: center; position: absolute; top: 3px; right: -0.1%;'
             '#label_attributes':
               class:
                 - label
               style: 'width:30%'
           quality_controllers_aimdb_2:
-            '#type': select
+            '#type': webform_select_other
             '#title': 'Quality controllers (AIMdb)'
             '#title_display': inline
             '#options': employee
+            '#wrapper_type': form_element
             '#wrapper_attributes':
               class:
                 - container-flex
@@ -521,16 +531,17 @@ elements: |-
             '#attributes':
               class:
                 - element
-              style: 'width:70%; min-height:40px; height:40px; text-align: center;'
+              style: 'min-height:40px; height:40px; width: 70%; text-align: center; position: absolute; top: 3px; right: -0.1%;'
             '#label_attributes':
               class:
                 - label
               style: 'width:30%; visibility: hidden;'
           quality_controllers_sdo_db_:
-            '#type': select
-            '#title': 'Quality controllers (SDO DB)'
+            '#type': webform_select_other
+            '#title': 'Quality controllers (SDOdb)'
             '#title_display': inline
             '#options': employee
+            '#wrapper_type': form_element
             '#wrapper_attributes':
               class:
                 - container-flex
@@ -538,16 +549,17 @@ elements: |-
             '#attributes':
               class:
                 - element
-              style: 'width:70%; min-height:40px; height:40px; text-align: center;'
+              style: 'min-height:40px; height:40px; width: 70%; text-align: center; position: absolute; top: 3px; right: -0.1%;'
             '#label_attributes':
               class:
                 - label
               style: 'width:30%'
           quality_controllers_sdo_db_2:
-            '#type': select
-            '#title': 'Quality controllers (SDO DB)'
+            '#type': webform_select_other
+            '#title': 'Quality controllers (SDOdb)'
             '#title_display': inline
             '#options': employee
+            '#wrapper_type': form_element
             '#wrapper_attributes':
               class:
                 - container-flex
@@ -555,16 +567,17 @@ elements: |-
             '#attributes':
               class:
                 - element
-              style: 'width:70%; min-height:40px; height:40px; text-align: center;'
+              style: 'min-height:40px; height:40px; width: 70%; text-align: center; position: absolute; top: 3px; right: -0.1%;'
             '#label_attributes':
               class:
                 - label
               style: 'width:30%; visibility: hidden;'
           quality_controllers:
-            '#type': select
+            '#type': webform_select_other
             '#title': 'Quality controllers'
             '#title_display': inline
             '#options': employee
+            '#wrapper_type': form_element
             '#wrapper_attributes':
               class:
                 - container-flex
@@ -572,16 +585,17 @@ elements: |-
             '#attributes':
               class:
                 - element
-              style: 'width:70%; min-height:40px; height:40px; text-align: center;'
+              style: 'min-height:40px; height:40px; width: 70%; text-align: center; position: absolute; top: 3px; right: -0.1%;'
             '#label_attributes':
               class:
                 - label
               style: 'width:30%'
           quality_controllers_2:
-            '#type': select
+            '#type': webform_select_other
             '#title': 'Quality controllers'
             '#title_display': inline
             '#options': employee
+            '#wrapper_type': form_element
             '#wrapper_attributes':
               class:
                 - container-flex
@@ -589,30 +603,74 @@ elements: |-
             '#attributes':
               class:
                 - element
-              style: 'width:70%; min-height:40px; height:40px; text-align: center;'
+              style: 'min-height:40px; height:40px; width: 70%; text-align: center; position: absolute; top: 3px; right: -0.1%;'
             '#label_attributes':
               class:
                 - label
               style: 'width:30%; visibility: hidden;'
       summary:
         '#type': fieldset
-        '#title': summary
-        date_of_personnel_notification_about_log_sheet_creation:
-          '#type': date
-          '#title': 'Date of personnel notification about Log Sheet creation'
-          '#title_display': inline
-          '#wrapper_attributes':
-            class:
-              - container-flex
-            style: 'display:flex; align-items: center;'
+        '#title': 'XXXXXXX                '
+        '#attributes':
+          class:
+            - summery
+        summary_details:
+          '#type': details
+          '#title': XXXXXXX
+          '#open': true
           '#attributes':
             class:
-              - element
-            style: 'width:70%; min-height:40px; height:40px; text-align: center;'
-          '#label_attributes':
+              - summeryDetails
+          '#summary_attributes':
             class:
-              - label
-            style: 'width:30%'
+              - Summary-attributes
+          date_of_personnel_notification_about_log_sheet_creation:
+            '#type': date
+            '#title': 'Date of personnel notification about Log Sheet creation'
+            '#title_display': inline
+            '#wrapper_attributes':
+              class:
+                - container-flex
+              style: 'display:flex; align-items: center; '
+            '#attributes':
+              class:
+                - element
+              style: 'width:70%; min-height:40px; height:40px; text-align: center;'
+            '#label_attributes':
+              class:
+                - label
+              style: 'width:30%'
+          raw_data_received_and_assessed_by:
+            '#type': textfield
+            '#title': 'Raw data received and assessed by'
+            '#autocomplete': 'off'
+            '#wrapper_attributes':
+              class:
+                - container-flex
+              style: 'display:flex; align-items: center; '
+            '#attributes':
+              class:
+                - element
+              style: 'width:70%; min-height:40px; height:40px; text-align: center; '
+            '#label_attributes':
+              class:
+                - label
+              style: 'width:30%'
+      signatured_by_head_of_ais:
+        '#type': checkbox
+        '#title': 'Signed by Head of AIS'
+        '#wrapper_attributes':
+          class:
+            - signatured-Wrapper
+          style: '    display: flex;     align-items: center;     flex-direction: row-reverse;'
+        '#attributes':
+          class:
+            - signatured-element
+          style: 'width:50px; height:40px'
+        '#label_attributes':
+          class:
+            - signatured-label
+          style: '    font-size: 1.125rem;     font-weight: 700;     line-height: 1.125rem; margin-right: 50px'
   evaluation:
     '#type': webform_wizard_page
     '#title': Evaluation
@@ -631,8 +689,8 @@ elements: |-
   remarks:
     '#type': webform_wizard_page
     '#title': Remarks
-css: "#edit-chart-s-other, #edit-aip-items-other,#edit-sup-s-other,#edit-aic-s-other,#edit-data-set-s-other{\r\n  min-height: 40px;\r\n  height: 40px;\r\n}\r\n#edit-aip-items .form-type-select{\r\n  margin-top:0;\r\n  margin-bottom:0;\r\n  width:70%\r\n  \r\n}\r\n#edit-chart-s- .form-type-select{\r\n  margin-top:0;\r\n  margin-bottom:0;\r\n  width:70%\r\n}\r\n#edit-sup-s- .form-type-select{\r\n  margin-top:0;\r\n  margin-bottom:0;\r\n  width:70%;\r\n}\r\n#edit-aic-s- .form-type-select{\r\n  margin-top:0;\r\n  margin-bottom:0;\r\n  width:70%;\r\n}\r\n#edit-data-set-s- .form-type-select{\r\n  margin-top:0;\r\n  margin-bottom:0;\r\n  width:70%;\r\n}\r\n\r\n#edit-aip-items{\r\n position:relative;\r\n}\r\n#edit-aip-items-other{\r\n  position:absolute;\r\n  top:3px;\r\n  right:7%;\r\n  height:40px;\r\n  width:63%;\r\n  text-align: center;\r\n}\r\n\r\n#edit-chart-s-{\r\n   position:relative;\r\n}\r\n#edit-chart-s-other{\r\n  position:absolute;\r\n  top:3px;\r\n  right:7%;\r\n  height:40px;\r\n  width:63%; \r\n  text-align: center;\r\n}\r\n#edit-sup-s-{\r\n  position:relative;\r\n}\r\n#edit-sup-s-other{\r\n  position:absolute;\r\n  top:3px;\r\n  right:7%;\r\n  height:40px;\r\n  width:63%;\r\n  text-align: center;\r\n}\r\n\r\n#edit-aic-s-{\r\n  position:relative;\r\n}\r\n#edit-aic-s-other{\r\n  position:absolute;\r\n  top:3px;\r\n  right:7%;\r\n  height:40px;\r\n  width:63%;\r\n  text-align: center;\r\n}\r\n\r\n#edit-data-set-s-{\r\n  position:relative;\r\n}\r\n#edit-data-set-s-other{\r\n  position:absolute;\r\n  top:3px;\r\n  right:7%;\r\n  height:40px;\r\n  width:63%;\r\n  text-align: center;\r\n}\r\n"
-javascript: " function changeElementStyle(elementId){ \r\n setTimeout(function(){\r\n  let parent = document.getElementById(elementId);\r\n  let element = parent.lastElementChild\r\n  if (element) {\r\n    element.style.display = 'block';\r\n  }\r\n }, 100);\r\n} \r\n changeElementStyle(\"edit-aip-items\");\r\n changeElementStyle(\"edit-chart-s-\");\r\n changeElementStyle(\"edit-sup-s-\");\r\n changeElementStyle(\"edit-aic-s-\");\r\n changeElementStyle(\"edit-data-set-s-\");\r\n\r\n(function ($) {\r\n  $(document).ready(function () {\r\n    var publicationMethod = $('#edit-publication-method');\r\n    var publicationNumber = $('#edit-publication-number');\r\n    var databaseEntry = $('#edit-database-entry-');\r\n    //other\r\n    var aipItems = $('#edit-aip-items-other');\r\n    //other\r\n    var chart = $('#edit-chart-s-other');\r\n    var sup = $('#edit-sup-s-other');\r\n    var aic = $('#edit-aic-s-other');\r\n    var dataSet =  $('#edit-data-set-s-other');\r\n    \r\n    \r\n    publicationMethod.change(function () {\r\n      if (publicationMethod.val() === 'Aeronautical database') {\r\n       publicationNumber.val('NIL');\r\n       databaseEntry.val(' ');\r\n       aipItems.val('NIL');\r\n       chart.val('NIL');\r\n       sup.val(' ');\r\n       aic.val('NIL');\r\n       dataSet.val(' ');\r\n      }\r\n    });\r\n  });\r\n\r\n})(jQuery);\r\n"
+css: " /*  Affected publication(s) */ \r\n\r\n#edit-aip-items .form-type-select{\r\n  margin-top:0;\r\n  margin-bottom:0;\r\n  width:70%\r\n}\r\n#edit-aip-items{\r\n position:relative;\r\n}\r\n#edit-aip-items-other{\r\n  position:absolute;\r\n  top:3px;\r\n  right:7%;\r\n  min-height: 40px;\r\n  height:40px;\r\n  width:63%;\r\n  text-align: center;\r\n}\r\n\r\n#edit-chart .form-type-select{\r\n  margin-top:0;\r\n  margin-bottom:0;\r\n  width:70%\r\n}\r\n#edit-chart{\r\n   position:relative;\r\n}\r\n#edit-chart-other{\r\n  position:absolute;\r\n  top:3px;\r\n  right:7%;\r\n  min-height: 40px;\r\n  height:40px;\r\n  width:63%; \r\n  text-align: center;\r\n}\r\n\r\n#edit-sup-s- .form-type-select{\r\n  margin-top:0;\r\n  margin-bottom:0;\r\n  width:70%;\r\n}\r\n#edit-sup-s-{\r\n  position:relative;\r\n}\r\n#edit-sup-s-other{\r\n  position:absolute;\r\n  top:3px;\r\n  right:7%;\r\n  min-height: 40px;\r\n  height:40px;\r\n  width:63%;\r\n  text-align: center;\r\n}\r\n\r\n#edit-aic-s- .form-type-select{\r\n  margin-top:0;\r\n  margin-bottom:0;\r\n  width:70%;\r\n}\r\n#edit-aic-s-{\r\n  position:relative;\r\n}\r\n#edit-aic-s-other{\r\n  position:absolute;\r\n  top:3px;\r\n  right:7%;\r\n  min-height: 40px;\r\n  height:40px;\r\n  width:63%;\r\n  text-align: center;\r\n}\r\n\r\n#edit-data-set-s- .form-type-select{\r\n  margin-top:0;\r\n  margin-bottom:0;\r\n  width:70%;\r\n}\r\n#edit-data-set-s-{\r\n  position:relative;\r\n}\r\n#edit-data-set-s-other{\r\n  position:absolute;\r\n  top:3px;\r\n  right:7%;\r\n  height:40px;\r\n  min-height: 40px;\r\n  width:63%;\r\n  text-align: center;\r\n}\r\n\r\n /*  Role assignment */ \r\n#edit-editor-s- .form-type-select{\r\n  margin-top:0;\r\n  margin-bottom:0;\r\n  width:70%\r\n}\r\n#edit-editor-s-{\r\n position:relative;\r\n}\r\n#edit-editor-s-other{\r\n  position:absolute;\r\n  top:3px;\r\n  right:7%;\r\n  min-height: 40px;\r\n  height:40px;\r\n  width:63%;\r\n  text-align: center;\r\n}\r\n\r\n#edit-editor-s-2 .form-type-select{\r\n  margin-top:0;\r\n  margin-bottom:0;\r\n  width:70%\r\n}\r\n#edit-editor-s-2{\r\n position:relative;\r\n}\r\n#edit-editor-s-2-other{\r\n  position:absolute;\r\n  top:3px;\r\n  right:7%;\r\n  min-height: 40px;\r\n  height:40px;\r\n  width:63%;\r\n  text-align: center;\r\n}\r\n\r\n#edit-cartographer .form-type-select{\r\n  margin-top:0;\r\n  margin-bottom:0;\r\n  width:70%\r\n}\r\n#edit-cartographer{\r\n position:relative;\r\n}\r\n#edit-cartographer-other{\r\n  position:absolute;\r\n  top:3px;\r\n  right:7%;\r\n  min-height: 40px;\r\n  height:40px;\r\n  width:63%;\r\n  text-align: center;\r\n}\r\n\r\n#edit-evaluator-s- .form-type-select{\r\n  margin-top:0;\r\n  margin-bottom:0;\r\n  width:70%\r\n}\r\n#edit-evaluator-s-{\r\n position:relative;\r\n}\r\n#edit-evaluator-s-other{\r\n  position:absolute;\r\n  top:3px;\r\n  right:7%;\r\n  min-height: 40px;\r\n  height:40px;\r\n  width:63%;\r\n  text-align: center;\r\n}\r\n\r\n#edit-evaluator-s-2 .form-type-select{\r\n  margin-top:0;\r\n  margin-bottom:0;\r\n  width:70%\r\n}\r\n#edit-evaluator-s-2{\r\n position:relative;\r\n}\r\n#edit-evaluator-s-2-other{\r\n  position:absolute;\r\n  top:3px;\r\n  right:7%;\r\n  min-height: 40px;\r\n  height:40px;\r\n  width:63%;\r\n  text-align: center;\r\n}\r\n\r\n#edit-quality-controllers-aimdb- .form-type-select{\r\n  margin-top:0;\r\n  margin-bottom:0;\r\n  width:70%\r\n}\r\n#edit-quality-controllers-aimdb-{\r\n position:relative;\r\n}\r\n#edit-quality-controllers-aimdb-other{\r\n  position:absolute;\r\n  top:3px;\r\n  right:7%;\r\n  min-height: 40px;\r\n  height:40px;\r\n  width:63%;\r\n  text-align: center;\r\n}\r\n\r\n#edit-quality-controllers-aimdb-2 .form-type-select{\r\n  margin-top:0;\r\n  margin-bottom:0;\r\n  width:70%\r\n}\r\n#edit-quality-controllers-aimdb-2{\r\n position:relative;\r\n}\r\n#edit-quality-controllers-aimdb-2-other{\r\n  position:absolute;\r\n  top:3px;\r\n  right:7%;\r\n  min-height: 40px;\r\n  height:40px;\r\n  width:63%;\r\n  text-align: center;\r\n}\r\n\r\n\r\n#edit-quality-controllers-sdo-db- .form-type-select{\r\n  margin-top:0;\r\n  margin-bottom:0;\r\n  width:70%\r\n}\r\n#edit-quality-controllers-sdo-db-{\r\n position:relative;\r\n}\r\n#edit-quality-controllers-sdo-db-other{\r\n  position:absolute;\r\n  top:3px;\r\n  right:7%;\r\n  min-height: 40px;\r\n  height:40px;\r\n  width:63%;\r\n  text-align: center;\r\n}\r\n\r\n#edit-quality-controllers-sdo-db-2 .form-type-select{\r\n  margin-top:0;\r\n  margin-bottom:0;\r\n  width:70%\r\n}\r\n#edit-quality-controllers-sdo-db-2{\r\n position:relative;\r\n}\r\n#edit-quality-controllers-sdo-db-2-other{\r\n  position:absolute;\r\n  top:3px;\r\n  right:7%;\r\n  min-height: 40px;\r\n  height:40px;\r\n  width:63%;\r\n  text-align: center;\r\n}\r\n\r\n#edit-quality-controllers .form-type-select{\r\n  margin-top:0;\r\n  margin-bottom:0;\r\n  width:70%\r\n}\r\n#edit-quality-controllers{\r\n position:relative;\r\n}\r\n#edit-quality-controllers-other{\r\n  position:absolute;\r\n  top:3px;\r\n  right:7%;\r\n  min-height: 40px;\r\n  height:40px;\r\n  width:63%;\r\n  text-align: center;\r\n}"
+javascript: "function changeElementStyle(elementId){ \r\n setTimeout(function(){\r\n  let parent = document.getElementById(elementId);\r\n  let element = parent.lastElementChild\r\n  if (element) {\r\n    element.style.display = 'block';\r\n  }\r\n }, 100);\r\n} \r\n// Affected publication(s)'s other fields lies on the select fields\r\n changeElementStyle(\"edit-aip-items\");\r\n changeElementStyle(\"edit-chart\");\r\n changeElementStyle(\"edit-sup-s-\");\r\n changeElementStyle(\"edit-aic-s-\");\r\n changeElementStyle(\"edit-data-set-s-\");\r\n\r\n// Role assignment's other fields lies on the select fields\r\n changeElementStyle(\"edit-editor-s-\");\r\n changeElementStyle(\"edit-editor-s-2\");\r\n changeElementStyle(\"edit-cartographer\");\r\n changeElementStyle(\"edit-evaluator-s-\");\r\n changeElementStyle(\"edit-evaluator-s-2\");\r\n changeElementStyle(\"edit-quality-controllers-aimdb-\");\r\n changeElementStyle(\"edit-quality-controllers-aimdb-2\");\r\n changeElementStyle(\"edit-quality-controllers-sdo-db-\");\r\n changeElementStyle(\"edit-quality-controllers-sdo-db-2\");\r\n changeElementStyle(\"edit-quality-controllers\");\r\n\r\n\r\n\r\n(function ($) {\r\n  $(document).ready(function () {\r\n    var publicationMethod = $('#edit-publication-method');\r\n    var publicationNumber = $('#edit-publication-number');\r\n    var databaseEntry = $('#edit-database-entry-');\r\n    //other\r\n    var aipItems = $('#edit-aip-items-other');\r\n    //other\r\n    var chart = $('#edit-chart-other');\r\n    var sup = $('#edit-sup-s-other');\r\n    var aic = $('#edit-aic-s-other');\r\n    var dataSet =  $('#edit-data-set-s-other');\r\n    \r\n    \r\n    publicationMethod.change(function () {\r\n      if (publicationMethod.val() === 'Aeronautical database') {\r\n       publicationNumber.val('NIL');\r\n       databaseEntry.val(' ');\r\n       aipItems.val('NIL');\r\n       chart.val('NIL');\r\n       sup.val(' ');\r\n       aic.val('NIL');\r\n       dataSet.val(' ');\r\n      }\r\n    });\r\n  });\r\n\r\n})(jQuery);\r\n"
 settings:
   ajax: false
   ajax_scroll_top: form
