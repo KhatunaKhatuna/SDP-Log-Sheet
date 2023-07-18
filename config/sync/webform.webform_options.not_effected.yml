@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: not_effected
-label: 'Not effected'
+label: 'Not affected'
 category: ''
 likert: false
-options: '''Not effected'': ''Not effected'''
+options: '''Not affected'': ''Not affected'''
