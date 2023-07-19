@@ -1,0 +1,13 @@
+uuid: 011e135d-43ea-4032-81dc-03a941c8f4ee
+langcode: en
+status: true
+dependencies: {  }
+id: employee
+label: Employee
+category: ''
+likert: false
+options: |-
+  'Diana Nemsadze': 'Diana Nemsadze'
+  'Marina Kandaurishvil': 'Marina Kandaurishvil'
+  'Mikheil Gaprindashvili': 'Mikheil Gaprindashvili'
+  'Sergo Kokolia': 'Sergo Kokolia'
