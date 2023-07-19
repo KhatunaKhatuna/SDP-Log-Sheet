@@ -40,6 +40,7 @@ elements: |-
               - section-title
               - rawDataReceipt-summery-attributes
               - ''
+            style: 'padding-top: 10px; padding-bottom: 10px;'
           log_sheet_number:
             '#type': textfield
             '#title': 'Log Sheet number'
@@ -107,6 +108,7 @@ elements: |-
             class:
               - section-title
               - rawDataDescription-summery-attributes
+            style: 'padding-top: 10px; padding-bottom: 10px;'
           '#title_tag': h4
           data_originator:
             '#type': select
@@ -226,6 +228,7 @@ elements: |-
           '#summary_attributes':
             class:
               - section-title
+            style: 'padding-top: 10px; padding-bottom: 10px;'
           flexbox:
             '#type': webform_flexbox
             date:
@@ -304,6 +307,7 @@ elements: |-
           '#summary_attributes':
             class:
               - section-title
+            style: 'padding-top: 10px; padding-bottom: 10px;'
           '#title_tag': h4
           effective_date:
             '#type': date
@@ -363,6 +367,7 @@ elements: |-
           '#summary_attributes':
             class:
               - section-title
+            style: 'padding-top: 10px; padding-bottom: 10px;'
           aip_items:
             '#type': webform_select_other
             '#title': 'AIP items'
@@ -472,6 +477,7 @@ elements: |-
           '#summary_attributes':
             class:
               - section-title
+            style: 'padding-top: 10px; padding-bottom: 10px;'
           editor_s_:
             '#type': webform_select_other
             '#title': Editor(s)
@@ -697,6 +703,7 @@ elements: |-
             class:
               - section-title
               - Summary-attributes
+            style: 'padding-top: 10px; padding-bottom: 10px;'
           date_of_personnel_notification_about_log_sheet_creation:
             '#type': date
             '#title': 'Date of personnel notification about Log Sheet creation'
