@@ -6,4 +6,6 @@ id: not_effected
 label: 'Not affected'
 category: ''
 likert: false
-options: '''Not affected'': ''Not affected'''
+options: |-
+  'Not affected': 'Not affected'
+  NIL: NIL
