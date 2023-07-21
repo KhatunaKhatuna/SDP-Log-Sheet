@@ -139,6 +139,7 @@ elements: |-
               'ServiseAir Ltd.': 'ServiseAir Ltd.'
               'TAV Urban Georgia LLC': 'TAV Urban Georgia LLC'
               'United Airports of Georgia Ltd.': 'United Airports of Georgia Ltd.'
+            '#empty_option': 'Please select'
             '#wrapper_attributes':
               class:
                 - container-flex
@@ -179,6 +180,7 @@ elements: |-
               'AIP SUP': 'AIP SUP'
               AIC: AIC
               'Aeronautical database': 'Aeronautical database'
+            '#empty_option': 'Please select'
             '#wrapper_attributes':
               class:
                 - container-flex
@@ -264,6 +266,7 @@ elements: |-
               '#title': 'Raw data of aeronautical use'
               '#title_display': inline
               '#options': yes_no
+              '#empty_option': 'Please select'
               '#wrapper_attributes':
                 class:
                   - container-flex
@@ -281,6 +284,7 @@ elements: |-
               '#title': 'Raw data needs clarification'
               '#title_display': inline
               '#options': yes_no
+              '#empty_option': 'Please select'
               '#wrapper_attributes':
                 class:
                   - container-flex
@@ -298,6 +302,7 @@ elements: |-
               '#title': 'Contact with DO'
               '#title_display': before
               '#options': yes_no
+              '#empty_option': 'Please select'
               '#wrapper_attributes':
                 class:
                   - container-flex
@@ -504,6 +509,8 @@ elements: |-
             '#title': Editor(s)
             '#title_display': inline
             '#options': employee
+            '#empty_option': 'Please select'
+            '#other__option_label': 'Other:'
             '#other__placeholder': ''
             '#wrapper_type': form_element
             '#wrapper_attributes':
@@ -523,6 +530,8 @@ elements: |-
             '#title': Editor(s)
             '#title_display': inline
             '#options': employee
+            '#empty_option': 'Please select'
+            '#other__option_label': 'Other:'
             '#other__placeholder': ''
             '#wrapper_type': form_element
             '#wrapper_attributes':
@@ -544,6 +553,8 @@ elements: |-
             '#options':
               'Natalia Gunchina': 'Natalia Gunchina'
               NIL: NIL
+            '#empty_option': 'Please select'
+            '#other__option_label': 'Other:'
             '#other__placeholder': ''
             '#wrapper_type': form_element
             '#wrapper_attributes':
@@ -563,6 +574,8 @@ elements: |-
             '#title': Evaluator(s)
             '#title_display': inline
             '#options': employee
+            '#empty_option': 'Please select'
+            '#other__option_label': 'Other:'
             '#other__placeholder': ''
             '#wrapper_type': form_element
             '#wrapper_attributes':
@@ -582,6 +595,8 @@ elements: |-
             '#title': Evaluator(s)
             '#title_display': inline
             '#options': employee
+            '#empty_option': 'Please select'
+            '#other__option_label': 'Other:'
             '#other__placeholder': ''
             '#wrapper_type': form_element
             '#wrapper_attributes':
@@ -601,6 +616,8 @@ elements: |-
             '#title': 'Quality controllers (AIMdb)'
             '#title_display': inline
             '#options': employee
+            '#empty_option': 'Please select'
+            '#other__option_label': 'Other:'
             '#other__placeholder': ''
             '#wrapper_type': form_element
             '#wrapper_attributes':
@@ -620,6 +637,8 @@ elements: |-
             '#title': 'Quality controllers (AIMdb)'
             '#title_display': inline
             '#options': employee
+            '#empty_option': 'Please select'
+            '#other__option_label': 'Other:'
             '#other__placeholder': ''
             '#wrapper_type': form_element
             '#wrapper_attributes':
@@ -639,6 +658,8 @@ elements: |-
             '#title': 'Quality controllers (SDOdb)'
             '#title_display': inline
             '#options': employee
+            '#empty_option': 'Please select'
+            '#other__option_label': 'Other:'
             '#other__placeholder': ''
             '#wrapper_type': form_element
             '#wrapper_attributes':
@@ -658,6 +679,8 @@ elements: |-
             '#title': 'Quality controllers (SDOdb)'
             '#title_display': inline
             '#options': employee
+            '#empty_option': 'Please select'
+            '#other__option_label': 'Other:'
             '#other__placeholder': ''
             '#wrapper_type': form_element
             '#wrapper_attributes':
@@ -677,6 +700,8 @@ elements: |-
             '#title': 'Quality controllers '
             '#title_display': inline
             '#options': employee
+            '#empty_option': 'Please select'
+            '#other__option_label': 'Other:'
             '#other__placeholder': ''
             '#wrapper_type': form_element
             '#wrapper_attributes':
@@ -696,6 +721,8 @@ elements: |-
             '#title': 'Quality controllers'
             '#title_display': inline
             '#options': employee
+            '#empty_option': 'Please select'
+            '#other__option_label': 'Other:'
             '#other__placeholder': ''
             '#wrapper_type': form_element
             '#wrapper_attributes':
