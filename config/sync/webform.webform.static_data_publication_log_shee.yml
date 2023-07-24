@@ -229,25 +229,6 @@ elements: |-
               class:
                 - label
               style: 'width:30%'
-          test:
-            '#type': select
-            '#title': test
-            '#title_display': inline
-            '#description_display': invisible
-            '#options': employee
-            '#empty_option': 'Please select'
-            '#wrapper_attributes':
-              class:
-                - container-flex
-              style: 'display:flex; align-items: center;'
-            '#attributes':
-              class:
-                - element
-              style: 'width:70%; min-height:40px; height:40px; text-align: center;'
-            '#label_attributes':
-              class:
-                - label
-              style: 'width:30%'
       raw_data_initial_assessment:
         '#type': fieldset
         '#title': 'Raw data initial assessment'
