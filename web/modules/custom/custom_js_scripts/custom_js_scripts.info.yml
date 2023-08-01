@@ -1,0 +1,5 @@
+name: "Custom Js Scripts"
+type: module
+description: "Adds custom JavaScript code to individual webform pages."
+package: Custom
+core_version_requirement: ^9 || ^8
