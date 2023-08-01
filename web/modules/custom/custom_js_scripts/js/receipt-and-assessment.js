@@ -10,7 +10,7 @@ rawDataSubjectTextareaDiv.style.width = "70%";
 editDatabaseEntryTextareaDiv.style.width = "70%";
 
 (function ($) {
-  Drupal.behaviors.sdplsWebformBehavior = {
+  Drupal.behaviors.sdplsWebformBehaviorReceiptAndAssessment = {
     attach: function (context, settings) {
       //Change Other Element style
       function changeOtherElementstyle(elementId, a, b) {
@@ -72,7 +72,7 @@ editDatabaseEntryTextareaDiv.style.width = "70%";
 
       // Set the some fields with value 'NIL' and reset others to 'please select', depend on the value of publication Method.
       $("#edit-publication-method", context)
-        .once("sdplsWebformBehavior")
+        .once("sdplsWebformBehaviorReceiptAndAssessment")
         .change(function () {
           let publicationMethod = $(this).val();
           let publicationNumber = $("#edit-publication-number");
