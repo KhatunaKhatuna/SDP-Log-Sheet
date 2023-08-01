@@ -1,0 +1,48 @@
+custom_js_scripts_receipt_and_assessment:
+  version: 1.x
+  js:
+    js/receipt-and-assessment.js: {}
+  dependencies:
+    - core/jquery
+
+custom_js_scripts_evaluation:
+  version: 1.x
+  js:
+    js/evaluation.js: {}
+  dependencies:
+    - core/jquery
+
+custom_js_scripts_sdo_db:
+  version: 1.x
+  js:
+    js/sdo-db.js: {}
+  dependencies:
+    - core/jquery
+
+custom_js_scripts_aimdb:
+  version: 1.x
+  js:
+    js/aimdb.js: {}
+  dependencies:
+    - core/jquery
+
+custom_js_scripts_charting:
+  version: 1.x
+  js:
+    js/charting.js: {}
+  dependencies:
+    - core/jquery
+
+custom_js_scripts_contact_with_data_originator:
+  version: 1.x
+  js:
+    js/contact-with-data-originator.js: {}
+  dependencies:
+    - core/jquery
+
+custom_js_scripts_remarks:
+  version: 1.x
+  js:
+    js/remarks.js: {}
+  dependencies:
+    - core/jquery
