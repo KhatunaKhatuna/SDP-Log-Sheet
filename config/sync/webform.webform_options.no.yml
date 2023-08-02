@@ -1,0 +1,9 @@
+uuid: 3ef3c4cb-2865-4f3a-946f-52b5e5a0597c
+langcode: en
+status: true
+dependencies: {  }
+id: 'no'
+label: 'NO'
+category: ''
+likert: false
+options: '''NO'': ''NO'''

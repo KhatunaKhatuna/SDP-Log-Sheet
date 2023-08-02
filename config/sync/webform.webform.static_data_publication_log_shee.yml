@@ -864,6 +864,201 @@ elements: |-
           class:
             - section-title
           style: 'padding-top: 10px; padding-bottom: 10px;'
+        date_of_evaluation:
+          '#type': date
+          '#title': 'Date of evaluation'
+          '#title_display': inline
+          '#wrapper_attributes':
+            class:
+              - container-flex
+            style: 'display:flex; align-items: center;'
+          '#attributes':
+            class:
+              - element
+            style: 'width:70%; min-height:40px; height:40px; text-align: center;'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%'
+        missing_items_:
+          '#type': webform_select_other
+          '#title': 'Missing items '
+          '#options': 'no'
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_type': form_element
+          '#wrapper_attributes':
+            class:
+              - wrapper
+            style: 'margin-bottom: 0;'
+          '#attributes':
+            class:
+              - element
+            style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%; position: absolute;'
+        data_correction_is_required:
+          '#type': webform_select_other
+          '#title': 'Data correction is required'
+          '#options': 'no'
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_attributes':
+            class:
+              - wrapper
+            style: 'display: flex; '
+          '#attributes':
+            class:
+              - element
+            style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
+        raw_data_of_required_resolution_ref_order_24_order_3_:
+          '#type': webform_select_other
+          '#title': 'Raw data of required resolution (ref. Order 24/Order 3)'
+          '#title_display': inline
+          '#options':
+            'YES': 'YES'
+            'Not applicable': 'Not applicable'
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_attributes':
+            class:
+              - wrapper
+            style: 'display:flex'
+          '#attributes':
+            class:
+              - element
+            style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
+        affected_aip_items_elements_in_addition_to_the_items_elements_es:
+          '#type': webform_select_other
+          '#title': 'Affected AIP items/elements (in addition to the items/elements established on "Raw data initial assessment" step)'
+          '#options':
+            'Not affected': 'Not affected'
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_attributes':
+            class:
+              - wrapper
+            style: 'display:flex'
+          '#attributes':
+            class:
+              - element
+            style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
+        additional_affected_items_elements_agreement_with_head_of_ais:
+          '#type': webform_select_other
+          '#title': 'Additional affected items''/elements'' agreement with Head of AIS'
+          '#options':
+            Agreed: Agreed
+            'Rejected, see remarks': 'Rejected, see remarks'
+            NIL: NIL
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_attributes':
+            class:
+              - wrapper
+            style: 'display:flex'
+          '#attributes':
+            class:
+              - element
+            style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
+        affected_chart_s_in_addition_to_the_chart_s_established_on_raw_d:
+          '#type': webform_select_other
+          '#title': 'Affected Chart(s) (in addition to the chart(s) established on "Raw data initial assessment" step)'
+          '#options':
+            'Not affected': 'Not affected'
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_attributes':
+            class:
+              - wrapper
+            style: 'display:flex'
+          '#attributes':
+            class:
+              - element
+            style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
+        additional_affected_charts_agreement_with_head_of_ais:
+          '#type': webform_select_other
+          '#title': 'Additional affected charts agreement with Head of AIS'
+          '#options':
+            Agreed: Agreed
+            'Rejected, see remarks': 'Rejected, see remarks'
+            NIL: NIL
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_attributes':
+            class:
+              - wrapper
+            style: 'display:flex'
+          '#attributes':
+            class:
+              - element
+            style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
+        contact_with_data_originator_needed:
+          '#type': webform_select_other
+          '#title': 'Contact with Data Originator needed'
+          '#options': yes_no
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_attributes':
+            class:
+              - wrapper
+            style: 'display:flex'
+          '#attributes':
+            class:
+              - element
+            style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
+        evaluation_is_positive:
+          '#type': webform_select_other
+          '#title': 'Evaluation is positive'
+          '#options': yes_no
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_attributes':
+            class:
+              - wrapper
+            style: 'display:flex'
+          '#attributes':
+            class:
+              - element
+            style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
+        data_input_into_the_database_required:
+          '#type': webform_select_other
+          '#title': 'Data input into the database required'
+          '#options':
+            'YES': 'YES'
+            'NO': 'NO'
+            'Not applicable': 'Not applicable'
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_attributes':
+            class:
+              - wrapper
+            style: 'display:flex'
+          '#attributes':
+            class:
+              - element
+            style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
       evaluation_completed:
         '#type': details
         '#title': 'Evaluation completed'
@@ -936,6 +1131,201 @@ elements: |-
           class:
             - section-title
           style: 'padding-top: 10px; padding-bottom: 10px;'
+        date_of_evaluation2:
+          '#type': date
+          '#title': 'Date of evaluation'
+          '#title_display': inline
+          '#wrapper_attributes':
+            class:
+              - container-flex
+            style: 'display:flex; align-items: center;'
+          '#attributes':
+            class:
+              - element
+            style: 'width:70%; min-height:40px; height:40px; text-align: center;'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%'
+        missing_items_2:
+          '#type': webform_select_other
+          '#title': 'Missing items '
+          '#options': 'no'
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_type': form_element
+          '#wrapper_attributes':
+            class:
+              - wrapper
+            style: 'margin-bottom: 0;'
+          '#attributes':
+            class:
+              - element
+            style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%; position: absolute;'
+        data_correction_is_required2:
+          '#type': webform_select_other
+          '#title': 'Data correction is required'
+          '#options': 'no'
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_attributes':
+            class:
+              - wrapper
+            style: 'display: flex; '
+          '#attributes':
+            class:
+              - element
+            style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
+        raw_data_of_required_resolution_ref_order_24_order_3_2:
+          '#type': webform_select_other
+          '#title': 'Raw data of required resolution (ref. Order 24/Order 3)'
+          '#title_display': inline
+          '#options':
+            'YES': 'YES'
+            'Not applicable': 'Not applicable'
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_attributes':
+            class:
+              - wrapper
+            style: 'display:flex'
+          '#attributes':
+            class:
+              - element
+            style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
+        affected_aip_items_elements_in_addition_to_the_items_elements_e2:
+          '#type': webform_select_other
+          '#title': 'Affected AIP items/elements (in addition to the items/elements established on "Raw data initial assessment" step)'
+          '#options':
+            'Not affected': 'Not affected'
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_attributes':
+            class:
+              - wrapper
+            style: 'display:flex'
+          '#attributes':
+            class:
+              - element
+            style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
+        additional_affected_items_elements_agreement_with_head_of_ai2:
+          '#type': webform_select_other
+          '#title': 'Additional affected items''/elements'' agreement with Head of AIS'
+          '#options':
+            Agreed: Agreed
+            'Rejected, see remarks': 'Rejected, see remarks'
+            NIL: NIL
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_attributes':
+            class:
+              - wrapper
+            style: 'display:flex'
+          '#attributes':
+            class:
+              - element
+            style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
+        affected_chart_s_in_addition_to_the_chart_s_established_on_raw_2:
+          '#type': webform_select_other
+          '#title': 'Affected Chart(s) (in addition to the chart(s) established on "Raw data initial assessment" step)'
+          '#options':
+            'Not affected': 'Not affected'
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_attributes':
+            class:
+              - wrapper
+            style: 'display:flex'
+          '#attributes':
+            class:
+              - element
+            style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
+        additional_affected_charts_agreement_with_head_of_ai2:
+          '#type': webform_select_other
+          '#title': 'Additional affected charts agreement with Head of AIS'
+          '#options':
+            Agreed: Agreed
+            'Rejected, see remarks': 'Rejected, see remarks'
+            NIL: NIL
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_attributes':
+            class:
+              - wrapper
+            style: 'display:flex'
+          '#attributes':
+            class:
+              - element
+            style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
+        contact_with_data_originator_needed2:
+          '#type': webform_select_other
+          '#title': 'Contact with Data Originator needed'
+          '#options': yes_no
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_attributes':
+            class:
+              - wrapper
+            style: 'display:flex'
+          '#attributes':
+            class:
+              - element
+            style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
+        evaluation_is_positive2:
+          '#type': webform_select_other
+          '#title': 'Evaluation is positive'
+          '#options': yes_no
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_attributes':
+            class:
+              - wrapper
+            style: 'display:flex'
+          '#attributes':
+            class:
+              - element
+            style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
+        data_input_into_the_database_required2:
+          '#type': webform_select_other
+          '#title': 'Data input into the database required'
+          '#options':
+            'YES': 'YES'
+            'NO': 'NO'
+            'Not applicable': 'Not applicable'
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_attributes':
+            class:
+              - wrapper
+            style: 'display:flex'
+          '#attributes':
+            class:
+              - element
+            style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
       evaluation_completed2:
         '#type': details
         '#title': 'Evaluation completed'
@@ -1009,7 +1399,7 @@ elements: |-
   remarks:
     '#type': webform_wizard_page
     '#title': Remarks
-css: "/*Header*/\r\n.header-text{\r\n  width:70%;\r\n  padding: 10px;\r\n}\r\n.header-title{\r\n    text-align: center;\r\n}\r\n.header-subTitle{\r\n  text-align: center;\r\n  margin-bottom: 20px;\r\n}\r\n.edition{\r\n  line-height: 20px;\r\n  font-size: 14px;\r\n}\r\n.edition-data{\r\n  line-height: 20px;\r\n  font-size: 14px;\r\n}\r\nimg{\r\nwidth:30%;\r\n}\r\n\r\n/*  Affected publication(s)'s field others */ \r\n#edit-aip-items-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  width: 70%;\r\n  margin-left: 30%;    \r\n  border-top: none;\r\n}\r\n#edit-aip-items .form-type-select{\r\n  margin-bottom:0;\r\n}\r\n#edit-chart-s-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  width: 70%;\r\n  margin-left: 30%;\r\n  border-top: none;\r\n}\r\n#edit-chart-s- .form-type-select{\r\n  margin-bottom:0;\r\n}\r\n#edit-sup-s-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  width: 70%;\r\n  margin-left: 30%;\r\n  border-top: none;\r\n}\r\n#edit-sup-s- .form-type-select{\r\n  margin-bottom:0;\r\n}\r\n#edit-aic-s-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  width: 70%;\r\n  margin-left: 30%;\r\n  border-top: none;\r\n}\r\n#edit-aic-s- .form-type-select{\r\n  margin-bottom:0;\r\n}\r\n#edit-data-set-s-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  width: 70%;\r\n  margin-left: 30%;\r\n  border-top: none;\r\n}\r\n#edit-data-set-s- .form-type-select{\r\n  margin-bottom:0;\r\n}\r\n /*  Role assignment's field others position*/ \r\n#edit-editor-s- .form-type-select{\r\n margin-bottom:0;\r\n}\r\n#edit-editor-s-{\r\n position:relative;\r\n}\r\n#edit-editor-s-other{\r\n  position:absolute;\r\n  top:0px;\r\n  right:7%;\r\n  width:63%;\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  margin-left: 30%; \r\n}\r\n\r\n#edit-editor-s-2 .form-type-select{\r\n margin-bottom:0;\r\n\r\n}\r\n#edit-editor-s-2{\r\n position:relative;\r\n}\r\n#edit-editor-s-2-other{\r\n  position:absolute;\r\n  top:0px;\r\n  right:7%;\r\n  width:63%;\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  margin-left: 30%; \r\n}\r\n\r\n#edit-cartographer .form-type-select{\r\n margin-bottom:0;\r\n\r\n}\r\n#edit-cartographer{\r\n position:relative;\r\n}\r\n#edit-cartographer-other{\r\n  position:absolute;\r\n  top:0px;\r\n  right:7%;\r\n  width:63%;\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  margin-left: 30%; \r\n}\r\n\r\n#edit-cartographer2 .form-type-select{\r\n margin-bottom:0;\r\n\r\n}\r\n#edit-cartographer2{\r\n position:relative;\r\n}\r\n#edit-cartographer2-other{\r\n  position:absolute;\r\n  top:0px;\r\n  right:7%;\r\n  width:63%;\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  margin-left: 30%; \r\n}\r\n\r\n#edit-evaluator-s- .form-type-select{\r\n margin-bottom:0;\r\n\r\n}\r\n#edit-evaluator-s-{\r\n position:relative;\r\n}\r\n#edit-evaluator-s-other{\r\n  position:absolute;\r\n  top:0px;\r\n  right:7%;\r\n  width:63%;\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  margin-left: 30%; \r\n}\r\n\r\n#edit-evaluator-s-2 .form-type-select{\r\n margin-bottom:0;\r\n\r\n}\r\n#edit-evaluator-s-2{\r\n position:relative;\r\n}\r\n#edit-evaluator-s-2-other{\r\n  position:absolute;\r\n  top:0px;\r\n  right:7%;\r\n  width:63%;\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  margin-left: 30%; \r\n}\r\n\r\n#edit-quality-controllers-aimdb- .form-type-select{\r\n  margin-bottom:0;\r\n}\r\n#edit-quality-controllers-aimdb-{\r\n position:relative;\r\n}\r\n#edit-quality-controllers-aimdb-other{\r\n  position:absolute;\r\n  top:0px;\r\n  right:7%;\r\n  width:63%;\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  margin-left: 30%;    \r\n}\r\n\r\n#edit-quality-controllers-aimdb-2 .form-type-select{\r\n  margin-bottom:0;\r\n}\r\n#edit-quality-controllers-aimdb-2{\r\n position:relative;\r\n}\r\n#edit-quality-controllers-aimdb-2-other{\r\n  position:absolute;\r\n  top:0px;\r\n  right:7%;\r\n  width:63%;\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  margin-left: 30%; \r\n}\r\n\r\n\r\n#edit-quality-controllers-sdo-db- .form-type-select{\r\n margin-bottom:0;\r\n\r\n}\r\n#edit-quality-controllers-sdo-db-{\r\n position:relative;\r\n}\r\n#edit-quality-controllers-sdo-db-other{\r\n  position:absolute;\r\n  top:0px;\r\n  right:7%;\r\n  width:63%;\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  margin-left: 30%; \r\n}\r\n\r\n#edit-quality-controllers-sdo-db-2 .form-type-select{\r\n margin-bottom:0;\r\n\r\n}\r\n#edit-quality-controllers-sdo-db-2{\r\n position:relative;\r\n}\r\n#edit-quality-controllers-sdo-db-2-other{\r\n  position:absolute;\r\n  top:0px;\r\n  right:7%;\r\n  width:63%;\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  margin-left: 30%; \r\n}\r\n\r\n#edit-quality-controllers .form-type-select{\r\n margin-bottom:0;\r\n\r\n}\r\n#edit-quality-controllers{\r\n position:relative;\r\n}\r\n#edit-quality-controllers-other{\r\n  position:absolute;\r\n  top:0px;\r\n  right:7%;\r\n  width:63%;\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  margin-left: 30%; \r\n}\r\n\r\n#edit-quality-controllers-2 .form-type-select{\r\n margin-bottom:0;\r\n\r\n}\r\n#edit-quality-controllers-2{\r\n position:relative;\r\n}\r\n#edit-quality-controllers-2-other{\r\n  position:absolute;\r\n  top:0px;\r\n  right:7%;\r\n  width:63%;\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  margin-left: 30%; \r\n}\r\n"
+css: "/*Header*/\r\n.header-text{\r\n  width:70%;\r\n  padding: 10px;\r\n}\r\n.header-title{\r\n    text-align: center;\r\n}\r\n.header-subTitle{\r\n  text-align: center;\r\n  margin-bottom: 20px;\r\n}\r\n.edition{\r\n  line-height: 20px;\r\n  font-size: 14px;\r\n}\r\n.edition-data{\r\n  line-height: 20px;\r\n  font-size: 14px;\r\n}\r\nimg{\r\nwidth:30%;\r\n}\r\n\r\n/*  Affected publication(s)'s field others form elements */ \r\n#edit-aip-items-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  width: 70%;\r\n  margin-left: 30%;    \r\n  border-top: none;\r\n}\r\n#edit-aip-items .form-type-select{\r\n  margin-bottom:0;\r\n}\r\n#edit-chart-s-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  width: 70%;\r\n  margin-left: 30%;\r\n  border-top: none;\r\n}\r\n#edit-chart-s- .form-type-select{\r\n  margin-bottom:0;\r\n}\r\n#edit-sup-s-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  width: 70%;\r\n  margin-left: 30%;\r\n  border-top: none;\r\n}\r\n#edit-sup-s- .form-type-select{\r\n  margin-bottom:0;\r\n}\r\n#edit-aic-s-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  width: 70%;\r\n  margin-left: 30%;\r\n  border-top: none;\r\n}\r\n#edit-aic-s- .form-type-select{\r\n  margin-bottom:0;\r\n}\r\n#edit-data-set-s-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  width: 70%;\r\n  margin-left: 30%;\r\n  border-top: none;\r\n}\r\n#edit-data-set-s- .form-type-select{\r\n  margin-bottom:0;\r\n}\r\n /*  Role assignment's field others position on top(form element)*/ \r\n#edit-editor-s- .form-type-select{\r\n margin-bottom:0;\r\n}\r\n#edit-editor-s-{\r\n position:relative;\r\n}\r\n#edit-editor-s-other{\r\n  position:absolute;\r\n  top:0px;\r\n  right:7%;\r\n  width:63%;\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  margin-left: 30%; \r\n}\r\n\r\n#edit-editor-s-2 .form-type-select{\r\n margin-bottom:0;\r\n\r\n}\r\n#edit-editor-s-2{\r\n position:relative;\r\n}\r\n#edit-editor-s-2-other{\r\n  position:absolute;\r\n  top:0px;\r\n  right:7%;\r\n  width:63%;\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  margin-left: 30%; \r\n}\r\n\r\n#edit-cartographer .form-type-select{\r\n margin-bottom:0;\r\n\r\n}\r\n#edit-cartographer{\r\n position:relative;\r\n}\r\n#edit-cartographer-other{\r\n  position:absolute;\r\n  top:0px;\r\n  right:7%;\r\n  width:63%;\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  margin-left: 30%; \r\n}\r\n\r\n#edit-cartographer2 .form-type-select{\r\n margin-bottom:0;\r\n\r\n}\r\n#edit-cartographer2{\r\n position:relative;\r\n}\r\n#edit-cartographer2-other{\r\n  position:absolute;\r\n  top:0px;\r\n  right:7%;\r\n  width:63%;\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  margin-left: 30%; \r\n}\r\n\r\n#edit-evaluator-s- .form-type-select{\r\n margin-bottom:0;\r\n\r\n}\r\n#edit-evaluator-s-{\r\n position:relative;\r\n}\r\n#edit-evaluator-s-other{\r\n  position:absolute;\r\n  top:0px;\r\n  right:7%;\r\n  width:63%;\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  margin-left: 30%; \r\n}\r\n\r\n#edit-evaluator-s-2 .form-type-select{\r\n margin-bottom:0;\r\n\r\n}\r\n#edit-evaluator-s-2{\r\n position:relative;\r\n}\r\n#edit-evaluator-s-2-other{\r\n  position:absolute;\r\n  top:0px;\r\n  right:7%;\r\n  width:63%;\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  margin-left: 30%; \r\n}\r\n\r\n#edit-quality-controllers-aimdb- .form-type-select{\r\n  margin-bottom:0;\r\n}\r\n#edit-quality-controllers-aimdb-{\r\n position:relative;\r\n}\r\n#edit-quality-controllers-aimdb-other{\r\n  position:absolute;\r\n  top:0px;\r\n  right:7%;\r\n  width:63%;\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  margin-left: 30%;    \r\n}\r\n\r\n#edit-quality-controllers-aimdb-2 .form-type-select{\r\n  margin-bottom:0;\r\n}\r\n#edit-quality-controllers-aimdb-2{\r\n position:relative;\r\n}\r\n#edit-quality-controllers-aimdb-2-other{\r\n  position:absolute;\r\n  top:0px;\r\n  right:7%;\r\n  width:63%;\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  margin-left: 30%; \r\n}\r\n\r\n\r\n#edit-quality-controllers-sdo-db- .form-type-select{\r\n margin-bottom:0;\r\n\r\n}\r\n#edit-quality-controllers-sdo-db-{\r\n position:relative;\r\n}\r\n#edit-quality-controllers-sdo-db-other{\r\n  position:absolute;\r\n  top:0px;\r\n  right:7%;\r\n  width:63%;\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  margin-left: 30%; \r\n}\r\n\r\n#edit-quality-controllers-sdo-db-2 .form-type-select{\r\n margin-bottom:0;\r\n\r\n}\r\n#edit-quality-controllers-sdo-db-2{\r\n position:relative;\r\n}\r\n#edit-quality-controllers-sdo-db-2-other{\r\n  position:absolute;\r\n  top:0px;\r\n  right:7%;\r\n  width:63%;\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  margin-left: 30%; \r\n}\r\n\r\n#edit-quality-controllers .form-type-select{\r\n margin-bottom:0;\r\n\r\n}\r\n#edit-quality-controllers{\r\n position:relative;\r\n}\r\n#edit-quality-controllers-other{\r\n  position:absolute;\r\n  top:0px;\r\n  right:7%;\r\n  width:63%;\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  margin-left: 30%; \r\n}\r\n\r\n#edit-quality-controllers-2 .form-type-select{\r\n margin-bottom:0;\r\n\r\n}\r\n#edit-quality-controllers-2{\r\n position:relative;\r\n}\r\n#edit-quality-controllers-2-other{\r\n  position:absolute;\r\n  top:0px;\r\n  right:7%;\r\n  width:63%;\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  margin-left: 30%; \r\n}\r\n\r\n/*Raw data evaluation's others field element*/\r\n#edit-missing-items-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  width: 70%;\r\n  margin-left: 30%;    \r\n  border-top: none;\r\n}\r\n#edit-missing-items- .form-type-select{\r\n  margin-bottom:0;\r\n}\r\n\r\n/*Raw data evaluation's others fieldset  with long title*/\r\n#edit-data-correction-is-required .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-data-correction-is-required .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-data-correction-is-required .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-data-correction-is-required-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-data-correction-is-required .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 6px;\r\n}\r\n\r\n#edit-raw-data-of-required-resolution-ref-order-24-order-3- .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n      margin-right: 0;\r\n}\r\n#edit-raw-data-of-required-resolution-ref-order-24-order-3- .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-raw-data-of-required-resolution-ref-order-24-order-3- .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-raw-data-of-required-resolution-ref-order-24-order-3-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-raw-data-of-required-resolution-ref-order-24-order-3- .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 30px;\r\n}\r\n\r\n\r\n#edit-affected-aip-items-elements-in-addition-to-the-items-elements-es .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-affected-aip-items-elements-in-addition-to-the-items-elements-es .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-affected-aip-items-elements-in-addition-to-the-items-elements-es .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-affected-aip-items-elements-in-addition-to-the-items-elements-es-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-affected-aip-items-elements-in-addition-to-the-items-elements-es .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 60px;\r\n}\r\n\r\n\r\n#edit-additional-affected-items-elements-agreement-with-head-of-ais .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-additional-affected-items-elements-agreement-with-head-of-ais .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-additional-affected-items-elements-agreement-with-head-of-ais .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-additional-affected-items-elements-agreement-with-head-of-ais-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-additional-affected-items-elements-agreement-with-head-of-ais .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 30px;\r\n}\r\n\r\n\r\n#edit-affected-chart-s-in-addition-to-the-chart-s-established-on-raw-d .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-affected-chart-s-in-addition-to-the-chart-s-established-on-raw-d .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-affected-chart-s-in-addition-to-the-chart-s-established-on-raw-d .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-affected-chart-s-in-addition-to-the-chart-s-established-on-raw-d-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-affected-chart-s-in-addition-to-the-chart-s-established-on-raw-d .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 45px;\r\n}\r\n\r\n\r\n#edit-additional-affected-charts-agreement-with-head-of-ais .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-additional-affected-charts-agreement-with-head-of-ais .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-additional-affected-charts-agreement-with-head-of-ais .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-additional-affected-charts-agreement-with-head-of-ais-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-additional-affected-charts-agreement-with-head-of-ais .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 30px;\r\n}\r\n\r\n\r\n#edit-contact-with-data-originator-needed .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-contact-with-data-originator-needed .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-contact-with-data-originator-needed .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-contact-with-data-originator-needed-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-contact-with-data-originator-needed .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 15px;\r\n}\r\n\r\n\r\n#edit-evaluation-is-positive .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-evaluation-is-positive .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-evaluation-is-positive .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-evaluation-is-positive-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-evaluation-is-positive .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 2.5px;\r\n}\r\n\r\n\r\n#edit-data-input-into-the-database-required .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-data-input-into-the-database-required .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-data-input-into-the-database-required .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-data-input-into-the-database-required-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-data-input-into-the-database-required .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 15px;\r\n}\r\n\r\n\r\n/*Raw data evaluation's others field element*/\r\n#edit-missing-items-2-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  width: 70%;\r\n  margin-left: 30%;    \r\n  border-top: none;\r\n}\r\n#edit-missing-items-2 .form-type-select{\r\n  margin-bottom:0;\r\n}\r\n\r\n/*Raw data evaluation's others fieldset  with long title*/\r\n#edit-data-correction-is-required2 .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-data-correction-is-required2 .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-data-correction-is-required2 .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-data-correction-is-required2-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-data-correction-is-required2 .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 6px;\r\n}\r\n\r\n#edit-raw-data-of-required-resolution-ref-order-24-order-3-2 .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n      margin-right: 0;\r\n}\r\n#edit-raw-data-of-required-resolution-ref-order-24-order-3-2 .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-raw-data-of-required-resolution-ref-order-24-order-3-2 .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-raw-data-of-required-resolution-ref-order-24-order-3-2-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-raw-data-of-required-resolution-ref-order-24-order-3-2 .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 30px;\r\n}\r\n\r\n\r\n#edit-affected-aip-items-elements-in-addition-to-the-items-elements-e2 .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-affected-aip-items-elements-in-addition-to-the-items-elements-e2 .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-affected-aip-items-elements-in-addition-to-the-items-elements-e2 .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-affected-aip-items-elements-in-addition-to-the-items-elements-e2-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-affected-aip-items-elements-in-addition-to-the-items-elements-e2 .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 60px;\r\n}\r\n\r\n\r\n#edit-additional-affected-items-elements-agreement-with-head-of-ai2 .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-additional-affected-items-elements-agreement-with-head-of-ai2 .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-additional-affected-items-elements-agreement-with-head-of-ai2 .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-additional-affected-items-elements-agreement-with-head-of-ai2-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-additional-affected-items-elements-agreement-with-head-of-ai2 .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 30px;\r\n}\r\n\r\n\r\n#edit-affected-chart-s-in-addition-to-the-chart-s-established-on-raw-2 .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-affected-chart-s-in-addition-to-the-chart-s-established-on-raw-2 .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-affected-chart-s-in-addition-to-the-chart-s-established-on-raw-2 .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-affected-chart-s-in-addition-to-the-chart-s-established-on-raw-2-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-affected-chart-s-in-addition-to-the-chart-s-established-on-raw-2 .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 45px;\r\n}\r\n\r\n\r\n#edit-additional-affected-charts-agreement-with-head-of-ai2 .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-additional-affected-charts-agreement-with-head-of-ai2 .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-additional-affected-charts-agreement-with-head-of-ai2 .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-additional-affected-charts-agreement-with-head-of-ai2-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-additional-affected-charts-agreement-with-head-of-ai2 .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 30px;\r\n}\r\n\r\n\r\n#edit-contact-with-data-originator-needed2 .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-contact-with-data-originator-needed2 .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-contact-with-data-originator-needed2 .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-contact-with-data-originator-needed2-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-contact-with-data-originator-needed2 .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 15px;\r\n}\r\n\r\n\r\n#edit-evaluation-is-positive2 .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-evaluation-is-positive2 .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-evaluation-is-positive2 .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-evaluation-is-positive2-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-evaluation-is-positive2 .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 2.5px;\r\n}\r\n\r\n\r\n#edit-data-input-into-the-database-required2 .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-data-input-into-the-database-required2 .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-data-input-into-the-database-required2 .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-data-input-into-the-database-required2-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-data-input-into-the-database-required2 .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 15px;\r\n}\r\n"
 javascript: "//Auto resize Textareas\r\nconst textareas = document.querySelectorAll(\"textarea\");\r\n\r\nfunction resizeTextarea(textarea) {\r\n  textarea.style.height = \"40px\"; // Reset the height to 40px to recalculate the height based on content\r\n  textarea.style.height = textarea.scrollHeight + \"px\"; // Set the height to match the content's height\r\n}\r\n\r\nfunction resizeAllTextareas() {\r\n  textareas.forEach(resizeTextarea);\r\n}\r\n\r\n// Call the resizeAllTextareas function when the page is loaded\r\nwindow.addEventListener(\"load\", resizeAllTextareas);\r\n\r\n// Call the resizeAllTextareas function whenever the window is resized\r\nwindow.addEventListener(\"resize\", resizeAllTextareas);\r\n\r\n// Call the resizeTextarea function whenever the text inside a textarea is changed (e.g., user input)\r\ntextareas.forEach((textarea) => {\r\n  textarea.addEventListener(\"input\", () => resizeTextarea(textarea));\r\n});\r\n\r\n\r\n\r\n\r\n"
 settings:
   ajax: false
