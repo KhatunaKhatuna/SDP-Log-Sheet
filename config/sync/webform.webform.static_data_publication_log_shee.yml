@@ -25,1731 +25,1066 @@ elements: |-
   receipt_and_assessment:
     '#type': webform_wizard_page
     '#title': 'Receipt and assessment'
-    receipt_and_assessment_fieldset:
+    head_of_ais:
       '#type': fieldset
-      '#title': 'Receipt and assessment'
-      '#attributes':
-        class:
-          - main-fieldset
-      head_of_ais:
-        '#type': fieldset
-        '#title': 'Head of AIS'
-        '#title_tag': h1
-        raw_data_receipt_details:
-          '#type': details
-          '#title': 'Raw data receipt'
-          '#attributes':
-            class:
-              - section
-            style: 'margin-top: 0;'
-          '#summary_attributes':
-            class:
-              - section-title
-              - rawDataReceipt-summery-attributes
-              - ''
-            style: 'padding-top: 10px; padding-bottom: 10px;'
-          log_sheet_number:
-            '#type': textfield
-            '#title': 'Log Sheet number'
-            '#title_display': inline
-            '#description_display': invisible
-            '#autocomplete': ''
-            '#wrapper_attributes':
-              class:
-                - container-flex
-              style: 'display:flex; align-items: center;'
-            '#attributes':
-              class:
-                - element
-              style: 'width:70%; min-height:40px; height:40px; text-align: center;'
-            '#label_attributes':
-              class:
-                - label
-              style: 'width:30%;'
-          ref_to_raw_data:
-            '#type': textfield
-            '#title': 'Ref. to raw data'
-            '#description': 'Indicate Type of document and Number'
-            '#title_display': inline
-            '#description_display': invisible
-            '#autocomplete': 'off'
-            '#wrapper_attributes':
-              class:
-                - container-flex;
-                - ''
-              style: 'display:flex; align-items: center;'
-            '#attributes':
-              class:
-                - element
-              style: 'width:70%; min-height:40px; height:40px; text-align: center;'
-            '#label_attributes':
-              class:
-                - label
-              style: 'width:30%'
-          date_of_raw_data_receipt:
-            '#type': date
-            '#title': 'Date of raw data receipt'
-            '#description': 'Insert date as &nbsp; &nbsp;MM-DD-YYYY'
-            '#title_display': inline
-            '#description_display': invisible
-            '#wrapper_attributes':
-              class:
-                - container-flex;
-              style: 'display:flex; align-items: center;'
-            '#attributes':
-              class:
-                - element
-              style: 'width:70%; min-height:40px; height:40px; text-align: center;'
-            '#label_attributes':
-              class:
-                - label
-              style: 'width:30%'
-        raw_data_description:
-          '#type': details
-          '#title': 'Raw data description'
-          '#attributes':
-            class:
-              - section
-          '#summary_attributes':
-            class:
-              - section-title
-              - rawDataDescription-summery-attributes
-            style: 'padding-top: 10px; padding-bottom: 10px;'
-          '#title_tag': h4
-          data_originator:
-            '#type': select
-            '#title': 'Data Originator'
-            '#title_display': inline
-            '#options':
-              'Batumi Airport Ltd': 'Batumi Airport Ltd'
-              GCAA: GCAA
-              'Georgian Aviation University': 'Georgian Aviation University'
-              'Ilias State University': 'Ilias State University'
-              'Ministry of Economy': 'Ministry of Economy'
-              'Sakaeronavigatsia Ltd. - AIS': 'Sakaeronavigatsia Ltd. - AIS'
-              'Sakaeronavigatsia Ltd. - ATM': 'Sakaeronavigatsia Ltd. - ATM'
-              NAPR: NAPR
-              'Sakaeronavigatsia Ltd. - CNS': 'Sakaeronavigatsia Ltd. - CNS'
-              'Sakaeronavigatsia Ltd. - Search and Rescue': 'Sakaeronavigatsia Ltd. - Search and Rescue'
-              'Sakaeronavigatsia Ltd. - Economic Dpt.': 'Sakaeronavigatsia Ltd. - Economic Dpt.'
-              'Sakaeronavigatsia Ltd. - MET': 'Sakaeronavigatsia Ltd. - MET'
-              'ServiseAir Ltd.': 'ServiseAir Ltd.'
-              'TAV Urban Georgia LLC': 'TAV Urban Georgia LLC'
-              'United Airports of Georgia Ltd.': 'United Airports of Georgia Ltd.'
-            '#empty_option': 'Please select'
-            '#wrapper_attributes':
-              class:
-                - container-flex
-              style: 'display:flex; align-items: center;'
-            '#attributes':
-              class:
-                - element
-              style: 'width:70%; min-height:40px; height:40px; text-align: center;'
-            '#label_attributes':
-              class:
-                - label
-              style: 'width:30%'
-          raw_data_subject:
-            '#type': textarea
-            '#title': 'Raw data subject'
-            '#autocomplete': 'off'
-            '#wrapper_attributes':
-              class:
-                - container-flex
-                - raw-data-subject
-              style: 'display:flex; align-items: center; '
-            '#attributes':
-              class:
-                - element
-              style: 'min-height:40px; height:40px; text-align: center; resize: none; overflow: hidden; padding-top: 10px; padding-bottom:10px'
-            '#label_attributes':
-              class:
-                - label
-              style: 'width:30%'
-          publication_method:
-            '#type': select
-            '#title': 'Publication method'
-            '#description': 'Choose Aeronautical database in case of update based on PERM NOTAM, Special dates update, etc.'
-            '#title_display': inline
-            '#description_display': invisible
-            '#options':
-              'AIP AMDT': 'AIP AMDT'
-              'AIP SUP': 'AIP SUP'
-              AIC: AIC
-              'Aeronautical database': 'Aeronautical database'
-            '#empty_option': 'Please select'
-            '#wrapper_attributes':
-              class:
-                - container-flex
-              style: 'display:flex; align-items: center;'
-            '#attributes':
-              class:
-                - element
-              style: 'width:70%; min-height:40px; height:40px; text-align: center;'
-            '#label_attributes':
-              class:
-                - label
-              style: 'width:30%'
-          publication_number:
-            '#type': textfield
-            '#title': 'Publication number'
-            '#title_display': inline
-            '#autocomplete': ''
-            '#states_clear': false
-            '#wrapper_attributes':
-              class:
-                - container-flex
-              style: 'display:flex; align-items: center;'
-            '#attributes':
-              class:
-                - element
-              style: 'width:70%; min-height:40px; height:40px; text-align: center;'
-            '#label_attributes':
-              class:
-                - label
-              style: 'width:30%'
-          database_entry_:
-            '#type': textarea
-            '#title': 'Database entry #'
-            '#autocomplete': 'off'
-            '#wrapper_attributes':
-              class:
-                - container-flex
-                - database-entry
-                - ''
-              style: 'display:flex; align-items: center;'
-            '#attributes':
-              class:
-                - element
-              style: 'min-height:40px; height:40px; text-align: center; resize: none; overflow: hidden; padding-top: 10px; padding-bottom:10px'
-            '#label_attributes':
-              class:
-                - label
-              style: 'width:30%'
-        raw_data_initial_assessment_details:
-          '#type': details
-          '#title': 'Raw data initial assessment'
-          '#attributes':
-            class:
-              - section
-            style: 'margin-top: 0;  margin-bottom: 0;'
-          '#summary_attributes':
-            class:
-              - section-title
-            style: 'padding-top: 10px; padding-bottom: 10px;'
-          date:
-            '#type': date
-            '#title': Date
-            '#title_display': inline
-            '#wrapper_attributes':
-              class:
-                - container-flex
-              style: 'display:flex; align-items: center;'
-            '#attributes':
-              class:
-                - element
-              style: 'width:70%; min-height:40px; height:40px; text-align: center;'
-            '#label_attributes':
-              class:
-                - label
-              style: 'width:30%'
-          raw_data_of_aeronautical_use:
-            '#type': select
-            '#title': 'Raw data of aeronautical use'
-            '#title_display': inline
-            '#options': yes_no
-            '#empty_option': 'Please select'
-            '#wrapper_attributes':
-              class:
-                - container-flex
-              style: 'display:flex; align-items: center;'
-            '#attributes':
-              class:
-                - element
-              style: 'width:70%; min-height:40px; height:40px; text-align: center;'
-            '#label_attributes':
-              class:
-                - label
-              style: 'width:30%'
-          raw_data_needs_clarification:
-            '#type': select
-            '#title': 'Raw data needs clarification'
-            '#title_display': inline
-            '#options': yes_no
-            '#empty_option': 'Please select'
-            '#wrapper_attributes':
-              class:
-                - container-flex
-              style: 'display:flex; align-items: center;'
-            '#attributes':
-              class:
-                - element
-              style: 'width:70%; min-height:40px; height:40px; text-align: center;'
-            '#label_attributes':
-              class:
-                - label
-              style: 'width:30%'
-          contact_with_do:
-            '#type': select
-            '#title': 'Contact with DO'
-            '#title_display': inline
-            '#options': yes_no
-            '#empty_option': 'Please select'
-            '#wrapper_attributes':
-              class:
-                - container-flex
-              style: 'display:flex; align-items: center;'
-            '#attributes':
-              class:
-                - element
-              style: 'width:70%; min-height:40px; height:40px; text-align: center;'
-            '#label_attributes':
-              class:
-                - label
-              style: 'width:30%'
-        effective_and_or_publication_dates:
-          '#type': details
-          '#title': 'Effective and/or publication dates'
-          '#attributes':
-            class:
-              - section
-          '#summary_attributes':
-            class:
-              - section-title
-            style: 'padding-top: 10px; padding-bottom: 10px;'
-          '#title_tag': h4
-          effective_date:
-            '#type': date
-            '#title': 'Effective date'
-            '#title_display': inline
-            '#wrapper_attributes':
-              class:
-                - container-flex
-              style: 'display:flex; align-items: center;'
-            '#attributes':
-              class:
-                - element
-                - effectiveDate
-              style: 'width:70%; min-height:40px; height:40px; text-align: center;'
-            '#label_attributes':
-              class:
-                - label
-              style: 'width:30%'
-          publication_date:
-            '#type': textfield
-            '#title': 'Publication date'
-            '#title_display': inline
-            '#wrapper_attributes':
-              class:
-                - container-flex
-              style: 'display:flex; align-items: center;'
-            '#attributes':
-              class:
-                - element
-              style: 'width:70%; min-height:40px; height:40px; text-align: center;'
-            '#label_attributes':
-              class:
-                - label
-              style: 'width:30%'
-        affected_publication_s_:
-          '#type': details
-          '#title': 'Affected publication(s)'
-          '#attributes':
-            class:
-              - section
-          '#summary_attributes':
-            class:
-              - section-title
-            style: 'padding-top: 10px; padding-bottom: 10px;'
-          aip_items:
-            '#type': webform_select_other
-            '#title': 'AIP items'
-            '#options': not_effected
-            '#empty_option': 'Please select'
-            '#other__type': textarea
-            '#other__option_label': 'Other:'
-            '#other__placeholder': ''
-            '#wrapper_type': form_element
-            '#wrapper_attributes':
-              class:
-                - wrapper
-              style: 'margin-bottom: 0;'
-            '#attributes':
-              class:
-                - element
-              style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
-            '#label_attributes':
-              class:
-                - label
-              style: 'width:30%; position: absolute;'
-          chart_s_:
-            '#type': webform_select_other
-            '#title': Chart(s)
-            '#options': not_effected
-            '#empty_option': 'Please select'
-            '#other__type': textarea
-            '#other__option_label': 'Other:'
-            '#other__placeholder': ''
-            '#wrapper_type': form_element
-            '#wrapper_attributes':
-              class:
-                - wrapper
-              style: 'margin-bottom: 0;'
-            '#attributes':
-              class:
-                - element
-              style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
-            '#label_attributes':
-              class:
-                - label
-              style: 'width:30%; position: absolute;'
-          sup_s_:
-            '#type': webform_select_other
-            '#title': SUP(s)
-            '#options': not_effected
-            '#empty_option': 'Please select'
-            '#other__type': textarea
-            '#other__option_label': 'Other:'
-            '#other__placeholder': ''
-            '#wrapper_type': form_element
-            '#wrapper_attributes':
-              class:
-                - wrapper
-              style: 'margin-bottom: 0;'
-            '#attributes':
-              class:
-                - element
-              style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
-            '#label_attributes':
-              class:
-                - label
-              style: 'width:30%; position: absolute;'
-          aic_s_:
-            '#type': webform_select_other
-            '#title': AIC(s)
-            '#options': not_effected
-            '#empty_option': 'Please select'
-            '#other__type': textarea
-            '#other__option_label': 'Other:'
-            '#other__placeholder': ''
-            '#wrapper_type': form_element
-            '#wrapper_attributes':
-              class:
-                - wrapper
-              style: 'margin-bottom: 0;'
-            '#attributes':
-              class:
-                - element
-              style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
-            '#label_attributes':
-              class:
-                - label
-              style: 'width:30%; position: absolute;'
-          data_set_s_:
-            '#type': webform_select_other
-            '#title': 'Data set(s)'
-            '#options': not_effected
-            '#empty_option': 'Please select'
-            '#other__type': textarea
-            '#other__option_label': 'Other:'
-            '#other__placeholder': ''
-            '#wrapper_type': form_element
-            '#wrapper_attributes':
-              class:
-                - wrapper
-              style: 'margin-bottom: 0;'
-            '#attributes':
-              class:
-                - element
-              style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
-            '#label_attributes':
-              class:
-                - label
-              style: 'width:30%; position: absolute;'
-        role_assignment_details:
-          '#type': details
-          '#title': 'Role assignment'
-          '#attributes':
-            class:
-              - section
-          '#summary_attributes':
-            class:
-              - section-title
-            style: 'padding-top: 10px; padding-bottom: 10px;'
-          editor_s_fieldset:
-            '#type': fieldset
-            '#title': Editor(s)-fieldset
-            '#title_display': invisible
-            '#attributes':
-              class:
-                - editorFieldset
-              style: 'border-color:#e7edf1; padding-left: 35px; padding-right: 35px; border-right: none; border-left: none;'
-            editor_s_:
-              '#type': webform_select_other
-              '#title': Editor(s)
-              '#title_display': inline
-              '#options': employee
-              '#empty_option': 'Please select'
-              '#other__option_label': 'Other:'
-              '#other__placeholder': ''
-              '#wrapper_type': form_element
-              '#wrapper_attributes':
-                class:
-                  - wrapper
-                style: 'margin-bottom: 0;'
-              '#attributes':
-                class:
-                  - element
-                style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
-              '#label_attributes':
-                class:
-                  - label
-                style: 'width:30%; position: absolute;'
-            editor_s_2:
-              '#type': webform_select_other
-              '#title': Editor(s)
-              '#title_display': inline
-              '#options': employee
-              '#empty_option': 'Please select'
-              '#other__option_label': 'Other:'
-              '#other__placeholder': ''
-              '#wrapper_type': form_element
-              '#wrapper_attributes':
-                class:
-                  - wrapper
-              '#attributes':
-                class:
-                  - element
-                style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
-              '#label_attributes':
-                class:
-                  - label
-                style: 'width:30%;position: absolute;visibility: hidden;'
-          cartographer_fieldset:
-            '#type': fieldset
-            '#title': Cartographer-fieldset
-            '#title_display': invisible
-            '#attributes':
-              class:
-                - CartographerFieldset
-              style: 'border-color:#e7edf1; padding-left: 35px; padding-right: 35px; border-right: none; border-left: none;'
-            cartographer:
-              '#type': webform_select_other
-              '#title': Cartographer(s)
-              '#title_display': inline
-              '#options':
-                'Natalia Gunchina': 'Natalia Gunchina'
-                NIL: NIL
-              '#empty_option': 'Please select'
-              '#other__option_label': 'Other:'
-              '#other__placeholder': ''
-              '#wrapper_type': form_element
-              '#wrapper_attributes':
-                class:
-                  - wrapper
-                style: 'margin-bottom: 0; '
-              '#attributes':
-                class:
-                  - element
-                style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
-              '#label_attributes':
-                class:
-                  - label
-                style: 'width:30%; position: absolute;'
-            cartographer2:
-              '#type': webform_select_other
-              '#title': Cartographer
-              '#title_display': inline
-              '#options':
-                'Natalia Gunchina': 'Natalia Gunchina'
-                NIL: NIL
-              '#empty_option': 'Please select'
-              '#other__option_label': 'Other:'
-              '#other__placeholder': ''
-              '#wrapper_type': form_element
-              '#wrapper_attributes':
-                class:
-                  - wrapper
-              '#attributes':
-                class:
-                  - element
-                style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
-              '#label_attributes':
-                class:
-                  - label
-                style: 'width:30%; visibility: hidden; position: absolute;'
-          evaluator_s_fieldset:
-            '#type': fieldset
-            '#title': Evaluator(s)-fieldset
-            '#title_display': invisible
-            '#attributes':
-              class:
-                - EvaluatorFieldset
-              style: 'border-color:#e7edf1; padding-left: 35px; padding-right: 35px; border-right: none; border-left: none;'
-            evaluator_s_:
-              '#type': webform_select_other
-              '#title': Evaluator(s)
-              '#title_display': inline
-              '#options': employee
-              '#empty_option': 'Please select'
-              '#other__option_label': 'Other:'
-              '#other__placeholder': ''
-              '#wrapper_type': form_element
-              '#wrapper_attributes':
-                class:
-                  - wrapper
-                style: 'margin-bottom: 0; '
-              '#attributes':
-                class:
-                  - element
-                style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
-              '#label_attributes':
-                class:
-                  - label
-                style: 'width:30%; position: absolute;'
-            evaluator_s_2:
-              '#type': webform_select_other
-              '#title': Evaluator(s)
-              '#title_display': inline
-              '#options': employee
-              '#empty_option': 'Please select'
-              '#other__option_label': 'Other:'
-              '#other__placeholder': ''
-              '#wrapper_type': form_element
-              '#wrapper_attributes':
-                class:
-                  - wrapper
-              '#attributes':
-                class:
-                  - element
-                style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
-              '#label_attributes':
-                class:
-                  - label
-                style: 'width:30%; visibility: hidden; position: absolute;'
-          aimdb_fieldset:
-            '#type': fieldset
-            '#title': AIMdb-fieldset
-            '#title_display': invisible
-            '#attributes':
-              class:
-                - AIMdbFieldset
-              style: 'border-color:#e7edf1; padding-left: 35px; padding-right: 35px; border-right: none; border-left: none;'
-            quality_controllers_aimdb_:
-              '#type': webform_select_other
-              '#title': 'Quality controllers (AIMdb)'
-              '#title_display': inline
-              '#options': employee
-              '#empty_option': 'Please select'
-              '#other__option_label': 'Other:'
-              '#other__placeholder': ''
-              '#wrapper_type': form_element
-              '#wrapper_attributes':
-                class:
-                  - wrapper
-                style: 'margin-bottom: 0; '
-              '#attributes':
-                class:
-                  - element
-                style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
-              '#label_attributes':
-                class:
-                  - label
-                style: 'width:30%; position: absolute;'
-            quality_controllers_aimdb_2:
-              '#type': webform_select_other
-              '#title': 'Quality controllers (AIMdb)'
-              '#title_display': inline
-              '#options': employee
-              '#empty_option': 'Please select'
-              '#other__option_label': 'Other:'
-              '#other__placeholder': ''
-              '#wrapper_type': form_element
-              '#wrapper_attributes':
-                class:
-                  - wrapper
-              '#attributes':
-                class:
-                  - element
-                style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
-              '#label_attributes':
-                class:
-                  - label
-                style: 'width:30%; position: absolute; visibility: hidden;'
-          sdodb_fieldset:
-            '#type': fieldset
-            '#title': SDOdb-fieldset
-            '#title_display': invisible
-            '#attributes':
-              class:
-                - SDOdbFieldset
-              style: 'border-color:#e7edf1; padding-left: 35px; padding-right: 35px; border-right: none; border-left: none;'
-            quality_controllers_sdo_db_:
-              '#type': webform_select_other
-              '#title': 'Quality controllers (SDOdb)'
-              '#title_display': inline
-              '#options': employee
-              '#empty_option': 'Please select'
-              '#other__option_label': 'Other:'
-              '#other__placeholder': ''
-              '#wrapper_type': form_element
-              '#wrapper_attributes':
-                class:
-                  - wrapper
-                style: 'margin-bottom: 0; '
-              '#attributes':
-                class:
-                  - element
-                style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
-              '#label_attributes':
-                class:
-                  - label
-                style: 'width:30%; position: absolute;'
-            quality_controllers_sdo_db_2:
-              '#type': webform_select_other
-              '#title': 'Quality controllers (SDOdb)'
-              '#title_display': inline
-              '#options': employee
-              '#empty_option': 'Please select'
-              '#other__option_label': 'Other:'
-              '#other__placeholder': ''
-              '#wrapper_type': form_element
-              '#wrapper_attributes':
-                class:
-                  - wrapper
-              '#attributes':
-                class:
-                  - element
-                style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
-              '#label_attributes':
-                class:
-                  - label
-                style: 'width:30%; position: absolute; visibility: hidden;'
-          qualitycontrollers_fieldset:
-            '#type': fieldset
-            '#title': QualityControllers-fieldset
-            '#title_display': invisible
-            '#attributes':
-              class:
-                - QualityControllersFieldset
-              style: 'border-color:#e7edf1; padding-left: 35px; padding-right: 35px; border-right: none; border-left: none;'
-            quality_controllers:
-              '#type': webform_select_other
-              '#title': 'Quality controllers (Charting)'
-              '#title_display': inline
-              '#options': employee
-              '#empty_option': 'Please select'
-              '#other__option_label': 'Other:'
-              '#other__placeholder': ''
-              '#wrapper_type': form_element
-              '#wrapper_attributes':
-                class:
-                  - wrapper
-                style: 'margin-bottom: 0; '
-              '#attributes':
-                class:
-                  - element
-                style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
-              '#label_attributes':
-                class:
-                  - label
-                style: 'width:30%; position: absolute;'
-            quality_controllers_2:
-              '#type': webform_select_other
-              '#title': 'Quality controllers'
-              '#title_display': inline
-              '#options': employee
-              '#empty_option': 'Please select'
-              '#other__option_label': 'Other:'
-              '#other__placeholder': ''
-              '#wrapper_type': form_element
-              '#wrapper_attributes':
-                class:
-                  - wrapper
-              '#attributes':
-                class:
-                  - element
-                style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
-              '#label_attributes':
-                class:
-                  - label
-                style: 'width:30%; position: absolute; visibility: hidden;'
-        summary_details:
-          '#type': details
-          '#title': XXXXXXX
-          '#attributes':
-            class:
-              - section
-            style: 'margin-top: 0;  margin-bottom: 0;'
-          '#summary_attributes':
-            class:
-              - section-title
-              - Summary-attributes
-            style: 'padding-top: 10px; padding-bottom: 10px;'
-          date_of_personnel_notification_about_log_sheet_creation:
-            '#type': date
-            '#title': 'Date of personnel notification about Log Sheet creation'
-            '#title_display': inline
-            '#wrapper_attributes':
-              class:
-                - container-flex
-              style: 'display:flex; align-items: center; '
-            '#attributes':
-              class:
-                - element
-              style: 'width:70%; min-height:40px; height:40px; text-align: center;'
-            '#label_attributes':
-              class:
-                - label
-              style: 'width:30%'
-          raw_data_received_and_assessed_by:
-            '#type': textfield
-            '#title': 'Raw data received and assessed by'
-            '#autocomplete': 'off'
-            '#wrapper_attributes':
-              class:
-                - container-flex
-              style: 'display:flex; align-items: center; '
-            '#attributes':
-              class:
-                - element
-              style: 'width:70%; min-height:40px; height:40px; text-align: center; '
-            '#label_attributes':
-              class:
-                - label
-              style: 'width:30%'
-        signatured_by_head_of_ais:
-          '#type': checkbox
-          '#title': 'Signed by Head of AIS'
+      '#title': 'Head of AIS'
+      '#title_tag': h1
+      raw_data_receipt_details:
+        '#type': details
+        '#title': 'Raw data receipt'
+        '#attributes':
+          class:
+            - section
+          style: 'margin-top: 0;'
+        '#summary_attributes':
+          class:
+            - section-title
+            - rawDataReceipt-summery-attributes
+            - ''
+          style: 'padding-top: 10px; padding-bottom: 10px;'
+        log_sheet_number:
+          '#type': textfield
+          '#title': 'Log Sheet number'
+          '#title_display': inline
+          '#description_display': invisible
+          '#autocomplete': ''
           '#wrapper_attributes':
             class:
-              - signatured-Wrapper
-            style: 'display: flex; align-items: center;  flex-direction: row-reverse; margin-bottom: 0;'
+              - container-flex
+            style: 'display:flex; align-items: center;'
           '#attributes':
             class:
-              - signatured-element
-            style: 'width:40px; height:30px'
+              - element
+            style: 'width:70%; min-height:40px; height:40px; text-align: center;'
           '#label_attributes':
             class:
-              - signatured-label
-            style: 'font-size: 1.125rem; font-weight: 700; line-height: 1.125rem; margin-right: 50px'
+              - label
+            style: 'width:30%;'
+        ref_to_raw_data:
+          '#type': textfield
+          '#title': 'Ref. to raw data'
+          '#description': 'Indicate Type of document and Number'
+          '#title_display': inline
+          '#description_display': invisible
+          '#autocomplete': 'off'
+          '#wrapper_attributes':
+            class:
+              - container-flex;
+              - ''
+            style: 'display:flex; align-items: center;'
+          '#attributes':
+            class:
+              - element
+            style: 'width:70%; min-height:40px; height:40px; text-align: center;'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%'
+        date_of_raw_data_receipt:
+          '#type': date
+          '#title': 'Date of raw data receipt'
+          '#description': 'Insert date as &nbsp; &nbsp;MM-DD-YYYY'
+          '#title_display': inline
+          '#description_display': invisible
+          '#wrapper_attributes':
+            class:
+              - container-flex;
+            style: 'display:flex; align-items: center;'
+          '#attributes':
+            class:
+              - element
+            style: 'width:70%; min-height:40px; height:40px; text-align: center;'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%'
+      raw_data_description:
+        '#type': details
+        '#title': 'Raw data description'
+        '#attributes':
+          class:
+            - section
+        '#summary_attributes':
+          class:
+            - section-title
+            - rawDataDescription-summery-attributes
+          style: 'padding-top: 10px; padding-bottom: 10px;'
+        '#title_tag': h4
+        data_originator:
+          '#type': select
+          '#title': 'Data Originator'
+          '#title_display': inline
+          '#options':
+            'Batumi Airport Ltd': 'Batumi Airport Ltd'
+            GCAA: GCAA
+            'Georgian Aviation University': 'Georgian Aviation University'
+            'Ilias State University': 'Ilias State University'
+            'Ministry of Economy': 'Ministry of Economy'
+            'Sakaeronavigatsia Ltd. - AIS': 'Sakaeronavigatsia Ltd. - AIS'
+            'Sakaeronavigatsia Ltd. - ATM': 'Sakaeronavigatsia Ltd. - ATM'
+            NAPR: NAPR
+            'Sakaeronavigatsia Ltd. - CNS': 'Sakaeronavigatsia Ltd. - CNS'
+            'Sakaeronavigatsia Ltd. - Search and Rescue': 'Sakaeronavigatsia Ltd. - Search and Rescue'
+            'Sakaeronavigatsia Ltd. - Economic Dpt.': 'Sakaeronavigatsia Ltd. - Economic Dpt.'
+            'Sakaeronavigatsia Ltd. - MET': 'Sakaeronavigatsia Ltd. - MET'
+            'ServiseAir Ltd.': 'ServiseAir Ltd.'
+            'TAV Urban Georgia LLC': 'TAV Urban Georgia LLC'
+            'United Airports of Georgia Ltd.': 'United Airports of Georgia Ltd.'
+          '#empty_option': 'Please select'
+          '#wrapper_attributes':
+            class:
+              - container-flex
+            style: 'display:flex; align-items: center;'
+          '#attributes':
+            class:
+              - element
+            style: 'width:70%; min-height:40px; height:40px; text-align: center;'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%'
+        raw_data_subject:
+          '#type': textarea
+          '#title': 'Raw data subject'
+          '#autocomplete': 'off'
+          '#wrapper_attributes':
+            class:
+              - container-flex
+              - raw-data-subject
+            style: 'display:flex; align-items: center; '
+          '#attributes':
+            class:
+              - element
+            style: 'min-height:40px; height:40px; text-align: center; resize: none; overflow: hidden; padding-top: 10px; padding-bottom:10px'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%'
+        publication_method:
+          '#type': select
+          '#title': 'Publication method'
+          '#description': 'Choose Aeronautical database in case of update based on PERM NOTAM, Special dates update, etc.'
+          '#title_display': inline
+          '#description_display': invisible
+          '#options':
+            'AIP AMDT': 'AIP AMDT'
+            'AIP SUP': 'AIP SUP'
+            AIC: AIC
+            'Aeronautical database': 'Aeronautical database'
+          '#empty_option': 'Please select'
+          '#wrapper_attributes':
+            class:
+              - container-flex
+            style: 'display:flex; align-items: center;'
+          '#attributes':
+            class:
+              - element
+            style: 'width:70%; min-height:40px; height:40px; text-align: center;'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%'
+        publication_number:
+          '#type': textfield
+          '#title': 'Publication number'
+          '#title_display': inline
+          '#autocomplete': ''
+          '#states_clear': false
+          '#wrapper_attributes':
+            class:
+              - container-flex
+            style: 'display:flex; align-items: center;'
+          '#attributes':
+            class:
+              - element
+            style: 'width:70%; min-height:40px; height:40px; text-align: center;'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%'
+        database_entry_:
+          '#type': textarea
+          '#title': 'Database entry #'
+          '#autocomplete': 'off'
+          '#wrapper_attributes':
+            class:
+              - container-flex
+              - database-entry
+              - ''
+            style: 'display:flex; align-items: center;'
+          '#attributes':
+            class:
+              - element
+            style: 'min-height:40px; height:40px; text-align: center; resize: none; overflow: hidden; padding-top: 10px; padding-bottom:10px'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%'
+      raw_data_initial_assessment_details:
+        '#type': details
+        '#title': 'Raw data initial assessment'
+        '#attributes':
+          class:
+            - section
+          style: 'margin-top: 0;  margin-bottom: 0;'
+        '#summary_attributes':
+          class:
+            - section-title
+          style: 'padding-top: 10px; padding-bottom: 10px;'
+        date:
+          '#type': date
+          '#title': Date
+          '#title_display': inline
+          '#wrapper_attributes':
+            class:
+              - container-flex
+            style: 'display:flex; align-items: center;'
+          '#attributes':
+            class:
+              - element
+            style: 'width:70%; min-height:40px; height:40px; text-align: center;'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%'
+        raw_data_of_aeronautical_use:
+          '#type': select
+          '#title': 'Raw data of aeronautical use'
+          '#title_display': inline
+          '#options': yes_no
+          '#empty_option': 'Please select'
+          '#wrapper_attributes':
+            class:
+              - container-flex
+            style: 'display:flex; align-items: center;'
+          '#attributes':
+            class:
+              - element
+            style: 'width:70%; min-height:40px; height:40px; text-align: center;'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%'
+        raw_data_needs_clarification:
+          '#type': select
+          '#title': 'Raw data needs clarification'
+          '#title_display': inline
+          '#options': yes_no
+          '#empty_option': 'Please select'
+          '#wrapper_attributes':
+            class:
+              - container-flex
+            style: 'display:flex; align-items: center;'
+          '#attributes':
+            class:
+              - element
+            style: 'width:70%; min-height:40px; height:40px; text-align: center;'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%'
+        contact_with_do:
+          '#type': select
+          '#title': 'Contact with DO'
+          '#title_display': inline
+          '#options': yes_no
+          '#empty_option': 'Please select'
+          '#wrapper_attributes':
+            class:
+              - container-flex
+            style: 'display:flex; align-items: center;'
+          '#attributes':
+            class:
+              - element
+            style: 'width:70%; min-height:40px; height:40px; text-align: center;'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%'
+      effective_and_or_publication_dates:
+        '#type': details
+        '#title': 'Effective and/or publication dates'
+        '#attributes':
+          class:
+            - section
+        '#summary_attributes':
+          class:
+            - section-title
+          style: 'padding-top: 10px; padding-bottom: 10px;'
+        '#title_tag': h4
+        effective_date:
+          '#type': date
+          '#title': 'Effective date'
+          '#title_display': inline
+          '#wrapper_attributes':
+            class:
+              - container-flex
+            style: 'display:flex; align-items: center;'
+          '#attributes':
+            class:
+              - element
+              - effectiveDate
+            style: 'width:70%; min-height:40px; height:40px; text-align: center;'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%'
+        publication_date:
+          '#type': textfield
+          '#title': 'Publication date'
+          '#title_display': inline
+          '#wrapper_attributes':
+            class:
+              - container-flex
+            style: 'display:flex; align-items: center;'
+          '#attributes':
+            class:
+              - element
+            style: 'width:70%; min-height:40px; height:40px; text-align: center;'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%'
+      affected_publication_s_:
+        '#type': details
+        '#title': 'Affected publication(s)'
+        '#attributes':
+          class:
+            - section
+        '#summary_attributes':
+          class:
+            - section-title
+          style: 'padding-top: 10px; padding-bottom: 10px;'
+        aip_items:
+          '#type': webform_select_other
+          '#title': 'AIP items'
+          '#options': not_effected
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_type': form_element
+          '#wrapper_attributes':
+            class:
+              - wrapper
+            style: 'margin-bottom: 0;'
+          '#attributes':
+            class:
+              - element
+            style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%; position: absolute;'
+        chart_s_:
+          '#type': webform_select_other
+          '#title': Chart(s)
+          '#options': not_effected
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_type': form_element
+          '#wrapper_attributes':
+            class:
+              - wrapper
+            style: 'margin-bottom: 0;'
+          '#attributes':
+            class:
+              - element
+            style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%; position: absolute;'
+        sup_s_:
+          '#type': webform_select_other
+          '#title': SUP(s)
+          '#options': not_effected
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_type': form_element
+          '#wrapper_attributes':
+            class:
+              - wrapper
+            style: 'margin-bottom: 0;'
+          '#attributes':
+            class:
+              - element
+            style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%; position: absolute;'
+        aic_s_:
+          '#type': webform_select_other
+          '#title': AIC(s)
+          '#options': not_effected
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_type': form_element
+          '#wrapper_attributes':
+            class:
+              - wrapper
+            style: 'margin-bottom: 0;'
+          '#attributes':
+            class:
+              - element
+            style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%; position: absolute;'
+        data_set_s_:
+          '#type': webform_select_other
+          '#title': 'Data set(s)'
+          '#options': not_effected
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_type': form_element
+          '#wrapper_attributes':
+            class:
+              - wrapper
+            style: 'margin-bottom: 0;'
+          '#attributes':
+            class:
+              - element
+            style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%; position: absolute;'
+      role_assignment_details:
+        '#type': details
+        '#title': 'Role assignment'
+        '#attributes':
+          class:
+            - section
+        '#summary_attributes':
+          class:
+            - section-title
+          style: 'padding-top: 10px; padding-bottom: 10px;'
+        editor_s_fieldset:
+          '#type': fieldset
+          '#title': Editor(s)-fieldset
+          '#title_display': invisible
+          '#attributes':
+            class:
+              - editorFieldset
+            style: 'border-color:#e7edf1; padding-left: 35px; padding-right: 35px; border-right: none; border-left: none;'
+          editor_s_:
+            '#type': webform_select_other
+            '#title': Editor(s)
+            '#title_display': inline
+            '#options': employee
+            '#empty_option': 'Please select'
+            '#other__option_label': 'Other:'
+            '#other__placeholder': ''
+            '#wrapper_type': form_element
+            '#wrapper_attributes':
+              class:
+                - wrapper
+              style: 'margin-bottom: 0;'
+            '#attributes':
+              class:
+                - element
+              style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
+            '#label_attributes':
+              class:
+                - label
+              style: 'width:30%; position: absolute;'
+          editor_s_2:
+            '#type': webform_select_other
+            '#title': Editor(s)
+            '#title_display': inline
+            '#options': employee
+            '#empty_option': 'Please select'
+            '#other__option_label': 'Other:'
+            '#other__placeholder': ''
+            '#wrapper_type': form_element
+            '#wrapper_attributes':
+              class:
+                - wrapper
+            '#attributes':
+              class:
+                - element
+              style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
+            '#label_attributes':
+              class:
+                - label
+              style: 'width:30%;position: absolute;visibility: hidden;'
+        cartographer_fieldset:
+          '#type': fieldset
+          '#title': Cartographer-fieldset
+          '#title_display': invisible
+          '#attributes':
+            class:
+              - CartographerFieldset
+            style: 'border-color:#e7edf1; padding-left: 35px; padding-right: 35px; border-right: none; border-left: none;'
+          cartographer:
+            '#type': webform_select_other
+            '#title': Cartographer(s)
+            '#title_display': inline
+            '#options':
+              'Natalia Gunchina': 'Natalia Gunchina'
+              NIL: NIL
+            '#empty_option': 'Please select'
+            '#other__option_label': 'Other:'
+            '#other__placeholder': ''
+            '#wrapper_type': form_element
+            '#wrapper_attributes':
+              class:
+                - wrapper
+              style: 'margin-bottom: 0; '
+            '#attributes':
+              class:
+                - element
+              style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
+            '#label_attributes':
+              class:
+                - label
+              style: 'width:30%; position: absolute;'
+          cartographer2:
+            '#type': webform_select_other
+            '#title': Cartographer
+            '#title_display': inline
+            '#options':
+              'Natalia Gunchina': 'Natalia Gunchina'
+              NIL: NIL
+            '#empty_option': 'Please select'
+            '#other__option_label': 'Other:'
+            '#other__placeholder': ''
+            '#wrapper_type': form_element
+            '#wrapper_attributes':
+              class:
+                - wrapper
+            '#attributes':
+              class:
+                - element
+              style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
+            '#label_attributes':
+              class:
+                - label
+              style: 'width:30%; visibility: hidden; position: absolute;'
+        evaluator_s_fieldset:
+          '#type': fieldset
+          '#title': Evaluator(s)-fieldset
+          '#title_display': invisible
+          '#attributes':
+            class:
+              - EvaluatorFieldset
+            style: 'border-color:#e7edf1; padding-left: 35px; padding-right: 35px; border-right: none; border-left: none;'
+          evaluator_s_:
+            '#type': webform_select_other
+            '#title': Evaluator(s)
+            '#title_display': inline
+            '#options': employee
+            '#empty_option': 'Please select'
+            '#other__option_label': 'Other:'
+            '#other__placeholder': ''
+            '#wrapper_type': form_element
+            '#wrapper_attributes':
+              class:
+                - wrapper
+              style: 'margin-bottom: 0; '
+            '#attributes':
+              class:
+                - element
+              style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
+            '#label_attributes':
+              class:
+                - label
+              style: 'width:30%; position: absolute;'
+          evaluator_s_2:
+            '#type': webform_select_other
+            '#title': Evaluator(s)
+            '#title_display': inline
+            '#options': employee
+            '#empty_option': 'Please select'
+            '#other__option_label': 'Other:'
+            '#other__placeholder': ''
+            '#wrapper_type': form_element
+            '#wrapper_attributes':
+              class:
+                - wrapper
+            '#attributes':
+              class:
+                - element
+              style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
+            '#label_attributes':
+              class:
+                - label
+              style: 'width:30%; visibility: hidden; position: absolute;'
+        aimdb_fieldset:
+          '#type': fieldset
+          '#title': AIMdb-fieldset
+          '#title_display': invisible
+          '#attributes':
+            class:
+              - AIMdbFieldset
+            style: 'border-color:#e7edf1; padding-left: 35px; padding-right: 35px; border-right: none; border-left: none;'
+          quality_controllers_aimdb_:
+            '#type': webform_select_other
+            '#title': 'Quality controllers (AIMdb)'
+            '#title_display': inline
+            '#options': employee
+            '#empty_option': 'Please select'
+            '#other__option_label': 'Other:'
+            '#other__placeholder': ''
+            '#wrapper_type': form_element
+            '#wrapper_attributes':
+              class:
+                - wrapper
+              style: 'margin-bottom: 0; '
+            '#attributes':
+              class:
+                - element
+              style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
+            '#label_attributes':
+              class:
+                - label
+              style: 'width:30%; position: absolute;'
+          quality_controllers_aimdb_2:
+            '#type': webform_select_other
+            '#title': 'Quality controllers (AIMdb)'
+            '#title_display': inline
+            '#options': employee
+            '#empty_option': 'Please select'
+            '#other__option_label': 'Other:'
+            '#other__placeholder': ''
+            '#wrapper_type': form_element
+            '#wrapper_attributes':
+              class:
+                - wrapper
+            '#attributes':
+              class:
+                - element
+              style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
+            '#label_attributes':
+              class:
+                - label
+              style: 'width:30%; position: absolute; visibility: hidden;'
+        sdodb_fieldset:
+          '#type': fieldset
+          '#title': SDOdb-fieldset
+          '#title_display': invisible
+          '#attributes':
+            class:
+              - SDOdbFieldset
+            style: 'border-color:#e7edf1; padding-left: 35px; padding-right: 35px; border-right: none; border-left: none;'
+          quality_controllers_sdo_db_:
+            '#type': webform_select_other
+            '#title': 'Quality controllers (SDOdb)'
+            '#title_display': inline
+            '#options': employee
+            '#empty_option': 'Please select'
+            '#other__option_label': 'Other:'
+            '#other__placeholder': ''
+            '#wrapper_type': form_element
+            '#wrapper_attributes':
+              class:
+                - wrapper
+              style: 'margin-bottom: 0; '
+            '#attributes':
+              class:
+                - element
+              style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
+            '#label_attributes':
+              class:
+                - label
+              style: 'width:30%; position: absolute;'
+          quality_controllers_sdo_db_2:
+            '#type': webform_select_other
+            '#title': 'Quality controllers (SDOdb)'
+            '#title_display': inline
+            '#options': employee
+            '#empty_option': 'Please select'
+            '#other__option_label': 'Other:'
+            '#other__placeholder': ''
+            '#wrapper_type': form_element
+            '#wrapper_attributes':
+              class:
+                - wrapper
+            '#attributes':
+              class:
+                - element
+              style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
+            '#label_attributes':
+              class:
+                - label
+              style: 'width:30%; position: absolute; visibility: hidden;'
+        qualitycontrollers_fieldset:
+          '#type': fieldset
+          '#title': QualityControllers-fieldset
+          '#title_display': invisible
+          '#attributes':
+            class:
+              - QualityControllersFieldset
+            style: 'border-color:#e7edf1; padding-left: 35px; padding-right: 35px; border-right: none; border-left: none;'
+          quality_controllers:
+            '#type': webform_select_other
+            '#title': 'Quality controllers (Charting)'
+            '#title_display': inline
+            '#options': employee
+            '#empty_option': 'Please select'
+            '#other__option_label': 'Other:'
+            '#other__placeholder': ''
+            '#wrapper_type': form_element
+            '#wrapper_attributes':
+              class:
+                - wrapper
+              style: 'margin-bottom: 0; '
+            '#attributes':
+              class:
+                - element
+              style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
+            '#label_attributes':
+              class:
+                - label
+              style: 'width:30%; position: absolute;'
+          quality_controllers_2:
+            '#type': webform_select_other
+            '#title': 'Quality controllers'
+            '#title_display': inline
+            '#options': employee
+            '#empty_option': 'Please select'
+            '#other__option_label': 'Other:'
+            '#other__placeholder': ''
+            '#wrapper_type': form_element
+            '#wrapper_attributes':
+              class:
+                - wrapper
+            '#attributes':
+              class:
+                - element
+              style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
+            '#label_attributes':
+              class:
+                - label
+              style: 'width:30%; position: absolute; visibility: hidden;'
+      summary_details:
+        '#type': details
+        '#title': XXXXXXX
+        '#attributes':
+          class:
+            - section
+          style: 'margin-top: 0;  margin-bottom: 0;'
+        '#summary_attributes':
+          class:
+            - section-title
+            - Summary-attributes
+          style: 'padding-top: 10px; padding-bottom: 10px;'
+        date_of_personnel_notification_about_log_sheet_creation:
+          '#type': date
+          '#title': 'Date of personnel notification about Log Sheet creation'
+          '#title_display': inline
+          '#wrapper_attributes':
+            class:
+              - container-flex
+            style: 'display:flex; align-items: center; '
+          '#attributes':
+            class:
+              - element
+            style: 'width:70%; min-height:40px; height:40px; text-align: center;'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%'
+        raw_data_received_and_assessed_by:
+          '#type': textfield
+          '#title': 'Raw data received and assessed by'
+          '#autocomplete': 'off'
+          '#wrapper_attributes':
+            class:
+              - container-flex
+            style: 'display:flex; align-items: center; '
+          '#attributes':
+            class:
+              - element
+            style: 'width:70%; min-height:40px; height:40px; text-align: center; '
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%'
+      signatured_by_head_of_ais:
+        '#type': checkbox
+        '#title': 'Signed by Head of AIS'
+        '#wrapper_attributes':
+          class:
+            - signatured-Wrapper
+          style: 'display: flex; align-items: center;  flex-direction: row-reverse; margin-bottom: 0;'
+        '#attributes':
+          class:
+            - signatured-element
+          style: 'width:40px; height:30px'
+        '#label_attributes':
+          class:
+            - signatured-label
+          style: 'font-size: 1.125rem; font-weight: 700; line-height: 1.125rem; margin-right: 50px'
   evaluation:
     '#type': webform_wizard_page
     '#title': Evaluation
-    evaluation_fieldset:
+    evaluator:
       '#type': fieldset
-      '#title': Evaluation
-      evaluator:
-        '#type': fieldset
-        '#title': Evaluator
-        raw_data_evaluation:
-          '#type': details
-          '#title': 'Raw data evaluation'
-          '#attributes':
-            class:
-              - section
-            style: 'margin-top: 0;'
-          '#summary_attributes':
-            class:
-              - section-title
-            style: 'padding-top: 10px; padding-bottom: 10px;'
-          date_of_evaluation:
-            '#type': date
-            '#title': 'Date of evaluation'
-            '#title_display': inline
-            '#wrapper_attributes':
-              class:
-                - container-flex
-              style: 'display:flex; align-items: center;'
-            '#attributes':
-              class:
-                - element
-              style: 'width:70%; min-height:40px; height:40px; text-align: center;'
-            '#label_attributes':
-              class:
-                - label
-              style: 'width:30%'
-          missing_items_:
-            '#type': webform_select_other
-            '#title': 'Missing items '
-            '#options': 'no'
-            '#empty_option': 'Please select'
-            '#other__type': textarea
-            '#other__option_label': 'Other:'
-            '#other__placeholder': ''
-            '#wrapper_type': form_element
-            '#wrapper_attributes':
-              class:
-                - wrapper
-              style: 'margin-bottom: 0;'
-            '#attributes':
-              class:
-                - element
-              style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
-            '#label_attributes':
-              class:
-                - label
-              style: 'width:30%; position: absolute;'
-          data_correction_is_required:
-            '#type': webform_select_other
-            '#title': 'Data correction is required'
-            '#options': 'no'
-            '#empty_option': 'Please select'
-            '#other__type': textarea
-            '#other__option_label': 'Other:'
-            '#other__placeholder': ''
-            '#wrapper_attributes':
-              class:
-                - wrapper
-              style: 'display: flex; '
-            '#attributes':
-              class:
-                - element
-              style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
-          raw_data_of_required_resolution_ref_order_24_order_3_:
-            '#type': webform_select_other
-            '#title': 'Raw data of required resolution (ref. Order 24/Order 3)'
-            '#title_display': inline
-            '#options':
-              'YES': 'YES'
-              'Not applicable': 'Not applicable'
-            '#empty_option': 'Please select'
-            '#other__type': textarea
-            '#other__option_label': 'Other:'
-            '#other__placeholder': ''
-            '#wrapper_attributes':
-              class:
-                - wrapper
-              style: 'display:flex'
-            '#attributes':
-              class:
-                - element
-              style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
-          affected_aip_items_elements_in_addition_to_the_items_elements_es:
-            '#type': webform_select_other
-            '#title': 'Affected AIP items/elements (in addition to the items/elements established on "Raw data initial assessment" step)'
-            '#options':
-              'Not affected': 'Not affected'
-            '#empty_option': 'Please select'
-            '#other__type': textarea
-            '#other__option_label': 'Other:'
-            '#other__placeholder': ''
-            '#wrapper_attributes':
-              class:
-                - wrapper
-              style: 'display:flex'
-            '#attributes':
-              class:
-                - element
-              style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
-          additional_affected_items_elements_agreement_with_head_of_ais:
-            '#type': webform_select_other
-            '#title': 'Additional affected items''/elements'' agreement with Head of AIS'
-            '#options':
-              Agreed: Agreed
-              'Rejected, see remarks': 'Rejected, see remarks'
-              NIL: NIL
-            '#empty_option': 'Please select'
-            '#other__type': textarea
-            '#other__option_label': 'Other:'
-            '#other__placeholder': ''
-            '#wrapper_attributes':
-              class:
-                - wrapper
-              style: 'display:flex'
-            '#attributes':
-              class:
-                - element
-              style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
-          affected_chart_s_in_addition_to_the_chart_s_established_on_raw_d:
-            '#type': webform_select_other
-            '#title': 'Affected Chart(s) (in addition to the chart(s) established on "Raw data initial assessment" step)'
-            '#options':
-              'Not affected': 'Not affected'
-            '#empty_option': 'Please select'
-            '#other__type': textarea
-            '#other__option_label': 'Other:'
-            '#other__placeholder': ''
-            '#wrapper_attributes':
-              class:
-                - wrapper
-              style: 'display:flex'
-            '#attributes':
-              class:
-                - element
-              style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
-          additional_affected_charts_agreement_with_head_of_ais:
-            '#type': webform_select_other
-            '#title': 'Additional affected charts agreement with Head of AIS'
-            '#options':
-              Agreed: Agreed
-              'Rejected, see remarks': 'Rejected, see remarks'
-              NIL: NIL
-            '#empty_option': 'Please select'
-            '#other__type': textarea
-            '#other__option_label': 'Other:'
-            '#other__placeholder': ''
-            '#wrapper_attributes':
-              class:
-                - wrapper
-              style: 'display:flex'
-            '#attributes':
-              class:
-                - element
-              style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
-          contact_with_data_originator_needed:
-            '#type': webform_select_other
-            '#title': 'Contact with Data Originator needed'
-            '#options': yes_no
-            '#empty_option': 'Please select'
-            '#other__type': textarea
-            '#other__option_label': 'Other:'
-            '#other__placeholder': ''
-            '#wrapper_attributes':
-              class:
-                - wrapper
-              style: 'display:flex'
-            '#attributes':
-              class:
-                - element
-              style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
-          evaluation_is_positive:
-            '#type': webform_select_other
-            '#title': 'Evaluation is positive'
-            '#options': yes_no
-            '#empty_option': 'Please select'
-            '#other__type': textarea
-            '#other__option_label': 'Other:'
-            '#other__placeholder': ''
-            '#wrapper_attributes':
-              class:
-                - wrapper
-              style: 'display:flex'
-            '#attributes':
-              class:
-                - element
-              style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
-          data_input_into_the_database_required:
-            '#type': webform_select_other
-            '#title': 'Data input into the database required'
-            '#options':
-              'YES': 'YES'
-              'NO': 'NO'
-              'Not applicable': 'Not applicable'
-            '#empty_option': 'Please select'
-            '#other__type': textarea
-            '#other__option_label': 'Other:'
-            '#other__placeholder': ''
-            '#wrapper_attributes':
-              class:
-                - wrapper
-              style: 'display:flex'
-            '#attributes':
-              class:
-                - element
-              style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
-        evaluation_completed:
-          '#type': details
-          '#title': 'Evaluation completed'
-          '#attributes':
-            class:
-              - section
-            style: 'margin-bottom: 0;'
-          '#summary_attributes':
-            class:
-              - section-title
-            style: 'padding-top: 10px; padding-bottom: 10px;'
-          name_surname_of_evaluator:
-            '#type': textfield
-            '#title': 'Name, Surname of Evaluator'
-            '#title_display': inline
-            '#wrapper_attributes':
-              class:
-                - container-flex
-              style: 'display:flex; align-items: center;'
-            '#attributes':
-              class:
-                - element
-              style: 'width:70%; min-height:40px; height:40px; text-align: center;'
-            '#label_attributes':
-              class:
-                - label
-              style: 'width:30%'
-          log_sheet_number_evaluator:
-            '#type': textfield
-            '#title': 'Log Sheet number'
-            '#title_display': inline
-            '#wrapper_attributes':
-              class:
-                - container-flex
-              style: 'display:flex; align-items: center;'
-            '#attributes':
-              class:
-                - element
-              style: 'width:70%; min-height:40px; height:40px; text-align: center;'
-            '#label_attributes':
-              class:
-                - label
-              style: 'width:30%'
-        signed_by_evaluator:
-          '#type': checkbox
-          '#title': 'Signed by Evaluator'
+      '#title': Evaluator
+      raw_data_evaluation:
+        '#type': details
+        '#title': 'Raw data evaluation'
+        '#attributes':
+          class:
+            - section
+          style: 'margin-top: 0;'
+        '#summary_attributes':
+          class:
+            - section-title
+          style: 'padding-top: 10px; padding-bottom: 10px;'
+        date_of_evaluation:
+          '#type': date
+          '#title': 'Date of evaluation'
+          '#title_display': inline
           '#wrapper_attributes':
             class:
-              - signatured-Wrapper
-            style: 'display: flex;   align-items: center;  flex-direction: row-reverse; margin-bottom: 0;'
+              - container-flex
+            style: 'display:flex; align-items: center;'
           '#attributes':
             class:
-              - signatured-element
-            style: 'width:40px; height:30px'
+              - element
+            style: 'width:70%; min-height:40px; height:40px; text-align: center;'
           '#label_attributes':
             class:
-              - signatured-label
-            style: 'font-size: 1.125rem; font-weight: 700; line-height: 1.125rem; margin-right: 50px'
-      evaluator2:
-        '#type': fieldset
-        '#title': Evaluator
-        raw_data_evaluation2:
-          '#type': details
-          '#title': 'Raw data evaluation'
-          '#attributes':
-            class:
-              - section
-            style: 'margin-top: 0;'
-          '#summary_attributes':
-            class:
-              - section-title
-            style: 'padding-top: 10px; padding-bottom: 10px;'
-          date_of_evaluation2:
-            '#type': date
-            '#title': 'Date of evaluation'
-            '#title_display': inline
-            '#wrapper_attributes':
-              class:
-                - container-flex
-              style: 'display:flex; align-items: center;'
-            '#attributes':
-              class:
-                - element
-              style: 'width:70%; min-height:40px; height:40px; text-align: center;'
-            '#label_attributes':
-              class:
-                - label
-              style: 'width:30%'
-          missing_items_2:
-            '#type': webform_select_other
-            '#title': 'Missing items '
-            '#options': 'no'
-            '#empty_option': 'Please select'
-            '#other__type': textarea
-            '#other__option_label': 'Other:'
-            '#other__placeholder': ''
-            '#wrapper_type': form_element
-            '#wrapper_attributes':
-              class:
-                - wrapper
-              style: 'margin-bottom: 0;'
-            '#attributes':
-              class:
-                - element
-              style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
-            '#label_attributes':
-              class:
-                - label
-              style: 'width:30%; position: absolute;'
-          data_correction_is_required2:
-            '#type': webform_select_other
-            '#title': 'Data correction is required'
-            '#options': 'no'
-            '#empty_option': 'Please select'
-            '#other__type': textarea
-            '#other__option_label': 'Other:'
-            '#other__placeholder': ''
-            '#wrapper_attributes':
-              class:
-                - wrapper
-              style: 'display: flex; '
-            '#attributes':
-              class:
-                - element
-              style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
-          raw_data_of_required_resolution_ref_order_24_order_3_2:
-            '#type': webform_select_other
-            '#title': 'Raw data of required resolution (ref. Order 24/Order 3)'
-            '#title_display': inline
-            '#options':
-              'YES': 'YES'
-              'Not applicable': 'Not applicable'
-            '#empty_option': 'Please select'
-            '#other__type': textarea
-            '#other__option_label': 'Other:'
-            '#other__placeholder': ''
-            '#wrapper_attributes':
-              class:
-                - wrapper
-              style: 'display:flex'
-            '#attributes':
-              class:
-                - element
-              style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
-          affected_aip_items_elements_in_addition_to_the_items_elements_e2:
-            '#type': webform_select_other
-            '#title': 'Affected AIP items/elements (in addition to the items/elements established on "Raw data initial assessment" step)'
-            '#options':
-              'Not affected': 'Not affected'
-            '#empty_option': 'Please select'
-            '#other__type': textarea
-            '#other__option_label': 'Other:'
-            '#other__placeholder': ''
-            '#wrapper_attributes':
-              class:
-                - wrapper
-              style: 'display:flex'
-            '#attributes':
-              class:
-                - element
-              style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
-          additional_affected_items_elements_agreement_with_head_of_ai2:
-            '#type': webform_select_other
-            '#title': 'Additional affected items''/elements'' agreement with Head of AIS'
-            '#options':
-              Agreed: Agreed
-              'Rejected, see remarks': 'Rejected, see remarks'
-              NIL: NIL
-            '#empty_option': 'Please select'
-            '#other__type': textarea
-            '#other__option_label': 'Other:'
-            '#other__placeholder': ''
-            '#wrapper_attributes':
-              class:
-                - wrapper
-              style: 'display:flex'
-            '#attributes':
-              class:
-                - element
-              style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
-          affected_chart_s_in_addition_to_the_chart_s_established_on_raw_2:
-            '#type': webform_select_other
-            '#title': 'Affected Chart(s) (in addition to the chart(s) established on "Raw data initial assessment" step)'
-            '#options':
-              'Not affected': 'Not affected'
-            '#empty_option': 'Please select'
-            '#other__type': textarea
-            '#other__option_label': 'Other:'
-            '#other__placeholder': ''
-            '#wrapper_attributes':
-              class:
-                - wrapper
-              style: 'display:flex'
-            '#attributes':
-              class:
-                - element
-              style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
-          additional_affected_charts_agreement_with_head_of_ai2:
-            '#type': webform_select_other
-            '#title': 'Additional affected charts agreement with Head of AIS'
-            '#options':
-              Agreed: Agreed
-              'Rejected, see remarks': 'Rejected, see remarks'
-              NIL: NIL
-            '#empty_option': 'Please select'
-            '#other__type': textarea
-            '#other__option_label': 'Other:'
-            '#other__placeholder': ''
-            '#wrapper_attributes':
-              class:
-                - wrapper
-              style: 'display:flex'
-            '#attributes':
-              class:
-                - element
-              style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
-          contact_with_data_originator_needed2:
-            '#type': webform_select_other
-            '#title': 'Contact with Data Originator needed'
-            '#options': yes_no
-            '#empty_option': 'Please select'
-            '#other__type': textarea
-            '#other__option_label': 'Other:'
-            '#other__placeholder': ''
-            '#wrapper_attributes':
-              class:
-                - wrapper
-              style: 'display:flex'
-            '#attributes':
-              class:
-                - element
-              style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
-          evaluation_is_positive2:
-            '#type': webform_select_other
-            '#title': 'Evaluation is positive'
-            '#options': yes_no
-            '#empty_option': 'Please select'
-            '#other__type': textarea
-            '#other__option_label': 'Other:'
-            '#other__placeholder': ''
-            '#wrapper_attributes':
-              class:
-                - wrapper
-              style: 'display:flex'
-            '#attributes':
-              class:
-                - element
-              style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
-          data_input_into_the_database_required2:
-            '#type': webform_select_other
-            '#title': 'Data input into the database required'
-            '#options':
-              'YES': 'YES'
-              'NO': 'NO'
-              'Not applicable': 'Not applicable'
-            '#empty_option': 'Please select'
-            '#other__type': textarea
-            '#other__option_label': 'Other:'
-            '#other__placeholder': ''
-            '#wrapper_attributes':
-              class:
-                - wrapper
-              style: 'display:flex'
-            '#attributes':
-              class:
-                - element
-              style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
-        evaluation_completed2:
-          '#type': details
-          '#title': 'Evaluation completed'
-          '#attributes':
-            class:
-              - section
-            style: 'margin-bottom: 0;'
-          '#summary_attributes':
-            class:
-              - section-title
-            style: 'padding-top: 10px; padding-bottom: 10px;'
-          name_surname_of_evaluator2:
-            '#type': textfield
-            '#title': 'Name, Surname of Evaluator'
-            '#title_display': inline
-            '#wrapper_attributes':
-              class:
-                - container-flex
-              style: 'display:flex; align-items: center;'
-            '#attributes':
-              class:
-                - element
-              style: 'width:70%; min-height:40px; height:40px; text-align: center;'
-            '#label_attributes':
-              class:
-                - label
-              style: 'width:30%'
-          log_sheet_number_evaluator2:
-            '#type': textfield
-            '#title': 'Log Sheet number'
-            '#title_display': inline
-            '#wrapper_attributes':
-              class:
-                - container-flex
-              style: 'display:flex; align-items: center;'
-            '#attributes':
-              class:
-                - element
-              style: 'width:70%; min-height:40px; height:40px; text-align: center;'
-            '#label_attributes':
-              class:
-                - label
-              style: 'width:30%'
-        signed_by_evaluator2:
-          '#type': checkbox
-          '#title': 'Signed by Evaluator'
+              - label
+            style: 'width:30%'
+        missing_items_:
+          '#type': webform_select_other
+          '#title': 'Missing items '
+          '#options': 'no'
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_type': form_element
           '#wrapper_attributes':
             class:
-              - signatured-Wrapper
-            style: 'display: flex;   align-items: center;  flex-direction: row-reverse; margin-bottom: 0;'
+              - wrapper
+            style: 'margin-bottom: 0;'
           '#attributes':
             class:
-              - signatured-element
-            style: 'width:40px; height:30px'
+              - element
+            style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
           '#label_attributes':
             class:
-              - signatured-label
-            style: 'font-size: 1.125rem; font-weight: 700; line-height: 1.125rem; margin-right: 50px'
-  sdo_db:
-    '#type': webform_wizard_page
-    '#title': 'SDO DB'
-    sdo_db_fieldset:
-      '#type': fieldset
-      '#title': 'SDO DB'
-      editor_sdo_db_top:
-        '#type': fieldset
-        '#title': EDITOR
-        data_input_into_sdo_db:
-          '#type': details
-          '#title': 'Data input into SDO DB'
+              - label
+            style: 'width:30%; position: absolute;'
+        data_correction_is_required:
+          '#type': webform_select_other
+          '#title': 'Data correction is required'
+          '#options': 'no'
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_attributes':
+            class:
+              - wrapper
+            style: 'display: flex; '
           '#attributes':
             class:
-              - section
-            style: 'margin-top: 0;'
-          '#summary_attributes':
+              - element
+            style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
+        raw_data_of_required_resolution_ref_order_24_order_3_:
+          '#type': webform_select_other
+          '#title': 'Raw data of required resolution (ref. Order 24/Order 3)'
+          '#title_display': inline
+          '#options':
+            'YES': 'YES'
+            'Not applicable': 'Not applicable'
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_attributes':
             class:
-              - section-title
-            style: 'padding-top: 10px; padding-bottom: 10px;'
-          date_start_of_data_input_:
-            '#type': date
-            '#title': 'Date (start of data input)'
-            '#title_display': inline
-            '#wrapper_attributes':
-              class:
-                - container-flex
-              style: 'display:flex; align-items: center;'
-            '#attributes':
-              class:
-                - element
-              style: 'width:70%; min-height:40px; height:40px; text-align: center;'
-            '#label_attributes':
-              class:
-                - label
-              style: 'width:30%'
-          private_slot_name:
-            '#type': textfield
-            '#title': 'Private Slot name'
-            '#title_display': inline
-            '#wrapper_attributes':
-              class:
-                - container-flex
-              style: 'display:flex; align-items: center;'
-            '#attributes':
-              class:
-                - element
-              style: 'width:70%; min-height:40px; height:40px; text-align: center'
-            '#label_attributes':
-              class:
-                - label
-              style: 'width:30%'
-          missing_items_sdo_db:
-            '#type': webform_select_other
-            '#title': 'Missing items'
-            '#options': 'no'
-            '#empty_option': 'Please select'
-            '#other__type': textarea
-            '#other__option_label': 'Other:'
-            '#other__placeholder': ''
-            '#wrapper_type': form_element
-            '#wrapper_attributes':
-              class:
-                - wrapper
-              style: 'margin-bottom: 0;'
-            '#attributes':
-              class:
-                - element
-              style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
-            '#label_attributes':
-              class:
-                - label
-              style: 'width:30%;position: absolute;'
-          data_correction_is_required_sdo_db:
-            '#type': webform_select_other
-            '#title': 'Data correction is required'
-            '#options': 'no'
-            '#empty_option': 'Please select'
-            '#other__type': textarea
-            '#other__option_label': 'Other:'
-            '#other__placeholder': ''
-            '#wrapper_attributes':
-              class:
-                - wrapper
-              style: 'display:flex'
-            '#attributes':
-              class:
-                - element
-              style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
-          contact_with_data_originator_needed_sdo_db:
-            '#type': webform_select_other
-            '#title': 'Contact with Data Originator needed'
-            '#options': yes_no
-            '#empty_option': 'Please select'
-            '#other__type': textarea
-            '#other__option_label': 'Other:'
-            '#other__placeholder': ''
-            '#wrapper_attributes':
-              class:
-                - wrapper
-              style: 'display:flex'
-            '#attributes':
-              class:
-                - element
-              style: 'width: 100%;min-height:40px; height:40px; text-align: center;'
-      quality_controllers_sdo_db:
-        '#type': fieldset
-        '#title': 'QUALITY CONTROLLERS'
-        1st_quality_check:
-          '#type': details
-          '#title': '1st Quality check'
+              - wrapper
+            style: 'display:flex'
           '#attributes':
             class:
-              - section
-            style: 'margin-top: 0;'
-          '#summary_attributes':
+              - element
+            style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
+        affected_aip_items_elements_in_addition_to_the_items_elements_es:
+          '#type': webform_select_other
+          '#title': 'Affected AIP items/elements (in addition to the items/elements established on "Raw data initial assessment" step)'
+          '#options':
+            'Not affected': 'Not affected'
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_attributes':
             class:
-              - section-title
-            style: 'padding-top: 10px; padding-bottom: 10px;'
-          date_of_quality_check_sdo_db_1st:
-            '#type': date
-            '#title': 'Date of quality check'
-            '#title_display': inline
-            '#wrapper_attributes':
-              class:
-                - container-flex
-              style: 'display:flex; align-items: center;'
-            '#attributes':
-              class:
-                - element
-              style: 'width:70%; min-height:40px; height:40px; text-align: center;'
-            '#label_attributes':
-              class:
-                - label
-              style: 'width:30%'
-          name_surname_of_qc_sdo_db_1st:
-            '#type': textfield
-            '#title': 'Name, Surname of QC'
-            '#title_display': inline
-            '#wrapper_attributes':
-              class:
-                - container-flex
-              style: 'display:flex; align-items: center;'
-            '#attributes':
-              class:
-                - element
-              style: 'width:70%; min-height:40px; height:40px; text-align: center;'
-            '#label_attributes':
-              class:
-                - label
-              style: 'width:30%'
-          errors_found_sdo_db_1st:
-            '#type': webform_select_other
-            '#title': 'Errors found'
-            '#options': 'no'
-            '#empty_option': 'Please select'
-            '#other__type': textarea
-            '#other__option_label': 'Other:'
-            '#other__placeholder': ''
-            '#wrapper_type': form_element
-            '#wrapper_attributes':
-              class:
-                - wrapper
-              style: 'margin-bottom: 0;'
-            '#attributes':
-              class:
-                - element
-              style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
-            '#label_attributes':
-              class:
-                - label
-              style: 'width:30%; position: absolute;'
-          attachment_sdo_db_1st:
-            '#type': webform_select_other
-            '#title': 'Attachment #'
-            '#options':
-              NIL: NIL
-            '#empty_option': 'Please select'
-            '#other__type': textarea
-            '#other__option_label': 'Other:'
-            '#other__placeholder': ''
-            '#wrapper_type': form_element
-            '#wrapper_attributes':
-              class:
-                - wrapper
-              style: 'margin-bottom: 0;'
-            '#attributes':
-              class:
-                - element
-              style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
-            '#label_attributes':
-              class:
-                - label
-              style: 'width:30%; position: absolute;'
-          corrected_by_sdo_db_1st:
-            '#type': textfield
-            '#title': 'Corrected by'
-            '#title_display': inline
-            '#wrapper_attributes':
-              class:
-                - container-flex
-              style: 'display:flex; align-items: center;'
-            '#attributes':
-              class:
-                - element
-              style: 'width:70%; min-height:40px; height:40px; text-align: center;'
-            '#label_attributes':
-              class:
-                - label
-              style: 'width:30%'
-        2nd_quality_check:
-          '#type': details
-          '#title': '2nd Quality check'
+              - wrapper
+            style: 'display:flex'
           '#attributes':
             class:
-              - section
-            style: 'margin-bottom: 0;'
-          '#summary_attributes':
+              - element
+            style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
+        additional_affected_items_elements_agreement_with_head_of_ais:
+          '#type': webform_select_other
+          '#title': 'Additional affected items''/elements'' agreement with Head of AIS'
+          '#options':
+            Agreed: Agreed
+            'Rejected, see remarks': 'Rejected, see remarks'
+            NIL: NIL
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_attributes':
             class:
-              - section-title
-            style: 'padding-top: 10px; padding-bottom: 10px;'
-          date_of_quality_check_sdo_db_2nd:
-            '#type': date
-            '#title': 'Date of quality check'
-            '#title_display': inline
-            '#wrapper_attributes':
-              class:
-                - container-flex
-              style: 'display:flex; align-items: center;'
-            '#attributes':
-              class:
-                - element
-              style: 'width:70%; min-height:40px; height:40px; text-align: center;'
-            '#label_attributes':
-              class:
-                - label
-              style: 'width:30%'
-          name_surname_of_qc_sdo_db_2nd:
-            '#type': textfield
-            '#title': 'Name, Surname of QC'
-            '#title_display': inline
-            '#wrapper_attributes':
-              class:
-                - container-flex
-              style: 'display:flex; align-items: center;'
-            '#attributes':
-              class:
-                - element
-              style: 'width:70%; min-height:40px; height:40px; text-align: center;'
-            '#label_attributes':
-              class:
-                - label
-              style: 'width:30%'
-          errors_found_sdo_db_2nd:
-            '#type': webform_select_other
-            '#title': 'Errors found'
-            '#options': 'no'
-            '#empty_option': 'Please select'
-            '#other__type': textarea
-            '#other__option_label': 'Other:'
-            '#other__placeholder': ''
-            '#wrapper_type': form_element
-            '#wrapper_attributes':
-              class:
-                - wrapper
-              style: 'margin-bottom: 0;'
-            '#attributes':
-              class:
-                - element
-              style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
-            '#label_attributes':
-              class:
-                - label
-              style: 'width:30%; position: absolute;'
-          attachment_sdo_db_2nd:
-            '#type': webform_select_other
-            '#title': 'Attachment #'
-            '#options':
-              NIL: NIL
-            '#empty_option': 'Please select'
-            '#other__type': textarea
-            '#other__option_label': 'Other:'
-            '#other__placeholder': ''
-            '#wrapper_type': form_element
-            '#wrapper_attributes':
-              class:
-                - wrapper
-              style: 'margin-bottom: 0;'
-            '#attributes':
-              class:
-                - element
-              style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
-            '#label_attributes':
-              class:
-                - label
-              style: 'width:30%; position: absolute;'
-          corrected_by_sdo_db_2nd:
-            '#type': textfield
-            '#title': 'Corrected by'
-            '#title_display': inline
-            '#wrapper_attributes':
-              class:
-                - container-flex
-              style: 'display:flex; align-items: center;'
-            '#attributes':
-              class:
-                - element
-              style: 'width:70%; min-height:40px; height:40px; text-align: center;'
-            '#label_attributes':
-              class:
-                - label
-              style: 'width:30%'
-      editor_sdo_db_bottom:
-        '#type': fieldset
-        '#title': EDITOR
-        data_input_into_sdo_db_completed:
-          '#type': details
-          '#title': 'Data input into SDO DB completed'
+              - wrapper
+            style: 'display:flex'
           '#attributes':
             class:
-              - section
-            style: 'margin-top: 0;'
-          '#summary_attributes':
+              - element
+            style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
+        affected_chart_s_in_addition_to_the_chart_s_established_on_raw_d:
+          '#type': webform_select_other
+          '#title': 'Affected Chart(s) (in addition to the chart(s) established on "Raw data initial assessment" step)'
+          '#options':
+            'Not affected': 'Not affected'
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_attributes':
             class:
-              - section-title
-            style: 'padding-top: 10px; padding-bottom: 10px;'
-          date_end_of_data_input_:
-            '#type': date
-            '#title': 'Date (end of data input)'
-            '#title_display': inline
-            '#wrapper_attributes':
-              class:
-                - container-flex
-              style: 'display:flex; align-items: center;'
-            '#attributes':
-              class:
-                - element
-              style: 'width:70%; min-height:40px; height:40px; text-align: center;'
-            '#label_attributes':
-              class:
-                - label
-              style: 'width:30%'
-          name_surname_of_editor_sdo_db:
-            '#type': textfield
-            '#title': 'Name, Surname of Editor'
-            '#title_display': inline
-            '#wrapper_attributes':
-              class:
-                - container-flex
-              style: 'display:flex; align-items: center;'
-            '#attributes':
-              class:
-                - element
-              style: 'width:70%; min-height:40px; height:40px; text-align: center;'
-            '#label_attributes':
-              class:
-                - label
-              style: 'width:30%'
-          log_sheet_number_sdo_db:
-            '#type': textfield
-            '#title': 'Log Sheet number'
-            '#title_display': inline
-            '#wrapper_attributes':
-              class:
-                - container-flex
-              style: 'display:flex; align-items: center;'
-            '#attributes':
-              class:
-                - element
-              style: 'width:70%; min-height:40px; height:40px; text-align: center;'
-            '#label_attributes':
-              class:
-                - label
-              style: 'width:30%'
-      signed_by_editor_sdo_db:
+              - wrapper
+            style: 'display:flex'
+          '#attributes':
+            class:
+              - element
+            style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
+        additional_affected_charts_agreement_with_head_of_ais:
+          '#type': webform_select_other
+          '#title': 'Additional affected charts agreement with Head of AIS'
+          '#options':
+            Agreed: Agreed
+            'Rejected, see remarks': 'Rejected, see remarks'
+            NIL: NIL
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_attributes':
+            class:
+              - wrapper
+            style: 'display:flex'
+          '#attributes':
+            class:
+              - element
+            style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
+        contact_with_data_originator_needed:
+          '#type': webform_select_other
+          '#title': 'Contact with Data Originator needed'
+          '#options': yes_no
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_attributes':
+            class:
+              - wrapper
+            style: 'display:flex'
+          '#attributes':
+            class:
+              - element
+            style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
+        evaluation_is_positive:
+          '#type': webform_select_other
+          '#title': 'Evaluation is positive'
+          '#options': yes_no
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_attributes':
+            class:
+              - wrapper
+            style: 'display:flex'
+          '#attributes':
+            class:
+              - element
+            style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
+        data_input_into_the_database_required:
+          '#type': webform_select_other
+          '#title': 'Data input into the database required'
+          '#options':
+            'YES': 'YES'
+            'NO': 'NO'
+            'Not applicable': 'Not applicable'
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_attributes':
+            class:
+              - wrapper
+            style: 'display:flex'
+          '#attributes':
+            class:
+              - element
+            style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
+      evaluation_completed:
+        '#type': details
+        '#title': 'Evaluation completed'
+        '#attributes':
+          class:
+            - section
+          style: 'margin-bottom: 0;'
+        '#summary_attributes':
+          class:
+            - section-title
+          style: 'padding-top: 10px; padding-bottom: 10px;'
+        name_surname_of_evaluator:
+          '#type': textfield
+          '#title': 'Name, Surname of Evaluator'
+          '#title_display': inline
+          '#wrapper_attributes':
+            class:
+              - container-flex
+            style: 'display:flex; align-items: center;'
+          '#attributes':
+            class:
+              - element
+            style: 'width:70%; min-height:40px; height:40px; text-align: center;'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%'
+        log_sheet_number_evaluator:
+          '#type': textfield
+          '#title': 'Log Sheet number'
+          '#title_display': inline
+          '#wrapper_attributes':
+            class:
+              - container-flex
+            style: 'display:flex; align-items: center;'
+          '#attributes':
+            class:
+              - element
+            style: 'width:70%; min-height:40px; height:40px; text-align: center;'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%'
+      signed_by_evaluator:
         '#type': checkbox
-        '#title': 'Signed by Editor'
+        '#title': 'Signed by Evaluator'
         '#wrapper_attributes':
           class:
             - signatured-Wrapper
@@ -1762,6 +1097,659 @@ elements: |-
           class:
             - signatured-label
           style: 'font-size: 1.125rem; font-weight: 700; line-height: 1.125rem; margin-right: 50px'
+    evaluator2:
+      '#type': fieldset
+      '#title': Evaluator
+      raw_data_evaluation2:
+        '#type': details
+        '#title': 'Raw data evaluation'
+        '#attributes':
+          class:
+            - section
+          style: 'margin-top: 0;'
+        '#summary_attributes':
+          class:
+            - section-title
+          style: 'padding-top: 10px; padding-bottom: 10px;'
+        date_of_evaluation2:
+          '#type': date
+          '#title': 'Date of evaluation'
+          '#title_display': inline
+          '#wrapper_attributes':
+            class:
+              - container-flex
+            style: 'display:flex; align-items: center;'
+          '#attributes':
+            class:
+              - element
+            style: 'width:70%; min-height:40px; height:40px; text-align: center;'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%'
+        missing_items_2:
+          '#type': webform_select_other
+          '#title': 'Missing items '
+          '#options': 'no'
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_type': form_element
+          '#wrapper_attributes':
+            class:
+              - wrapper
+            style: 'margin-bottom: 0;'
+          '#attributes':
+            class:
+              - element
+            style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%; position: absolute;'
+        data_correction_is_required2:
+          '#type': webform_select_other
+          '#title': 'Data correction is required'
+          '#options': 'no'
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_attributes':
+            class:
+              - wrapper
+            style: 'display: flex; '
+          '#attributes':
+            class:
+              - element
+            style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
+        raw_data_of_required_resolution_ref_order_24_order_3_2:
+          '#type': webform_select_other
+          '#title': 'Raw data of required resolution (ref. Order 24/Order 3)'
+          '#title_display': inline
+          '#options':
+            'YES': 'YES'
+            'Not applicable': 'Not applicable'
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_attributes':
+            class:
+              - wrapper
+            style: 'display:flex'
+          '#attributes':
+            class:
+              - element
+            style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
+        affected_aip_items_elements_in_addition_to_the_items_elements_e2:
+          '#type': webform_select_other
+          '#title': 'Affected AIP items/elements (in addition to the items/elements established on "Raw data initial assessment" step)'
+          '#options':
+            'Not affected': 'Not affected'
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_attributes':
+            class:
+              - wrapper
+            style: 'display:flex'
+          '#attributes':
+            class:
+              - element
+            style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
+        additional_affected_items_elements_agreement_with_head_of_ai2:
+          '#type': webform_select_other
+          '#title': 'Additional affected items''/elements'' agreement with Head of AIS'
+          '#options':
+            Agreed: Agreed
+            'Rejected, see remarks': 'Rejected, see remarks'
+            NIL: NIL
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_attributes':
+            class:
+              - wrapper
+            style: 'display:flex'
+          '#attributes':
+            class:
+              - element
+            style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
+        affected_chart_s_in_addition_to_the_chart_s_established_on_raw_2:
+          '#type': webform_select_other
+          '#title': 'Affected Chart(s) (in addition to the chart(s) established on "Raw data initial assessment" step)'
+          '#options':
+            'Not affected': 'Not affected'
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_attributes':
+            class:
+              - wrapper
+            style: 'display:flex'
+          '#attributes':
+            class:
+              - element
+            style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
+        additional_affected_charts_agreement_with_head_of_ai2:
+          '#type': webform_select_other
+          '#title': 'Additional affected charts agreement with Head of AIS'
+          '#options':
+            Agreed: Agreed
+            'Rejected, see remarks': 'Rejected, see remarks'
+            NIL: NIL
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_attributes':
+            class:
+              - wrapper
+            style: 'display:flex'
+          '#attributes':
+            class:
+              - element
+            style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
+        contact_with_data_originator_needed2:
+          '#type': webform_select_other
+          '#title': 'Contact with Data Originator needed'
+          '#options': yes_no
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_attributes':
+            class:
+              - wrapper
+            style: 'display:flex'
+          '#attributes':
+            class:
+              - element
+            style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
+        evaluation_is_positive2:
+          '#type': webform_select_other
+          '#title': 'Evaluation is positive'
+          '#options': yes_no
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_attributes':
+            class:
+              - wrapper
+            style: 'display:flex'
+          '#attributes':
+            class:
+              - element
+            style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
+        data_input_into_the_database_required2:
+          '#type': webform_select_other
+          '#title': 'Data input into the database required'
+          '#options':
+            'YES': 'YES'
+            'NO': 'NO'
+            'Not applicable': 'Not applicable'
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_attributes':
+            class:
+              - wrapper
+            style: 'display:flex'
+          '#attributes':
+            class:
+              - element
+            style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
+      evaluation_completed2:
+        '#type': details
+        '#title': 'Evaluation completed'
+        '#attributes':
+          class:
+            - section
+          style: 'margin-bottom: 0;'
+        '#summary_attributes':
+          class:
+            - section-title
+          style: 'padding-top: 10px; padding-bottom: 10px;'
+        name_surname_of_evaluator2:
+          '#type': textfield
+          '#title': 'Name, Surname of Evaluator'
+          '#title_display': inline
+          '#wrapper_attributes':
+            class:
+              - container-flex
+            style: 'display:flex; align-items: center;'
+          '#attributes':
+            class:
+              - element
+            style: 'width:70%; min-height:40px; height:40px; text-align: center;'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%'
+        log_sheet_number_evaluator2:
+          '#type': textfield
+          '#title': 'Log Sheet number'
+          '#title_display': inline
+          '#wrapper_attributes':
+            class:
+              - container-flex
+            style: 'display:flex; align-items: center;'
+          '#attributes':
+            class:
+              - element
+            style: 'width:70%; min-height:40px; height:40px; text-align: center;'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%'
+      signed_by_evaluator2:
+        '#type': checkbox
+        '#title': 'Signed by Evaluator'
+        '#wrapper_attributes':
+          class:
+            - signatured-Wrapper
+          style: 'display: flex;   align-items: center;  flex-direction: row-reverse; margin-bottom: 0;'
+        '#attributes':
+          class:
+            - signatured-element
+          style: 'width:40px; height:30px'
+        '#label_attributes':
+          class:
+            - signatured-label
+          style: 'font-size: 1.125rem; font-weight: 700; line-height: 1.125rem; margin-right: 50px'
+  sdo_db:
+    '#type': webform_wizard_page
+    '#title': 'SDO DB'
+    editor_sdo_db_top:
+      '#type': fieldset
+      '#title': EDITOR
+      data_input_into_sdo_db:
+        '#type': details
+        '#title': 'Data input into SDO DB'
+        '#attributes':
+          class:
+            - section
+          style: 'margin-top: 0;'
+        '#summary_attributes':
+          class:
+            - section-title
+          style: 'padding-top: 10px; padding-bottom: 10px;'
+        date_start_of_data_input_:
+          '#type': date
+          '#title': 'Date (start of data input)'
+          '#title_display': inline
+          '#wrapper_attributes':
+            class:
+              - container-flex
+            style: 'display:flex; align-items: center;'
+          '#attributes':
+            class:
+              - element
+            style: 'width:70%; min-height:40px; height:40px; text-align: center;'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%'
+        private_slot_name:
+          '#type': textfield
+          '#title': 'Private Slot name'
+          '#title_display': inline
+          '#wrapper_attributes':
+            class:
+              - container-flex
+            style: 'display:flex; align-items: center;'
+          '#attributes':
+            class:
+              - element
+            style: 'width:70%; min-height:40px; height:40px; text-align: center'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%'
+        missing_items_sdo_db:
+          '#type': webform_select_other
+          '#title': 'Missing items'
+          '#options': 'no'
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_type': form_element
+          '#wrapper_attributes':
+            class:
+              - wrapper
+            style: 'margin-bottom: 0;'
+          '#attributes':
+            class:
+              - element
+            style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%;position: absolute;'
+        data_correction_is_required_sdo_db:
+          '#type': webform_select_other
+          '#title': 'Data correction is required'
+          '#options': 'no'
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_attributes':
+            class:
+              - wrapper
+            style: 'display:flex'
+          '#attributes':
+            class:
+              - element
+            style: 'width: 100%;min-height:40px; height:40px; text-align: center; '
+        contact_with_data_originator_needed_sdo_db:
+          '#type': webform_select_other
+          '#title': 'Contact with Data Originator needed'
+          '#options': yes_no
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_attributes':
+            class:
+              - wrapper
+            style: 'display:flex'
+          '#attributes':
+            class:
+              - element
+            style: 'width: 100%;min-height:40px; height:40px; text-align: center;'
+    quality_controllers_sdo_db:
+      '#type': fieldset
+      '#title': 'QUALITY CONTROLLERS'
+      1st_quality_check:
+        '#type': details
+        '#title': '1st Quality check'
+        '#attributes':
+          class:
+            - section
+          style: 'margin-top: 0;'
+        '#summary_attributes':
+          class:
+            - section-title
+          style: 'padding-top: 10px; padding-bottom: 10px;'
+        date_of_quality_check_sdo_db_1st:
+          '#type': date
+          '#title': 'Date of quality check'
+          '#title_display': inline
+          '#wrapper_attributes':
+            class:
+              - container-flex
+            style: 'display:flex; align-items: center;'
+          '#attributes':
+            class:
+              - element
+            style: 'width:70%; min-height:40px; height:40px; text-align: center;'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%'
+        name_surname_of_qc_sdo_db_1st:
+          '#type': textfield
+          '#title': 'Name, Surname of QC'
+          '#title_display': inline
+          '#wrapper_attributes':
+            class:
+              - container-flex
+            style: 'display:flex; align-items: center;'
+          '#attributes':
+            class:
+              - element
+            style: 'width:70%; min-height:40px; height:40px; text-align: center;'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%'
+        errors_found_sdo_db_1st:
+          '#type': webform_select_other
+          '#title': 'Errors found'
+          '#options': 'no'
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_type': form_element
+          '#wrapper_attributes':
+            class:
+              - wrapper
+            style: 'margin-bottom: 0;'
+          '#attributes':
+            class:
+              - element
+            style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%; position: absolute;'
+        attachment_sdo_db_1st:
+          '#type': webform_select_other
+          '#title': 'Attachment #'
+          '#options':
+            NIL: NIL
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_type': form_element
+          '#wrapper_attributes':
+            class:
+              - wrapper
+            style: 'margin-bottom: 0;'
+          '#attributes':
+            class:
+              - element
+            style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%; position: absolute;'
+        corrected_by_sdo_db_1st:
+          '#type': textfield
+          '#title': 'Corrected by'
+          '#title_display': inline
+          '#wrapper_attributes':
+            class:
+              - container-flex
+            style: 'display:flex; align-items: center;'
+          '#attributes':
+            class:
+              - element
+            style: 'width:70%; min-height:40px; height:40px; text-align: center;'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%'
+      2nd_quality_check:
+        '#type': details
+        '#title': '2nd Quality check'
+        '#attributes':
+          class:
+            - section
+          style: 'margin-bottom: 0;'
+        '#summary_attributes':
+          class:
+            - section-title
+          style: 'padding-top: 10px; padding-bottom: 10px;'
+        date_of_quality_check_sdo_db_2nd:
+          '#type': date
+          '#title': 'Date of quality check'
+          '#title_display': inline
+          '#wrapper_attributes':
+            class:
+              - container-flex
+            style: 'display:flex; align-items: center;'
+          '#attributes':
+            class:
+              - element
+            style: 'width:70%; min-height:40px; height:40px; text-align: center;'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%'
+        name_surname_of_qc_sdo_db_2nd:
+          '#type': textfield
+          '#title': 'Name, Surname of QC'
+          '#title_display': inline
+          '#wrapper_attributes':
+            class:
+              - container-flex
+            style: 'display:flex; align-items: center;'
+          '#attributes':
+            class:
+              - element
+            style: 'width:70%; min-height:40px; height:40px; text-align: center;'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%'
+        errors_found_sdo_db_2nd:
+          '#type': webform_select_other
+          '#title': 'Errors found'
+          '#options': 'no'
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_type': form_element
+          '#wrapper_attributes':
+            class:
+              - wrapper
+            style: 'margin-bottom: 0;'
+          '#attributes':
+            class:
+              - element
+            style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%; position: absolute;'
+        attachment_sdo_db_2nd:
+          '#type': webform_select_other
+          '#title': 'Attachment #'
+          '#options':
+            NIL: NIL
+          '#empty_option': 'Please select'
+          '#other__type': textarea
+          '#other__option_label': 'Other:'
+          '#other__placeholder': ''
+          '#wrapper_type': form_element
+          '#wrapper_attributes':
+            class:
+              - wrapper
+            style: 'margin-bottom: 0;'
+          '#attributes':
+            class:
+              - element
+            style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%; position: absolute;'
+        corrected_by_sdo_db_2nd:
+          '#type': textfield
+          '#title': 'Corrected by'
+          '#title_display': inline
+          '#wrapper_attributes':
+            class:
+              - container-flex
+            style: 'display:flex; align-items: center;'
+          '#attributes':
+            class:
+              - element
+            style: 'width:70%; min-height:40px; height:40px; text-align: center;'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%'
+    editor_sdo_db_bottom:
+      '#type': fieldset
+      '#title': EDITOR
+      data_input_into_sdo_db_completed:
+        '#type': details
+        '#title': 'Data input into SDO DB completed'
+        '#attributes':
+          class:
+            - section
+          style: 'margin-top: 0;'
+        '#summary_attributes':
+          class:
+            - section-title
+          style: 'padding-top: 10px; padding-bottom: 10px;'
+        date_end_of_data_input_:
+          '#type': date
+          '#title': 'Date (end of data input)'
+          '#title_display': inline
+          '#wrapper_attributes':
+            class:
+              - container-flex
+            style: 'display:flex; align-items: center;'
+          '#attributes':
+            class:
+              - element
+            style: 'width:70%; min-height:40px; height:40px; text-align: center;'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%'
+        name_surname_of_editor_sdo_db:
+          '#type': textfield
+          '#title': 'Name, Surname of Editor'
+          '#title_display': inline
+          '#wrapper_attributes':
+            class:
+              - container-flex
+            style: 'display:flex; align-items: center;'
+          '#attributes':
+            class:
+              - element
+            style: 'width:70%; min-height:40px; height:40px; text-align: center;'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%'
+        log_sheet_number_sdo_db:
+          '#type': textfield
+          '#title': 'Log Sheet number'
+          '#title_display': inline
+          '#wrapper_attributes':
+            class:
+              - container-flex
+            style: 'display:flex; align-items: center;'
+          '#attributes':
+            class:
+              - element
+            style: 'width:70%; min-height:40px; height:40px; text-align: center;'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%'
+    signed_by_editor_sdo_db:
+      '#type': checkbox
+      '#title': 'Signed by Editor'
+      '#wrapper_attributes':
+        class:
+          - signatured-Wrapper
+        style: 'display: flex;   align-items: center;  flex-direction: row-reverse; margin-bottom: 0;'
+      '#attributes':
+        class:
+          - signatured-element
+        style: 'width:40px; height:30px'
+      '#label_attributes':
+        class:
+          - signatured-label
+        style: 'font-size: 1.125rem; font-weight: 700; line-height: 1.125rem; margin-right: 50px'
   aimdb:
     '#type': webform_wizard_page
     '#title': AIMdb
@@ -1774,7 +1762,7 @@ elements: |-
   remarks:
     '#type': webform_wizard_page
     '#title': Remarks
-css: "/*Header*/\r\n.header-text{\r\n  width:70%;\r\n  padding: 10px;\r\n}\r\n.header-title{\r\n    text-align: center;\r\n}\r\n.header-subTitle{\r\n  text-align: center;\r\n  margin-bottom: 20px;\r\n}\r\n.edition{\r\n  line-height: 20px;\r\n  font-size: 14px;\r\n}\r\n.edition-data{\r\n  line-height: 20px;\r\n  font-size: 14px;\r\n}\r\nimg{\r\nwidth:30%;\r\n}\r\n\r\n/*Main Fieldset receipt-and-assessment*/\r\n\r\n#edit-head-of-ais{\r\n    margin-top: 0;\r\n    margin-bottom: 0;\r\n}\r\n#edit-receipt-and-assessment-fieldset > legend {\r\n  background-color: #fff;\r\n}\r\n#edit-receipt-and-assessment-fieldset > legend .fieldset__label{\r\n    color: inherit;\r\n    text-align: center;\r\n}\r\n#edit-receipt-and-assessment-fieldset > div {\r\n  padding-top:0;\r\n}\r\n\r\n/*Main Fieldset Evaluation*/\r\n#edit-evaluator{\r\n    margin-top: 0;\r\n\r\n}\r\n#edit-evaluator2{\r\n    margin-bottom: 0;\r\n}\r\n#edit-evaluation-fieldset > legend {\r\n  background-color: #fff;\r\n}\r\n#edit-evaluation-fieldset > legend .fieldset__label{\r\n    color: inherit;\r\n    text-align: center;\r\n}\r\n#edit-evaluation-fieldset > div {\r\n  padding-top:0;\r\n}\r\n\r\n/*Main Fieldset SDO DB*/\r\n#edit-editor-sdo-db-top{\r\n    margin-top: 0;\r\n\r\n}\r\n#edit-editor-sdo-db-bottom{\r\n    margin-bottom: 0;\r\n}\r\n#edit-sdo-db-fieldset > legend {\r\n  background-color: #fff;\r\n}\r\n#edit-sdo-db-fieldset > legend .fieldset__label{\r\n    color: inherit;\r\n    text-align: center;\r\n}\r\n#edit-sdo-db-fieldset > div {\r\n  padding-top:0;\r\n}\r\n\r\n/*  Affected publication(s)'s field others form elements */ \r\n#edit-aip-items-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  width: 70%;\r\n  margin-left: 30%;    \r\n  border-top: none;\r\n}\r\n#edit-aip-items .form-type-select{\r\n  margin-bottom:0;\r\n}\r\n#edit-chart-s-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  width: 70%;\r\n  margin-left: 30%;\r\n  border-top: none;\r\n}\r\n#edit-chart-s- .form-type-select{\r\n  margin-bottom:0;\r\n}\r\n#edit-sup-s-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  width: 70%;\r\n  margin-left: 30%;\r\n  border-top: none;\r\n}\r\n#edit-sup-s- .form-type-select{\r\n  margin-bottom:0;\r\n}\r\n#edit-aic-s-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  width: 70%;\r\n  margin-left: 30%;\r\n  border-top: none;\r\n}\r\n#edit-aic-s- .form-type-select{\r\n  margin-bottom:0;\r\n}\r\n#edit-data-set-s-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  width: 70%;\r\n  margin-left: 30%;\r\n  border-top: none;\r\n}\r\n#edit-data-set-s- .form-type-select{\r\n  margin-bottom:0;\r\n}\r\n /*  Role assignment's field others position on top(form element)*/ \r\n#edit-editor-s- .form-type-select{\r\n margin-bottom:0;\r\n}\r\n#edit-editor-s-{\r\n position:relative;\r\n}\r\n#edit-editor-s-other{\r\n  position:absolute;\r\n  top:0px;\r\n  right:7%;\r\n  width:63%;\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  margin-left: 30%; \r\n}\r\n\r\n#edit-editor-s-2 .form-type-select{\r\n margin-bottom:0;\r\n\r\n}\r\n#edit-editor-s-2{\r\n position:relative;\r\n}\r\n#edit-editor-s-2-other{\r\n  position:absolute;\r\n  top:0px;\r\n  right:7%;\r\n  width:63%;\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  margin-left: 30%; \r\n}\r\n\r\n#edit-cartographer .form-type-select{\r\n margin-bottom:0;\r\n\r\n}\r\n#edit-cartographer{\r\n position:relative;\r\n}\r\n#edit-cartographer-other{\r\n  position:absolute;\r\n  top:0px;\r\n  right:7%;\r\n  width:63%;\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  margin-left: 30%; \r\n}\r\n\r\n#edit-cartographer2 .form-type-select{\r\n margin-bottom:0;\r\n\r\n}\r\n#edit-cartographer2{\r\n position:relative;\r\n}\r\n#edit-cartographer2-other{\r\n  position:absolute;\r\n  top:0px;\r\n  right:7%;\r\n  width:63%;\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  margin-left: 30%; \r\n}\r\n\r\n#edit-evaluator-s- .form-type-select{\r\n margin-bottom:0;\r\n\r\n}\r\n#edit-evaluator-s-{\r\n position:relative;\r\n}\r\n#edit-evaluator-s-other{\r\n  position:absolute;\r\n  top:0px;\r\n  right:7%;\r\n  width:63%;\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  margin-left: 30%; \r\n}\r\n\r\n#edit-evaluator-s-2 .form-type-select{\r\n margin-bottom:0;\r\n\r\n}\r\n#edit-evaluator-s-2{\r\n position:relative;\r\n}\r\n#edit-evaluator-s-2-other{\r\n  position:absolute;\r\n  top:0px;\r\n  right:7%;\r\n  width:63%;\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  margin-left: 30%; \r\n}\r\n\r\n#edit-quality-controllers-aimdb- .form-type-select{\r\n  margin-bottom:0;\r\n}\r\n#edit-quality-controllers-aimdb-{\r\n position:relative;\r\n}\r\n#edit-quality-controllers-aimdb-other{\r\n  position:absolute;\r\n  top:0px;\r\n  right:7%;\r\n  width:63%;\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  margin-left: 30%;    \r\n}\r\n\r\n#edit-quality-controllers-aimdb-2 .form-type-select{\r\n  margin-bottom:0;\r\n}\r\n#edit-quality-controllers-aimdb-2{\r\n position:relative;\r\n}\r\n#edit-quality-controllers-aimdb-2-other{\r\n  position:absolute;\r\n  top:0px;\r\n  right:7%;\r\n  width:63%;\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  margin-left: 30%; \r\n}\r\n\r\n\r\n#edit-quality-controllers-sdo-db- .form-type-select{\r\n margin-bottom:0;\r\n\r\n}\r\n#edit-quality-controllers-sdo-db-{\r\n position:relative;\r\n}\r\n#edit-quality-controllers-sdo-db-other{\r\n  position:absolute;\r\n  top:0px;\r\n  right:7%;\r\n  width:63%;\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  margin-left: 30%; \r\n}\r\n\r\n#edit-quality-controllers-sdo-db-2 .form-type-select{\r\n margin-bottom:0;\r\n\r\n}\r\n#edit-quality-controllers-sdo-db-2{\r\n position:relative;\r\n}\r\n#edit-quality-controllers-sdo-db-2-other{\r\n  position:absolute;\r\n  top:0px;\r\n  right:7%;\r\n  width:63%;\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  margin-left: 30%; \r\n}\r\n\r\n#edit-quality-controllers .form-type-select{\r\n margin-bottom:0;\r\n\r\n}\r\n#edit-quality-controllers{\r\n position:relative;\r\n}\r\n#edit-quality-controllers-other{\r\n  position:absolute;\r\n  top:0px;\r\n  right:7%;\r\n  width:63%;\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  margin-left: 30%; \r\n}\r\n\r\n#edit-quality-controllers-2 .form-type-select{\r\n margin-bottom:0;\r\n\r\n}\r\n#edit-quality-controllers-2{\r\n position:relative;\r\n}\r\n#edit-quality-controllers-2-other{\r\n  position:absolute;\r\n  top:0px;\r\n  right:7%;\r\n  width:63%;\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  margin-left: 30%; \r\n}\r\n\r\n/*Raw data evaluation's others field element*/\r\n#edit-missing-items-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  width: 70%;\r\n  margin-left: 30%;    \r\n  border-top: none;\r\n}\r\n#edit-missing-items- .form-type-select{\r\n  margin-bottom:0;\r\n}\r\n\r\n/*Raw data evaluation's others fieldset  with long title*/\r\n#edit-data-correction-is-required .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-data-correction-is-required .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-data-correction-is-required .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-data-correction-is-required-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-data-correction-is-required .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 6px;\r\n}\r\n\r\n#edit-raw-data-of-required-resolution-ref-order-24-order-3- .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n      margin-right: 0;\r\n}\r\n#edit-raw-data-of-required-resolution-ref-order-24-order-3- .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-raw-data-of-required-resolution-ref-order-24-order-3- .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-raw-data-of-required-resolution-ref-order-24-order-3-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-raw-data-of-required-resolution-ref-order-24-order-3- .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 30px;\r\n}\r\n\r\n\r\n#edit-affected-aip-items-elements-in-addition-to-the-items-elements-es .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-affected-aip-items-elements-in-addition-to-the-items-elements-es .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-affected-aip-items-elements-in-addition-to-the-items-elements-es .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-affected-aip-items-elements-in-addition-to-the-items-elements-es-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-affected-aip-items-elements-in-addition-to-the-items-elements-es .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 60px;\r\n}\r\n\r\n\r\n#edit-additional-affected-items-elements-agreement-with-head-of-ais .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-additional-affected-items-elements-agreement-with-head-of-ais .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-additional-affected-items-elements-agreement-with-head-of-ais .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-additional-affected-items-elements-agreement-with-head-of-ais-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-additional-affected-items-elements-agreement-with-head-of-ais .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 30px;\r\n}\r\n\r\n\r\n#edit-affected-chart-s-in-addition-to-the-chart-s-established-on-raw-d .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-affected-chart-s-in-addition-to-the-chart-s-established-on-raw-d .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-affected-chart-s-in-addition-to-the-chart-s-established-on-raw-d .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-affected-chart-s-in-addition-to-the-chart-s-established-on-raw-d-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-affected-chart-s-in-addition-to-the-chart-s-established-on-raw-d .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 45px;\r\n}\r\n\r\n\r\n#edit-additional-affected-charts-agreement-with-head-of-ais .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-additional-affected-charts-agreement-with-head-of-ais .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-additional-affected-charts-agreement-with-head-of-ais .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-additional-affected-charts-agreement-with-head-of-ais-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-additional-affected-charts-agreement-with-head-of-ais .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 30px;\r\n}\r\n\r\n\r\n#edit-contact-with-data-originator-needed .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-contact-with-data-originator-needed .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-contact-with-data-originator-needed .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-contact-with-data-originator-needed-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-contact-with-data-originator-needed .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 15px;\r\n}\r\n\r\n\r\n#edit-evaluation-is-positive .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-evaluation-is-positive .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-evaluation-is-positive .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-evaluation-is-positive-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-evaluation-is-positive .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 2.5px;\r\n}\r\n\r\n\r\n#edit-data-input-into-the-database-required .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-data-input-into-the-database-required .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-data-input-into-the-database-required .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-data-input-into-the-database-required-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-data-input-into-the-database-required .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 15px;\r\n}\r\n\r\n\r\n/*Raw data evaluation's others field element*/\r\n#edit-missing-items-2-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  width: 70%;\r\n  margin-left: 30%;    \r\n  border-top: none;\r\n}\r\n#edit-missing-items-2 .form-type-select{\r\n  margin-bottom:0;\r\n}\r\n\r\n/*Raw data evaluation's others fieldset  with long title*/\r\n#edit-data-correction-is-required2 .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-data-correction-is-required2 .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-data-correction-is-required2 .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-data-correction-is-required2-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-data-correction-is-required2 .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 6px;\r\n}\r\n\r\n#edit-raw-data-of-required-resolution-ref-order-24-order-3-2 .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n      margin-right: 0;\r\n}\r\n#edit-raw-data-of-required-resolution-ref-order-24-order-3-2 .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-raw-data-of-required-resolution-ref-order-24-order-3-2 .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-raw-data-of-required-resolution-ref-order-24-order-3-2-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-raw-data-of-required-resolution-ref-order-24-order-3-2 .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 30px;\r\n}\r\n\r\n\r\n#edit-affected-aip-items-elements-in-addition-to-the-items-elements-e2 .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-affected-aip-items-elements-in-addition-to-the-items-elements-e2 .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-affected-aip-items-elements-in-addition-to-the-items-elements-e2 .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-affected-aip-items-elements-in-addition-to-the-items-elements-e2-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-affected-aip-items-elements-in-addition-to-the-items-elements-e2 .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 60px;\r\n}\r\n\r\n\r\n#edit-additional-affected-items-elements-agreement-with-head-of-ai2 .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-additional-affected-items-elements-agreement-with-head-of-ai2 .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-additional-affected-items-elements-agreement-with-head-of-ai2 .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-additional-affected-items-elements-agreement-with-head-of-ai2-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-additional-affected-items-elements-agreement-with-head-of-ai2 .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 30px;\r\n}\r\n\r\n\r\n#edit-affected-chart-s-in-addition-to-the-chart-s-established-on-raw-2 .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-affected-chart-s-in-addition-to-the-chart-s-established-on-raw-2 .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-affected-chart-s-in-addition-to-the-chart-s-established-on-raw-2 .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-affected-chart-s-in-addition-to-the-chart-s-established-on-raw-2-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-affected-chart-s-in-addition-to-the-chart-s-established-on-raw-2 .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 45px;\r\n}\r\n\r\n\r\n#edit-additional-affected-charts-agreement-with-head-of-ai2 .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-additional-affected-charts-agreement-with-head-of-ai2 .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-additional-affected-charts-agreement-with-head-of-ai2 .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-additional-affected-charts-agreement-with-head-of-ai2-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-additional-affected-charts-agreement-with-head-of-ai2 .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 30px;\r\n}\r\n\r\n\r\n#edit-contact-with-data-originator-needed2 .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-contact-with-data-originator-needed2 .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-contact-with-data-originator-needed2 .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-contact-with-data-originator-needed2-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-contact-with-data-originator-needed2 .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 15px;\r\n}\r\n\r\n\r\n#edit-evaluation-is-positive2 .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-evaluation-is-positive2 .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-evaluation-is-positive2 .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-evaluation-is-positive2-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-evaluation-is-positive2 .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 2.5px;\r\n}\r\n\r\n\r\n#edit-data-input-into-the-database-required2 .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-data-input-into-the-database-required2 .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-data-input-into-the-database-required2 .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-data-input-into-the-database-required2-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-data-input-into-the-database-required2 .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 15px;\r\n}\r\n\r\n\r\n/*Data input into SDO DB's others field element*/\r\n#edit-missing-items-sdo-db-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  width: 70%;\r\n  margin-left: 30%;    \r\n  border-top: none;\r\n}\r\n#edit-missing-items-sdo-db .form-type-select{\r\n  margin-bottom:0;\r\n}\r\n\r\n\r\n/*Data input into SDO DB''s others fieldset  with long title*/\r\n#edit-data-correction-is-required-sdo-db .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-data-correction-is-required-sdo-db .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-data-correction-is-required-sdo-db .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-data-correction-is-required-sdo-db-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-data-correction-is-required-sdo-db .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 6px;\r\n}\r\n\r\n#edit-contact-with-data-originator-needed-sdo-db .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-contact-with-data-originator-needed-sdo-db .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-contact-with-data-originator-needed-sdo-db .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-contact-with-data-originator-needed-sdo-db-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-contact-with-data-originator-needed-sdo-db .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 15px;\r\n}\r\n\r\n/*1st Quality check's others field form element*/\r\n#edit-errors-found-sdo-db-1st-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  width: 70%;\r\n  margin-left: 30%;    \r\n  border-top: none;\r\n}\r\n#edit-errors-found-sdo-db-1st .form-type-select{\r\n  margin-bottom:0;\r\n}\r\n\r\n#edit-attachment-sdo-db-1st-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  width: 70%;\r\n  margin-left: 30%;    \r\n  border-top: none;\r\n}\r\n#edit-attachment-sdo-db-1st .form-type-select{\r\n  margin-bottom:0;\r\n}\r\n\r\n\r\n/*2nd Quality check's others field form element*/\r\n#edit-errors-found-sdo-db-2nd-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  width: 70%;\r\n  margin-left: 30%;    \r\n  border-top: none;\r\n}\r\n#edit-errors-found-sdo-db-2nd .form-type-select{\r\n  margin-bottom:0;\r\n}\r\n\r\n#edit-attachment-sdo-db-2nd-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  width: 70%;\r\n  margin-left: 30%;    \r\n  border-top: none;\r\n}\r\n#edit-attachment-sdo-db-2nd .form-type-select{\r\n  margin-bottom:0;\r\n}"
+css: "/*Header*/\r\n.header-text{\r\n  width:70%;\r\n  padding: 10px;\r\n}\r\n.header-title{\r\n    text-align: center;\r\n}\r\n.header-subTitle{\r\n  text-align: center;\r\n  margin-bottom: 20px;\r\n}\r\n.edition{\r\n  line-height: 20px;\r\n  font-size: 14px;\r\n}\r\n.edition-data{\r\n  line-height: 20px;\r\n  font-size: 14px;\r\n}\r\nimg{\r\nwidth:30%;\r\n}\r\n\r\n/*Wizard Page Fieldset receipt-and-assessment*/\r\n\r\n#edit-head-of-ais{\r\n    margin-top: 0;\r\n    margin-bottom: 0;\r\n}\r\n#edit-receipt-and-assessment > legend {\r\n  background-color: #fff;\r\n}\r\n#edit-receipt-and-assessment > legend .fieldset__label{\r\n    color: inherit;\r\n    text-align: center;\r\n}\r\n#edit-receipt-and-assessment > div {\r\n  padding-top:0;\r\n}\r\n\r\n/*Wizard Page Fieldset Evaluation*/\r\n#edit-evaluator{\r\n    margin-top: 0;\r\n\r\n}\r\n#edit-evaluator2{\r\n    margin-bottom: 0;\r\n}\r\n#edit-evaluation > legend {\r\n  background-color: #fff;\r\n}\r\n#edit-evaluation > legend .fieldset__label{\r\n    color: inherit;\r\n    text-align: center;\r\n}\r\n#edit-evaluation > div {\r\n  padding-top:0;\r\n}\r\n\r\n/*Wizard Page Fieldset SDO DB*/\r\n#edit-editor-sdo-db-top{\r\n    margin-top: 0;\r\n\r\n}\r\n#edit-editor-sdo-db-bottom{\r\n    margin-bottom: 0;\r\n}\r\n#edit-sdo-db > legend {\r\n  background-color: #fff;\r\n}\r\n#edit-sdo-db > legend .fieldset__label{\r\n    color: inherit;\r\n    text-align: center;\r\n}\r\n#edit-sdo-db > div {\r\n  padding-top:0;\r\n}\r\n/*Wizard Page Fieldset AIMdb*/\r\n#edit-aimdb > legend {\r\n  background-color: #fff;\r\n}\r\n#edit-aimdb > legend .fieldset__label{\r\n    color: inherit;\r\n    text-align: center;\r\n}\r\n#edit-aimdb > div {\r\n  padding-top:0;\r\n}\r\n\r\n/*Wizard Page Fieldset charting*/\r\n#edit-charting > legend {\r\n  background-color: #fff;\r\n}\r\n#edit-charting > legend .fieldset__label{\r\n    color: inherit;\r\n    text-align: center;\r\n}\r\n#edit-charting > div {\r\n  padding-top:0;\r\n}\r\n\r\n/*Wizard Page Fieldset contact-with-data-originator*/\r\n#edit-contact-with-data-originator > legend {\r\n  background-color: #fff;\r\n}\r\n#edit-contact-with-data-originator > legend .fieldset__label{\r\n    color: inherit;\r\n    text-align: center;\r\n}\r\n#edit-contact-with-data-originator > div {\r\n  padding-top:0;\r\n}\r\n/*Wizard Page Fieldset remarks*/\r\n#edit-remarks > legend {\r\n  background-color: #fff;\r\n}\r\n#edit-remarks > legend .fieldset__label{\r\n    color: inherit;\r\n    text-align: center;\r\n}\r\n#edit-remarks > div {\r\n  padding-top:0;\r\n}\r\n/*  Affected publication(s)'s field others form elements */ \r\n#edit-aip-items-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  width: 70%;\r\n  margin-left: 30%;    \r\n  border-top: none;\r\n}\r\n#edit-aip-items .form-type-select{\r\n  margin-bottom:0;\r\n}\r\n#edit-chart-s-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  width: 70%;\r\n  margin-left: 30%;\r\n  border-top: none;\r\n}\r\n#edit-chart-s- .form-type-select{\r\n  margin-bottom:0;\r\n}\r\n#edit-sup-s-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  width: 70%;\r\n  margin-left: 30%;\r\n  border-top: none;\r\n}\r\n#edit-sup-s- .form-type-select{\r\n  margin-bottom:0;\r\n}\r\n#edit-aic-s-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  width: 70%;\r\n  margin-left: 30%;\r\n  border-top: none;\r\n}\r\n#edit-aic-s- .form-type-select{\r\n  margin-bottom:0;\r\n}\r\n#edit-data-set-s-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  width: 70%;\r\n  margin-left: 30%;\r\n  border-top: none;\r\n}\r\n#edit-data-set-s- .form-type-select{\r\n  margin-bottom:0;\r\n}\r\n /*  Role assignment's field others position on top(form element)*/ \r\n#edit-editor-s- .form-type-select{\r\n margin-bottom:0;\r\n}\r\n#edit-editor-s-{\r\n position:relative;\r\n}\r\n#edit-editor-s-other{\r\n  position:absolute;\r\n  top:0px;\r\n  right:7%;\r\n  width:63%;\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  margin-left: 30%; \r\n}\r\n\r\n#edit-editor-s-2 .form-type-select{\r\n margin-bottom:0;\r\n\r\n}\r\n#edit-editor-s-2{\r\n position:relative;\r\n}\r\n#edit-editor-s-2-other{\r\n  position:absolute;\r\n  top:0px;\r\n  right:7%;\r\n  width:63%;\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  margin-left: 30%; \r\n}\r\n\r\n#edit-cartographer .form-type-select{\r\n margin-bottom:0;\r\n\r\n}\r\n#edit-cartographer{\r\n position:relative;\r\n}\r\n#edit-cartographer-other{\r\n  position:absolute;\r\n  top:0px;\r\n  right:7%;\r\n  width:63%;\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  margin-left: 30%; \r\n}\r\n\r\n#edit-cartographer2 .form-type-select{\r\n margin-bottom:0;\r\n\r\n}\r\n#edit-cartographer2{\r\n position:relative;\r\n}\r\n#edit-cartographer2-other{\r\n  position:absolute;\r\n  top:0px;\r\n  right:7%;\r\n  width:63%;\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  margin-left: 30%; \r\n}\r\n\r\n#edit-evaluator-s- .form-type-select{\r\n margin-bottom:0;\r\n\r\n}\r\n#edit-evaluator-s-{\r\n position:relative;\r\n}\r\n#edit-evaluator-s-other{\r\n  position:absolute;\r\n  top:0px;\r\n  right:7%;\r\n  width:63%;\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  margin-left: 30%; \r\n}\r\n\r\n#edit-evaluator-s-2 .form-type-select{\r\n margin-bottom:0;\r\n\r\n}\r\n#edit-evaluator-s-2{\r\n position:relative;\r\n}\r\n#edit-evaluator-s-2-other{\r\n  position:absolute;\r\n  top:0px;\r\n  right:7%;\r\n  width:63%;\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  margin-left: 30%; \r\n}\r\n\r\n#edit-quality-controllers-aimdb- .form-type-select{\r\n  margin-bottom:0;\r\n}\r\n#edit-quality-controllers-aimdb-{\r\n position:relative;\r\n}\r\n#edit-quality-controllers-aimdb-other{\r\n  position:absolute;\r\n  top:0px;\r\n  right:7%;\r\n  width:63%;\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  margin-left: 30%;    \r\n}\r\n\r\n#edit-quality-controllers-aimdb-2 .form-type-select{\r\n  margin-bottom:0;\r\n}\r\n#edit-quality-controllers-aimdb-2{\r\n position:relative;\r\n}\r\n#edit-quality-controllers-aimdb-2-other{\r\n  position:absolute;\r\n  top:0px;\r\n  right:7%;\r\n  width:63%;\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  margin-left: 30%; \r\n}\r\n\r\n\r\n#edit-quality-controllers-sdo-db- .form-type-select{\r\n margin-bottom:0;\r\n\r\n}\r\n#edit-quality-controllers-sdo-db-{\r\n position:relative;\r\n}\r\n#edit-quality-controllers-sdo-db-other{\r\n  position:absolute;\r\n  top:0px;\r\n  right:7%;\r\n  width:63%;\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  margin-left: 30%; \r\n}\r\n\r\n#edit-quality-controllers-sdo-db-2 .form-type-select{\r\n margin-bottom:0;\r\n\r\n}\r\n#edit-quality-controllers-sdo-db-2{\r\n position:relative;\r\n}\r\n#edit-quality-controllers-sdo-db-2-other{\r\n  position:absolute;\r\n  top:0px;\r\n  right:7%;\r\n  width:63%;\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  margin-left: 30%; \r\n}\r\n\r\n#edit-quality-controllers .form-type-select{\r\n margin-bottom:0;\r\n\r\n}\r\n#edit-quality-controllers{\r\n position:relative;\r\n}\r\n#edit-quality-controllers-other{\r\n  position:absolute;\r\n  top:0px;\r\n  right:7%;\r\n  width:63%;\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  margin-left: 30%; \r\n}\r\n\r\n#edit-quality-controllers-2 .form-type-select{\r\n margin-bottom:0;\r\n\r\n}\r\n#edit-quality-controllers-2{\r\n position:relative;\r\n}\r\n#edit-quality-controllers-2-other{\r\n  position:absolute;\r\n  top:0px;\r\n  right:7%;\r\n  width:63%;\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  margin-left: 30%; \r\n}\r\n\r\n/*Raw data evaluation's others field element*/\r\n#edit-missing-items-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  width: 70%;\r\n  margin-left: 30%;    \r\n  border-top: none;\r\n}\r\n#edit-missing-items- .form-type-select{\r\n  margin-bottom:0;\r\n}\r\n\r\n/*Raw data evaluation's others fieldset  with long title*/\r\n#edit-data-correction-is-required .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-data-correction-is-required .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-data-correction-is-required .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-data-correction-is-required-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-data-correction-is-required .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 6px;\r\n}\r\n\r\n#edit-raw-data-of-required-resolution-ref-order-24-order-3- .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n      margin-right: 0;\r\n}\r\n#edit-raw-data-of-required-resolution-ref-order-24-order-3- .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-raw-data-of-required-resolution-ref-order-24-order-3- .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-raw-data-of-required-resolution-ref-order-24-order-3-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-raw-data-of-required-resolution-ref-order-24-order-3- .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 30px;\r\n}\r\n\r\n\r\n#edit-affected-aip-items-elements-in-addition-to-the-items-elements-es .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-affected-aip-items-elements-in-addition-to-the-items-elements-es .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-affected-aip-items-elements-in-addition-to-the-items-elements-es .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-affected-aip-items-elements-in-addition-to-the-items-elements-es-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-affected-aip-items-elements-in-addition-to-the-items-elements-es .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 60px;\r\n}\r\n\r\n\r\n#edit-additional-affected-items-elements-agreement-with-head-of-ais .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-additional-affected-items-elements-agreement-with-head-of-ais .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-additional-affected-items-elements-agreement-with-head-of-ais .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-additional-affected-items-elements-agreement-with-head-of-ais-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-additional-affected-items-elements-agreement-with-head-of-ais .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 30px;\r\n}\r\n\r\n\r\n#edit-affected-chart-s-in-addition-to-the-chart-s-established-on-raw-d .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-affected-chart-s-in-addition-to-the-chart-s-established-on-raw-d .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-affected-chart-s-in-addition-to-the-chart-s-established-on-raw-d .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-affected-chart-s-in-addition-to-the-chart-s-established-on-raw-d-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-affected-chart-s-in-addition-to-the-chart-s-established-on-raw-d .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 45px;\r\n}\r\n\r\n\r\n#edit-additional-affected-charts-agreement-with-head-of-ais .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-additional-affected-charts-agreement-with-head-of-ais .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-additional-affected-charts-agreement-with-head-of-ais .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-additional-affected-charts-agreement-with-head-of-ais-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-additional-affected-charts-agreement-with-head-of-ais .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 30px;\r\n}\r\n\r\n\r\n#edit-contact-with-data-originator-needed .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-contact-with-data-originator-needed .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-contact-with-data-originator-needed .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-contact-with-data-originator-needed-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-contact-with-data-originator-needed .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 15px;\r\n}\r\n\r\n\r\n#edit-evaluation-is-positive .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-evaluation-is-positive .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-evaluation-is-positive .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-evaluation-is-positive-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-evaluation-is-positive .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 2.5px;\r\n}\r\n\r\n\r\n#edit-data-input-into-the-database-required .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-data-input-into-the-database-required .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-data-input-into-the-database-required .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-data-input-into-the-database-required-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-data-input-into-the-database-required .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 15px;\r\n}\r\n\r\n\r\n/*Raw data evaluation's others field element*/\r\n#edit-missing-items-2-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  width: 70%;\r\n  margin-left: 30%;    \r\n  border-top: none;\r\n}\r\n#edit-missing-items-2 .form-type-select{\r\n  margin-bottom:0;\r\n}\r\n\r\n/*Raw data evaluation's others fieldset  with long title*/\r\n#edit-data-correction-is-required2 .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-data-correction-is-required2 .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-data-correction-is-required2 .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-data-correction-is-required2-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-data-correction-is-required2 .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 6px;\r\n}\r\n\r\n#edit-raw-data-of-required-resolution-ref-order-24-order-3-2 .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n      margin-right: 0;\r\n}\r\n#edit-raw-data-of-required-resolution-ref-order-24-order-3-2 .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-raw-data-of-required-resolution-ref-order-24-order-3-2 .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-raw-data-of-required-resolution-ref-order-24-order-3-2-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-raw-data-of-required-resolution-ref-order-24-order-3-2 .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 30px;\r\n}\r\n\r\n\r\n#edit-affected-aip-items-elements-in-addition-to-the-items-elements-e2 .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-affected-aip-items-elements-in-addition-to-the-items-elements-e2 .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-affected-aip-items-elements-in-addition-to-the-items-elements-e2 .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-affected-aip-items-elements-in-addition-to-the-items-elements-e2-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-affected-aip-items-elements-in-addition-to-the-items-elements-e2 .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 60px;\r\n}\r\n\r\n\r\n#edit-additional-affected-items-elements-agreement-with-head-of-ai2 .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-additional-affected-items-elements-agreement-with-head-of-ai2 .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-additional-affected-items-elements-agreement-with-head-of-ai2 .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-additional-affected-items-elements-agreement-with-head-of-ai2-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-additional-affected-items-elements-agreement-with-head-of-ai2 .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 30px;\r\n}\r\n\r\n\r\n#edit-affected-chart-s-in-addition-to-the-chart-s-established-on-raw-2 .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-affected-chart-s-in-addition-to-the-chart-s-established-on-raw-2 .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-affected-chart-s-in-addition-to-the-chart-s-established-on-raw-2 .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-affected-chart-s-in-addition-to-the-chart-s-established-on-raw-2-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-affected-chart-s-in-addition-to-the-chart-s-established-on-raw-2 .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 45px;\r\n}\r\n\r\n\r\n#edit-additional-affected-charts-agreement-with-head-of-ai2 .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-additional-affected-charts-agreement-with-head-of-ai2 .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-additional-affected-charts-agreement-with-head-of-ai2 .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-additional-affected-charts-agreement-with-head-of-ai2-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-additional-affected-charts-agreement-with-head-of-ai2 .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 30px;\r\n}\r\n\r\n\r\n#edit-contact-with-data-originator-needed2 .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-contact-with-data-originator-needed2 .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-contact-with-data-originator-needed2 .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-contact-with-data-originator-needed2-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-contact-with-data-originator-needed2 .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 15px;\r\n}\r\n\r\n\r\n#edit-evaluation-is-positive2 .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-evaluation-is-positive2 .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-evaluation-is-positive2 .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-evaluation-is-positive2-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-evaluation-is-positive2 .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 2.5px;\r\n}\r\n\r\n\r\n#edit-data-input-into-the-database-required2 .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-data-input-into-the-database-required2 .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-data-input-into-the-database-required2 .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-data-input-into-the-database-required2-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-data-input-into-the-database-required2 .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 15px;\r\n}\r\n\r\n\r\n/*Data input into SDO DB's others field element*/\r\n#edit-missing-items-sdo-db-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  width: 70%;\r\n  margin-left: 30%;    \r\n  border-top: none;\r\n}\r\n#edit-missing-items-sdo-db .form-type-select{\r\n  margin-bottom:0;\r\n}\r\n\r\n\r\n/*Data input into SDO DB''s others fieldset  with long title*/\r\n#edit-data-correction-is-required-sdo-db .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-data-correction-is-required-sdo-db .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-data-correction-is-required-sdo-db .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-data-correction-is-required-sdo-db-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-data-correction-is-required-sdo-db .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 6px;\r\n}\r\n\r\n#edit-contact-with-data-originator-needed-sdo-db .fieldset__legend{\r\n    width: 30%;\r\n    background: none;\r\n}\r\n#edit-contact-with-data-originator-needed-sdo-db .fieldset__label{\r\n   padding-left: 0;\r\n   color: inherit;\r\n   font-weight: normal;\r\n   font-style: normal;\r\n   line-height: 1.6875rem;\r\n   font-size: 16px;\r\n}  \r\n  \r\n#edit-contact-with-data-originator-needed-sdo-db .fieldset__wrapper{\r\n    padding: 0;\r\n    width: 70%;\r\n    border: none;\r\n}\r\n#edit-contact-with-data-originator-needed-sdo-db-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  border-top: none;\r\n}\r\n#edit-contact-with-data-originator-needed-sdo-db .form-type-select{\r\n  margin-bottom:0;\r\n  margin-top: 15px;\r\n}\r\n\r\n/*1st Quality check's others field form element*/\r\n#edit-errors-found-sdo-db-1st-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  width: 70%;\r\n  margin-left: 30%;    \r\n  border-top: none;\r\n}\r\n#edit-errors-found-sdo-db-1st .form-type-select{\r\n  margin-bottom:0;\r\n}\r\n\r\n#edit-attachment-sdo-db-1st-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  width: 70%;\r\n  margin-left: 30%;    \r\n  border-top: none;\r\n}\r\n#edit-attachment-sdo-db-1st .form-type-select{\r\n  margin-bottom:0;\r\n}\r\n\r\n\r\n/*2nd Quality check's others field form element*/\r\n#edit-errors-found-sdo-db-2nd-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  width: 70%;\r\n  margin-left: 30%;    \r\n  border-top: none;\r\n}\r\n#edit-errors-found-sdo-db-2nd .form-type-select{\r\n  margin-bottom:0;\r\n}\r\n\r\n#edit-attachment-sdo-db-2nd-other{\r\n  min-height:40px; \r\n  height:40px; \r\n  text-align: center; \r\n  resize: none; \r\n  overflow: hidden; \r\n  padding-top: 10px; \r\n  padding-bottom:10px;\r\n  width: 70%;\r\n  margin-left: 30%;    \r\n  border-top: none;\r\n}\r\n#edit-attachment-sdo-db-2nd .form-type-select{\r\n  margin-bottom:0;\r\n}"
 javascript: "//Auto resize Textareas\r\nconst textareas = document.querySelectorAll(\"textarea\");\r\n\r\nfunction resizeTextarea(textarea) {\r\n  textarea.style.height = \"40px\"; // Reset the height to 40px to recalculate the height based on content\r\n  textarea.style.height = textarea.scrollHeight + \"px\"; // Set the height to match the content's height\r\n}\r\n\r\nfunction resizeAllTextareas() {\r\n  textareas.forEach(resizeTextarea);\r\n}\r\n\r\n// Call the resizeAllTextareas function when the page is loaded\r\nwindow.addEventListener(\"load\", resizeAllTextareas);\r\n\r\n// Call the resizeAllTextareas function whenever the window is resized\r\nwindow.addEventListener(\"resize\", resizeAllTextareas);\r\n\r\n// Call the resizeTextarea function whenever the text inside a textarea is changed (e.g., user input)\r\ntextareas.forEach((textarea) => {\r\n  textarea.addEventListener(\"input\", () => resizeTextarea(textarea));\r\n});\r\n\r\n\r\n\r\n\r\n"
 settings:
   ajax: false
