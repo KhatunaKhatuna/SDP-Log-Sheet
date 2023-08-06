@@ -1,5 +1,5 @@
 (function ($) {
-  Drupal.behaviors.sdplsWebformBehaviorEvaluation = {
+  Drupal.behaviors.sdplsWebformBehaviorsdodb = {
     attach: function (context, settings) {
       //Change Other Element style
       function changeOtherElementstyle(elementId, a, b) {
