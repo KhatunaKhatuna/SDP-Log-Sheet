@@ -19,6 +19,10 @@
           "edit-data-correction-is-required-charting"
         );
         changeOtherElementstyleFieldset("edit-contact-with-data-originator-needed-charting");
+        changeOtherElementstyleFieldset("edit-errors-found-charting-1st");
+        changeOtherElementstyleFieldset("edit-attachment-charting-1st");
+        changeOtherElementstyleFieldset("edit-errors-found-charting-2nd");
+        changeOtherElementstyleFieldset("edit-attachment-charting-2nd");
 
         // Function to handle window resize
         function handleWindowResize() {
@@ -30,6 +34,10 @@
             "edit-data-correction-is-required-charting"
           );
           changeOtherElementstyleFieldset("edit-contact-with-data-originator-needed-charting");
+          changeOtherElementstyleFieldset("edit-errors-found-charting-1st");
+          changeOtherElementstyleFieldset("edit-attachment-charting-1st");
+          changeOtherElementstyleFieldset("edit-errors-found-charting-2nd");
+          changeOtherElementstyleFieldset("edit-attachment-charting-2nd");
 
         }
   
