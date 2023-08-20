@@ -1421,14 +1421,19 @@ elements: |-
           '#other__type': textarea
           '#other__option_label': 'Other:'
           '#other__placeholder': ''
+          '#wrapper_type': form_element
           '#wrapper_attributes':
             class:
               - wrapper
-            style: 'display:flex;'
+            style: 'margin-bottom: 0;'
           '#attributes':
             class:
               - element
-            style: 'width: 100%;min-height:40px; height:40px; text-align: center;'
+            style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%;position: absolute;'
         data_correction_is_required_sdo_db:
           '#type': webform_select_other
           '#title': 'Data correction is required'
@@ -1515,14 +1520,19 @@ elements: |-
           '#other__type': textarea
           '#other__option_label': 'Other:'
           '#other__placeholder': ''
+          '#wrapper_type': form_element
           '#wrapper_attributes':
             class:
               - wrapper
-            style: 'display:flex;'
+            style: 'margin-bottom: 0;'
           '#attributes':
             class:
               - element
-            style: 'width: 100%;min-height:40px; height:40px; text-align: center;'
+            style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%; position: absolute;'
         attachment_sdo_db_1st:
           '#type': webform_select_other
           '#title': 'Attachment #'
@@ -1532,14 +1542,15 @@ elements: |-
           '#other__type': textarea
           '#other__option_label': 'Other:'
           '#other__placeholder': ''
+          '#wrapper_type': form_element
           '#wrapper_attributes':
             class:
               - wrapper
-            style: 'display:flex;'
+            style: 'margin-bottom: 0;'
           '#attributes':
             class:
               - element
-            style: 'width: 100%;min-height:40px; height:40px; text-align: center;'
+            style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
           '#label_attributes':
             class:
               - label
@@ -1611,14 +1622,19 @@ elements: |-
           '#other__type': textarea
           '#other__option_label': 'Other:'
           '#other__placeholder': ''
+          '#wrapper_type': form_element
           '#wrapper_attributes':
             class:
               - wrapper
-            style: 'display:flex;'
+            style: 'margin-bottom: 0;'
           '#attributes':
             class:
               - element
-            style: 'width: 100%;min-height:40px; height:40px; text-align: center;'
+            style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%; position: absolute;'
         attachment_sdo_db_2nd:
           '#type': webform_select_other
           '#title': 'Attachment #'
@@ -1628,14 +1644,19 @@ elements: |-
           '#other__type': textarea
           '#other__option_label': 'Other:'
           '#other__placeholder': ''
+          '#wrapper_type': form_element
           '#wrapper_attributes':
             class:
               - wrapper
-            style: 'display:flex;'
+            style: 'margin-bottom: 0;'
           '#attributes':
             class:
               - element
-            style: 'width: 100%;min-height:40px; height:40px; text-align: center;'
+            style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%; position: absolute;'
         corrected_by_sdo_db_2nd:
           '#type': textfield
           '#title': 'Corrected by'
@@ -2344,6 +2365,80 @@ elements: |-
     cartographer_charting_bottom:
       '#type': fieldset
       '#title': Cartographer
+      charting_completed:
+        '#type': details
+        '#title': 'Charting completed'
+        '#attributes':
+          class:
+            - section
+          style: 'margin-top: 0; margin-bottom: 0;'
+        '#summary_attributes':
+          class:
+            - section-title
+          style: 'padding-top: 10px; padding-bottom: 10px;'
+        date_end_of_creation_charting:
+          '#type': date
+          '#title': 'Date (end of creation)'
+          '#title_display': inline
+          '#wrapper_attributes':
+            class:
+              - container-flex
+            style: 'display:flex; align-items: center;'
+          '#attributes':
+            class:
+              - element
+            style: 'width:70%; min-height:40px; height:40px; text-align: center;'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%'
+        name_surname_of_cartographer_charting:
+          '#type': textfield
+          '#title': 'Name, Surname of Cartographer'
+          '#title_display': inline
+          '#wrapper_attributes':
+            class:
+              - container-flex
+            style: 'display:flex; align-items: center;'
+          '#attributes':
+            class:
+              - element
+            style: 'width:70%; min-height:40px; height:40px; text-align: center'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%'
+        log_sheet_number_charting:
+          '#type': textfield
+          '#title': 'Log Sheet number'
+          '#title_display': inline
+          '#wrapper_attributes':
+            class:
+              - container-flex
+            style: 'display:flex; align-items: center;'
+          '#attributes':
+            class:
+              - element
+            style: 'width:70%; min-height:40px; height:40px; text-align: center'
+          '#label_attributes':
+            class:
+              - label
+            style: 'width:30%'
+    signed_by_editor_charting:
+      '#type': checkbox
+      '#title': 'Signed by Cartographer'
+      '#wrapper_attributes':
+        class:
+          - signatured-Wrapper
+        style: 'display: flex;   align-items: center;  flex-direction: row-reverse; margin-bottom: 0;'
+      '#attributes':
+        class:
+          - signatured-element
+        style: 'width:40px; height:30px'
+      '#label_attributes':
+        class:
+          - signatured-label
+        style: 'font-size: 1.125rem; font-weight: 700; line-height: 1.125rem; margin-right: 50px'
   contact_with_data_originator:
     '#type': webform_wizard_page
     '#title': 'Contact with Data Originator'
