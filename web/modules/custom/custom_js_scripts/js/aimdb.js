@@ -13,7 +13,6 @@
       }
 
       // Call the function once on page load to apply the style initially
-      changeOtherElementstyle("edit-missing-items-aimdb");
 
       //Change Other Element style when fieldset
       function changeOtherElementstyleFieldset(elementId, a, b) {
@@ -28,6 +27,7 @@
       }
 
       // Call the function once on page load to apply the style initially
+      changeOtherElementstyleFieldset("edit-missing-items-aimdb");
       changeOtherElementstyleFieldset("edit-data-correction-is-required-aimdb");
       changeOtherElementstyleFieldset(
         "edit-contact-with-data-originator-aimdb"
@@ -38,6 +38,7 @@
       // Function to handle window resize
       function handleWindowResize() {
         // Call your changeOtherElementstyle function here with the elementId
+        changeOtherElementstyleFieldset("edit-missing-items-aimdb");
         changeOtherElementstyleFieldset(
           "edit-data-correction-is-required-aimdb"
         );

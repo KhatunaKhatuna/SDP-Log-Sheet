@@ -1,7 +1,7 @@
 (function ($) {
   Drupal.behaviors.sdplsWebformBehaviorsdodb = {
     attach: function (context, settings) {
-      //Change Other Element style
+      //Change Other Element style when field element
       function changeOtherElementstyle(elementId, a, b) {
         let parent = document.getElementById(elementId);
         let element = parent.lastElementChild;
@@ -13,11 +13,6 @@
       }
 
       // Call the function once on page load to apply the style initially
-      changeOtherElementstyle("edit-missing-items-sdo-db");
-      changeOtherElementstyle("edit-errors-found-sdo-db-1st");
-      changeOtherElementstyle("edit-attachment-sdo-db-1st");
-      changeOtherElementstyle("edit-errors-found-sdo-db-2nd");
-      changeOtherElementstyle("edit-attachment-sdo-db-2nd");
 
       //Change Other Element style when fieldset
       function changeOtherElementstyleFieldset(elementId, a, b) {
@@ -32,6 +27,11 @@
       }
 
       // Call the function once on page load to apply the style initially
+      changeOtherElementstyleFieldset("edit-missing-items-sdo-db");
+      changeOtherElementstyleFieldset("edit-errors-found-sdo-db-1st");
+      changeOtherElementstyleFieldset("edit-attachment-sdo-db-1st");
+      changeOtherElementstyleFieldset("edit-errors-found-sdo-db-2nd");
+      changeOtherElementstyleFieldset("edit-attachment-sdo-db-2nd");
       changeOtherElementstyleFieldset(
         "edit-data-correction-is-required-sdo-db"
       );
@@ -42,17 +42,19 @@
       // Function to handle window resize
       function handleWindowResize() {
         // Call your changeOtherElementstyle function here with the elementId
-        changeOtherElementstyle("edit-missing-items-sdo-db");
+        changeOtherElementstyleFieldset("edit-missing-items-sdo-db");
+        changeOtherElementstyleFieldset("edit-errors-found-sdo-db-1st");
+        changeOtherElementstyleFieldset("edit-attachment-sdo-db-1st");
+        changeOtherElementstyleFieldset("edit-errors-found-sdo-db-2nd");
+        changeOtherElementstyleFieldset("edit-attachment-sdo-db-2nd");
+
         changeOtherElementstyleFieldset(
           "edit-data-correction-is-required-sdo-db"
         );
         changeOtherElementstyleFieldset(
           "edit-contact-with-data-originator-needed-sdo-db"
         );
-        changeOtherElementstyle("edit-errors-found-sdo-db-1st");
-        changeOtherElementstyle("edit-attachment-sdo-db-1st");
-        changeOtherElementstyle("edit-errors-found-sdo-db-2nd");
-        changeOtherElementstyle("edit-attachment-sdo-db-2nd");
+    
       }
 
       // Add an event listener for window resize
