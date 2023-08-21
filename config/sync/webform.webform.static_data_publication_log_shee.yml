@@ -2451,7 +2451,7 @@ elements: |-
         '#attributes':
           class:
             - section
-          style: 'margin-top: 0;'
+          style: 'margin-top: 0;    margin-bottom: 0;'
         '#summary_attributes':
           class:
             - section-title
@@ -2600,7 +2600,7 @@ elements: |-
         '#attributes':
           class:
             - section
-          style: 'margin-top: 0;'
+          style: 'margin-top: 0;    margin-bottom: 0;'
         '#summary_attributes':
           class:
             - section-title
@@ -2749,7 +2749,7 @@ elements: |-
         '#attributes':
           class:
             - section
-          style: 'margin-top: 0;'
+          style: 'margin-top: 0;    margin-bottom: 0;'
         '#summary_attributes':
           class:
             - section-title
@@ -2898,7 +2898,7 @@ elements: |-
         '#attributes':
           class:
             - section
-          style: 'margin-top: 0;'
+          style: 'margin-top: 0;    margin-bottom: 0;'
         '#summary_attributes':
           class:
             - section-title
