@@ -1421,19 +1421,14 @@ elements: |-
           '#other__type': textarea
           '#other__option_label': 'Other:'
           '#other__placeholder': ''
-          '#wrapper_type': form_element
           '#wrapper_attributes':
             class:
               - wrapper
-            style: 'margin-bottom: 0;'
+            style: 'display:flex'
           '#attributes':
             class:
               - element
-            style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
-          '#label_attributes':
-            class:
-              - label
-            style: 'width:30%;position: absolute;'
+            style: 'width: 100%;min-height:40px; height:40px; text-align: center;'
         data_correction_is_required_sdo_db:
           '#type': webform_select_other
           '#title': 'Data correction is required'
@@ -1475,7 +1470,7 @@ elements: |-
         '#attributes':
           class:
             - section
-          style: 'margin-top: 0;'
+          style: 'display:flex;'
         '#summary_attributes':
           class:
             - section-title
@@ -1520,19 +1515,14 @@ elements: |-
           '#other__type': textarea
           '#other__option_label': 'Other:'
           '#other__placeholder': ''
-          '#wrapper_type': form_element
           '#wrapper_attributes':
             class:
               - wrapper
-            style: 'margin-bottom: 0;'
+            style: 'display:flex'
           '#attributes':
             class:
               - element
-            style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
-          '#label_attributes':
-            class:
-              - label
-            style: 'width:30%; position: absolute;'
+            style: 'width: 100%;min-height:40px; height:40px; text-align: center;'
         attachment_sdo_db_1st:
           '#type': webform_select_other
           '#title': 'Attachment #'
@@ -1542,19 +1532,14 @@ elements: |-
           '#other__type': textarea
           '#other__option_label': 'Other:'
           '#other__placeholder': ''
-          '#wrapper_type': form_element
           '#wrapper_attributes':
             class:
               - wrapper
-            style: 'margin-bottom: 0;'
+            style: 'display:flex'
           '#attributes':
             class:
               - element
-            style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
-          '#label_attributes':
-            class:
-              - label
-            style: 'width:30%; position: absolute;'
+            style: 'width: 100%;min-height:40px; height:40px; text-align: center;'
         corrected_by_sdo_db_1st:
           '#type': textfield
           '#title': 'Corrected by'
@@ -1622,19 +1607,14 @@ elements: |-
           '#other__type': textarea
           '#other__option_label': 'Other:'
           '#other__placeholder': ''
-          '#wrapper_type': form_element
           '#wrapper_attributes':
             class:
               - wrapper
-            style: 'margin-bottom: 0;'
+            style: 'display:flex;'
           '#attributes':
             class:
               - element
-            style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
-          '#label_attributes':
-            class:
-              - label
-            style: 'width:30%; position: absolute;'
+            style: 'width: 100%;min-height:40px; height:40px; text-align: center;;'
         attachment_sdo_db_2nd:
           '#type': webform_select_other
           '#title': 'Attachment #'
@@ -1644,19 +1624,14 @@ elements: |-
           '#other__type': textarea
           '#other__option_label': 'Other:'
           '#other__placeholder': ''
-          '#wrapper_type': form_element
           '#wrapper_attributes':
             class:
               - wrapper
-            style: 'margin-bottom: 0;'
+            style: 'display:flex;'
           '#attributes':
             class:
               - element
-            style: 'min-height:40px; height:40px; text-align: center; width: 70%; margin-left: 30%;'
-          '#label_attributes':
-            class:
-              - label
-            style: 'width:30%; position: absolute;'
+            style: 'width: 100%;min-height:40px; height:40px; text-align: center;'
         corrected_by_sdo_db_2nd:
           '#type': textfield
           '#title': 'Corrected by'
@@ -2451,7 +2426,7 @@ elements: |-
         '#attributes':
           class:
             - section
-          style: 'margin-top: 0;    margin-bottom: 0;'
+          style: 'margin-top: 0;'
         '#summary_attributes':
           class:
             - section-title
@@ -2600,7 +2575,7 @@ elements: |-
         '#attributes':
           class:
             - section
-          style: 'margin-top: 0;    margin-bottom: 0;'
+          style: 'margin-top: 0;'
         '#summary_attributes':
           class:
             - section-title
@@ -2749,7 +2724,7 @@ elements: |-
         '#attributes':
           class:
             - section
-          style: 'margin-top: 0;    margin-bottom: 0;'
+          style: 'margin-top: 0;'
         '#summary_attributes':
           class:
             - section-title
@@ -2898,7 +2873,7 @@ elements: |-
         '#attributes':
           class:
             - section
-          style: 'margin-top: 0;    margin-bottom: 0;'
+          style: 'margin-top: 0;'
         '#summary_attributes':
           class:
             - section-title
