@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * Alter webform elements.
+ *
+ * @param array $element
+ *   The webform element.
+ * @param \Drupal\Core\Form\FormStateInterface $form_state
+ *   The current state of the form.
+ * @param array $context
+ *   An associative array containing the following key-value pairs:
+ *   - form: The form structure to which elements is being attached.
+ */
+
+function log_sheet_number_webform_element_alter(array &$element, \Drupal\Core\Form\FormStateInterface $form_state, array $context) {
+if($element['#webform_id'] === 'static_data_publication_log_shee--log_sheet_number_evaluator' || $element['#webform_id'] === 'static_data_publication_log_shee--log_sheet_number_evaluator2' || $element['#webform_id'] === 'static_data_publication_log_shee--log_sheet_number_sdo_db' || $element['#webform_id'] === 'static_data_publication_log_shee--log_sheet_number_aimdb'|| $element['#webform_id'] === 'static_data_publication_log_shee--log_sheet_number_charting'|| $element['#webform_id'] === 'static_data_publication_log_shee--log_sheet_number_rdr'|| $element['#webform_id'] === 'static_data_publication_log_shee--log_sheet_number_eval'|| $element['#webform_id'] === 'static_data_publication_log_shee--log_sheet_number_did'|| $element['#webform_id'] === 'static_data_publication_log_shee--log_sheet_number_cc'){
+    $value_entered = $form_state->getValue('log_sheet_number');
+//    dpm($value_entered, 'value_entered');
+    $element['#default_value'] = $value_entered;
+}
+}
+
+

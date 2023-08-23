@@ -1,0 +1,5 @@
+name: "Log sheet number"
+type: module
+description: "Sets log sheet numbers"
+package: Custom
+core_version_requirement: ^9 || ^8
