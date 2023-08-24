@@ -13,11 +13,25 @@
  */
 
 function log_sheet_number_webform_element_alter(array &$element, \Drupal\Core\Form\FormStateInterface $form_state, array $context) {
-if($element['#webform_id'] === 'static_data_publication_log_shee--log_sheet_number_evaluator' || $element['#webform_id'] === 'static_data_publication_log_shee--log_sheet_number_evaluator2' || $element['#webform_id'] === 'static_data_publication_log_shee--log_sheet_number_sdo_db' || $element['#webform_id'] === 'static_data_publication_log_shee--log_sheet_number_aimdb'|| $element['#webform_id'] === 'static_data_publication_log_shee--log_sheet_number_charting'|| $element['#webform_id'] === 'static_data_publication_log_shee--log_sheet_number_rdr'|| $element['#webform_id'] === 'static_data_publication_log_shee--log_sheet_number_eval'|| $element['#webform_id'] === 'static_data_publication_log_shee--log_sheet_number_did'|| $element['#webform_id'] === 'static_data_publication_log_shee--log_sheet_number_cc'){
+  // Check if the current element is one of the elements you want to alter.
+  $webform_ids_to_alter = [
+    'static_data_publication_log_shee--log_sheet_number_evaluator',
+    'static_data_publication_log_shee--log_sheet_number_evaluator2',
+    'static_data_publication_log_shee--log_sheet_number_sdo_db',
+    'static_data_publication_log_shee--log_sheet_number_aimdb',
+    'static_data_publication_log_shee--log_sheet_number_charting',
+    'static_data_publication_log_shee--log_sheet_number_rdr',
+    'static_data_publication_log_shee--log_sheet_number_evel',
+    'static_data_publication_log_shee--log_sheet_number_did',
+    'static_data_publication_log_shee--log_sheet_number_cc'
+
+  ];
+
+  if (in_array($element['#webform_id'], $webform_ids_to_alter)) {
     $value_entered = $form_state->getValue('log_sheet_number');
-//    dpm($value_entered, 'value_entered');
+    //dpm($value_entered, 'value_entered');
     $element['#default_value'] = $value_entered;
-}
+  }
 }
 
 
