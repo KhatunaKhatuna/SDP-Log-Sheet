@@ -23,6 +23,7 @@
         "drupal/core-recommended": "^9.4",
         "drupal/webform": "^6.0",
         "drupal/webform_views": "^5.2",
+        "drupal/webformnavigation": "^2.0",
         "drush/drush": "^11.0",
         "vlucas/phpdotenv": "^5.1",
         "webflo/drupal-finder": "^1.2"

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c609ede4d1d856b60aad190200c08373",
+    "content-hash": "5ee37c3dd43beb16b32bab5b53c78eab",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1663,6 +1663,56 @@
             }
         },
         {
+            "name": "drupal/webform_submission_log",
+            "version": "6.1.5",
+            "require": {
+                "drupal/core": "^9.3",
+                "drupal/webform": "*"
+            },
+            "type": "metapackage",
+            "extra": {
+                "drupal": {
+                    "version": "6.1.5",
+                    "datestamp": "1686599078",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "DanChadwick",
+                    "homepage": "https://www.drupal.org/user/504278"
+                },
+                {
+                    "name": "jrockowitz",
+                    "homepage": "https://www.drupal.org/user/371407"
+                },
+                {
+                    "name": "Liam Morland",
+                    "homepage": "https://www.drupal.org/user/493050"
+                },
+                {
+                    "name": "quicksketch",
+                    "homepage": "https://www.drupal.org/user/35821"
+                },
+                {
+                    "name": "torotil",
+                    "homepage": "https://www.drupal.org/user/865256"
+                }
+            ],
+            "description": "Dedicated logging and reporting for webform submissions.",
+            "homepage": "https://www.drupal.org/project/webform",
+            "support": {
+                "source": "https://git.drupalcode.org/project/webform"
+            }
+        },
+        {
             "name": "drupal/webform_views",
             "version": "5.2.0",
             "source": {
@@ -1729,6 +1779,59 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/webform_views",
                 "issues": "https://www.drupal.org/project/issues/webform_views"
+            }
+        },
+        {
+            "name": "drupal/webformnavigation",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/webformnavigation.git",
+                "reference": "2.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/webformnavigation-2.0.1.zip",
+                "reference": "2.0.1",
+                "shasum": "f11fe6978c0a327ef6847975eaeae48bedaec5d5"
+            },
+            "require": {
+                "drupal/core": "^9.0 || ^10",
+                "drupal/webform": "^5.16 || ^6.0",
+                "drupal/webform_submission_log": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.1",
+                    "datestamp": "1674583762",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Ryan McVeigh (rymcveigh)",
+                    "homepage": "https://www.drupal.org/u/rymcveigh",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Contributors",
+                    "homepage": "https://www.drupal.org/node/3099769/committers",
+                    "role": "Contributor"
+                }
+            ],
+            "description": "Allows for forward navigation through a multi-page webform.",
+            "homepage": "https://drupal.org/project/webformnavigation",
+            "support": {
+                "source": "https://git.drupalcode.org/project/webformnavigation",
+                "issues": "https://www.drupal.org/project/issues/webformnavigation"
             }
         },
         {
