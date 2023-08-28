@@ -6,7 +6,8 @@
 
 function custom_js_scripts_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
   // Check if the form is a webform.
-  if (strpos($form_id, 'webform_submission_static_data_publication_log_shee_add_form') === 0) {
+  if (strpos($form_id, 'webform_submission_static_data_publication_log_shee_add_form') === 0
+    || strpos($form_id, 'webform_submission_static_data_publication_log_shee_edit_form') === 0) {
     // Get the current page of the webform.
     $current_page = $form_state->get('current_page'); 
 
