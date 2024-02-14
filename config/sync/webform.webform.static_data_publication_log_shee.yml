@@ -27,7 +27,7 @@ elements: |-
         - container-flex
       style: 'display:flex;  border: solid 2px #5d7585; border-radius: 0.1875rem;'
     '#display_on': both
-    '#text': '<img src="/sites/default/files/inline-images/logo-nav.png"><div class="header-text"><div class="header-title">"Sakaeronavigatsia" ltd. - Aeronautical Information Service</div><div class="header-subTitle">F_052 (I) - Static Data Publication Log Sheet</div><div><div class="edition">Edition: 6.4</div><div class="edition-data">Edition date: 27.01.2023</div></div></div>'
+    '#text': '<img src=""><div class="header-text"><div class="header-title">"Sakaeronavigatsia" ltd. - Aeronautical Information Service</div><div class="header-subTitle">F_052 (I) - Static Data Publication Log Sheet</div><div><div class="edition">Edition: 6.4</div><div class="edition-data">Edition date: 27.01.2023</div></div></div>'
     '#format': full_html
   receipt_and_assessment:
     '#type': webform_wizard_page
