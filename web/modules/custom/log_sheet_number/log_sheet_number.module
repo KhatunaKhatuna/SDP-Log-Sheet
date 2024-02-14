@@ -30,6 +30,7 @@ function log_sheet_number_webform_element_alter(array &$element, \Drupal\Core\Fo
     $value_entered = $form_state->getValue('log_sheet_number');
     //dpm($value_entered, 'value_entered');
     $element['#default_value'] = $value_entered;
+    $element['#attributes']['readonly'] = 'readonly';
   }
 }
 
