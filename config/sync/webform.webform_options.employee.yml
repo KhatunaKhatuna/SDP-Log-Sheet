@@ -7,8 +7,8 @@ label: Employee
 category: ''
 likert: false
 options: |-
-  'Diana Nemsadze': 'Diana Nemsadze'
-  'Marina Kandaurishvil': 'Marina Kandaurishvil'
-  'Mikheil Gaprindashvili': 'Mikheil Gaprindashvili'
-  'Sergo Kokolia': 'Sergo Kokolia'
+  'Name1  SurName1': 'Name1  SurName1'
+  'Name2  SurName2': 'Name2  SurName2'
+  'Name3 SurName3': 'Name3 SurName3'
+  'Name  SurName': 'Name  SurName'
   NIL: NIL
